@@ -1,0 +1,23 @@
+{
+  "links": {
+    "home": "Home",
+    "about": "About",
+    "projects": {
+      "label": "Projects",
+      "items": {
+        "drone": {
+          "title": "Drone",
+          "description": "A drone project"
+        },
+        "plane": {
+          "title": "Plane",
+          "description": "A plane project"
+        },
+        "train": {
+          "title": "Train",
+          "description": "AGH Solar Train initiative"
+        }
+      }
+    }
+  }
+}

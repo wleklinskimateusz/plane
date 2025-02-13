@@ -13,56 +13,51 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { CommonDictionary } from "@/translations/common/common-dictionary";
 
-const projects = [
-  {
-    title: "Drone",
-    href: "/projects/drone",
-    description: "A drone project",
-  },
-  {
-    title: "Plane",
-    href: "/projects/plane",
-    description: "A plane project",
-  },
-  {
-    title: "Train",
-    href: "/projects/train",
-    description: "AGH Solar Train initiative",
-  },
-];
+const projects = ["drone", "plane", "train"] as const;
 
-export function Navigation() {
+export function Navigation({
+  commonDictionary,
+}: {
+  commonDictionary: CommonDictionary;
+}) {
   return (
     <NavigationMenu className="py-4 ">
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Home
+              {commonDictionary.links.home}
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/about" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              About the Team
+              {commonDictionary.links.about}
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
+          <NavigationMenuTrigger>
+            {commonDictionary.links.projects.label}
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="flex flex-col gap-3 p-6 md:w-[200px] lg:w-[300px] ">
-              {projects.map((project) => (
-                <ListItem
-                  key={project.title}
-                  title={project.title}
-                  href={project.href}
-                >
-                  {project.description}
-                </ListItem>
-              ))}
+              {projects.map((project) => {
+                const { title, description } =
+                  commonDictionary.links.projects.items[project];
+                return (
+                  <ListItem
+                    key={project}
+                    title={title}
+                    href={`/projects/${project}`}
+                  >
+                    {description}
+                  </ListItem>
+                );
+              })}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>

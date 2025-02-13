@@ -1,0 +1,23 @@
+{
+  "links": {
+    "home": "Strona Główna",
+    "about": "O nas",
+    "projects": {
+      "label": "Projekty",
+      "items": {
+        "drone": {
+          "title": "Dron",
+          "description": "Projekt drona"
+        },
+        "plane": {
+          "title": "Samolot",
+          "description": "Projekt samolotu"
+        },
+        "train": {
+          "title": "Pociąg",
+          "description": "Inicjatywa AGH Solar Train"
+        }
+      }
+    }
+  }
+}
