@@ -5,17 +5,9 @@
     "projects": {
       "label": "Projects",
       "items": {
-        "drone": {
-          "title": "Drone",
-          "description": "A drone project"
-        },
-        "plane": {
-          "title": "Plane",
-          "description": "A plane project"
-        },
-        "train": {
-          "title": "Train",
-          "description": "AGH Solar Train initiative"
+        "uszatek": {
+          "title": "Teddy Drop Ear",
+          "description": "A plane that's going to fly around, scan and drop things, maybe it won't crash and will be overall great."
         }
       }
     }

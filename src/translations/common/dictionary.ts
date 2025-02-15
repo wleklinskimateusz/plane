@@ -5,7 +5,7 @@ const dictionaries = {
   pl: () => import("./pl.json").then((module) => module.default),
 };
 
-export type CommonDictionary = Awaited<ReturnType<typeof getCommonDictionary>>;
+export type Translations = Awaited<ReturnType<typeof getTranslations>>;
 
-export const getCommonDictionary = async (locale: "en" | "pl") =>
-  dictionaries[locale]();
+export const getTranslations = async (locale: string) =>
+  dictionaries[locale === "pl" ? "pl" : "en"]();

@@ -12,6 +12,9 @@ function getLocale(request: NextRequest) {
 }
 
 export function middleware(request: NextRequest) {
+  // skip all static files
+  if (request.nextUrl.pathname.endsWith(".jpeg")) return;
+
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl;
   const pathnameHasLocale = locales.some(
@@ -32,7 +35,6 @@ export const config = {
   matcher: [
     // Skip all internal paths (_next)
     "/((?!_next).*)",
-    // Optional: only run on root (/) URL
-    // '/'
+    // skip all static files
   ],
 };

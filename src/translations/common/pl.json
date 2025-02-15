@@ -5,17 +5,9 @@
     "projects": {
       "label": "Projekty",
       "items": {
-        "drone": {
-          "title": "Dron",
-          "description": "Projekt drona"
-        },
-        "plane": {
-          "title": "Samolot",
-          "description": "Projekt samolotu"
-        },
-        "train": {
-          "title": "Pociąg",
-          "description": "Inicjatywa AGH Solar Train"
+        "uszatek": {
+          "title": "Miś Uszatek",
+          "description": "Samolot, który będzie zapierdalał, będzie skanował i chyba coś zrzucał, może się nie ropierdoli i ogólnie super będzie."
         }
       }
     }

@@ -13,14 +13,12 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { CommonDictionary } from "@/translations/common/common-dictionary";
-
-const projects = ["drone", "plane", "train"] as const;
+import { Translations } from "@/translations/common/dictionary";
 
 export function Navigation({
   commonDictionary,
 }: {
-  commonDictionary: CommonDictionary;
+  commonDictionary: Translations;
 }) {
   return (
     <NavigationMenu className="py-4 ">
@@ -45,19 +43,13 @@ export function Navigation({
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="flex flex-col gap-3 p-6 md:w-[200px] lg:w-[300px] ">
-              {projects.map((project) => {
-                const { title, description } =
-                  commonDictionary.links.projects.items[project];
-                return (
-                  <ListItem
-                    key={project}
-                    title={title}
-                    href={`/projects/${project}`}
-                  >
+              {Object.entries(commonDictionary.links.projects.items).map(
+                ([key, { title, description }]) => (
+                  <ListItem key={key} title={title} href={`/projects/${key}`}>
                     {description}
                   </ListItem>
-                );
-              })}
+                )
+              )}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
