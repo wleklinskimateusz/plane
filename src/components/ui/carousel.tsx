@@ -54,7 +54,7 @@ const Carousel = React.forwardRef<
       setApi,
       plugins = [
         Autoplay({
-          delay: 2000,
+          delay: 4000,
         }),
       ],
       className,

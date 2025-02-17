@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getTranslations } from "@/translations/common/dictionary";
 import { ImageCard } from "@/components/image-card";
 import { BlueprintWrapper } from "@/components/blueprint-wrapper";
+import * as motion from "motion/react-client";
 
 import {
   CarouselContent,
@@ -10,6 +11,22 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Carousel } from "@/components/ui/carousel";
+import { Timeline } from "@/components/timeline";
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0 },
+};
 
 const carouselItems = [
   {
@@ -86,6 +103,37 @@ const carouselItems = [
   },
 ];
 
+const timelineItems = [
+  {
+    date: "2020",
+    title: "Project Started",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    imageSrc: "/team.jpeg",
+  },
+  {
+    date: "2021",
+    title: "First Milestone",
+    description:
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    imageSrc: "/team.jpeg",
+  },
+  {
+    date: "2022",
+    title: "Major Achievement",
+    description:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    imageSrc: "/team.jpeg",
+  },
+  {
+    date: "2023",
+    title: "Current Status",
+    description:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    imageSrc: "/team.jpeg",
+  },
+];
+
 export default async function Uszatek({
   params,
 }: {
@@ -118,20 +166,31 @@ export default async function Uszatek({
         <div className="w-full gap-8">
           <Carousel opts={{ loop: true }}>
             <CarouselContent>
-              {carouselItems.map((item) => (
+              {carouselItems.map((item, index) => (
                 <CarouselItem className="basis-full md:basis-1/3" key={item.id}>
-                  <BlueprintWrapper
-                    topText={item.dimensions.width}
-                    rightText={item.dimensions.height}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                      duration: 0.5,
+                      delay: index * 0.1,
+                    }}
+                    whileHover={{ scale: 1.02 }}
                   >
                     <ImageCard imageSrc={item.imageSrc} alt={item.alt} />
-                  </BlueprintWrapper>
+                  </motion.div>
                 </CarouselItem>
               ))}
             </CarouselContent>
             <CarouselPrevious className="hidden md:block" />
             <CarouselNext className="hidden md:block" />
           </Carousel>
+        </div>
+      </section>
+
+      <section className="py-16 px-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <Timeline items={timelineItems} />
         </div>
       </section>
     </div>
