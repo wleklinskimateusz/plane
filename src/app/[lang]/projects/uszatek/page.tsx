@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getTranslations } from "@/translations/common/dictionary";
 import { getUszatekTranslations } from "@/translations/uszatek/dictionary";
 import { ImageCard } from "@/components/image-card";
+import { ImageSwitcher } from "@/components/image-switcher";
 
 import {
   CarouselContent,
@@ -27,13 +28,7 @@ export default async function Uszatek({
   return (
     <div className="flex flex-col w-full  mx-auto">
       <section className="relative h-[100vh] w-full">
-        <Image
-          src="/team.jpeg"
-          alt="Uszatek"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-        />
+        <Image src="/team.jpeg" alt="Uszatek" layout="fill" objectFit="cover" />
         <div className="absolute inset-0 bg-black/30" />
         <div className="absolute bottom-32 left-16 max-w-xl">
           <div className="bg-black/40 backdrop-blur-md p-8 rounded-lg">
@@ -72,6 +67,22 @@ export default async function Uszatek({
         <div className="max-w-7xl mx-auto">
           <Timeline items={uszatekTranslations.timeline.items} />
         </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="w-full bg-gray-50 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            {uszatekTranslations.team.title}
+          </h2>
+          <p className="text-gray-600 text-xl">
+            {uszatekTranslations.team.description}
+          </p>
+        </div>
+        <ImageSwitcher
+          members={uszatekTranslations.team.members}
+          autoSwitchInterval={5000}
+        />
       </section>
     </div>
   );

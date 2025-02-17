@@ -70,5 +70,39 @@
         "imageSrc": "/team.jpeg"
       }
     ]
+  },
+  "team": {
+    "title": "Poznaj Nasz Zespół",
+    "description": "Pasjonaci stojący za projektem Uszatek",
+    "members": [
+      {
+        "id": 1,
+        "name": "Jan Kowalski",
+        "role": "Kierownik Projektu",
+        "description": "Student inżynierii lotniczej specjalizujący się w aerodynamice i integracji systemów.",
+        "imageSrc": "/team.jpeg"
+      },
+      {
+        "id": 2,
+        "name": "Anna Nowak",
+        "role": "Kierownik ds. Elektroniki",
+        "description": "Specjalizuje się w optymalizacji ogniw słonecznych i systemach zarządzania energią.",
+        "imageSrc": "/team.jpeg"
+      },
+      {
+        "id": 3,
+        "name": "Michał Wiśniewski",
+        "role": "Inżynier Oprogramowania",
+        "description": "Rozwija systemy kontroli lotu i algorytmy nawigacyjne.",
+        "imageSrc": "/team.jpeg"
+      },
+      {
+        "id": 4,
+        "name": "Sara Wójcik",
+        "role": "Inżynier Mechanik",
+        "description": "Odpowiada za projekt konstrukcyjny i dobór materiałów.",
+        "imageSrc": "/team.jpeg"
+      }
+    ]
   }
 } 

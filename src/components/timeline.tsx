@@ -51,9 +51,9 @@ const TimelineItem = ({
 
       {/* Timeline center */}
       <div className="relative flex h-full w-16 items-center justify-center">
-        <div className="absolute left-1/2 -translate-x-1/2 h-full w-0 border-l-2 border-dashed border-blue-200" />
+        <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 border-l-2 border-dashed border-blue-200" />
         <motion.div
-          className="absolute left-1/2 -translate-x-1/2 h-4 w-4 rounded-full bg-blue-600 ring-4 ring-blue-100"
+          className="absolute left-1/2 top-[calc(50%-0.5rem)] -translate-x-1/2 h-4 w-4 rounded-full bg-blue-600 ring-4 ring-blue-100 z-10"
           initial={{ scale: 0 }}
           animate={{ scale: isInView ? 1 : 0 }}
           transition={{ duration: 0.4 }}

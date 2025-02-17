@@ -70,5 +70,39 @@
         "imageSrc": "/team.jpeg"
       }
     ]
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "description": "The passionate individuals behind the Uszatek project",
+    "members": [
+      {
+        "id": 1,
+        "name": "John Smith",
+        "role": "Project Lead",
+        "description": "Aerospace engineering student with a focus on aerodynamics and system integration.",
+        "imageSrc": "/team.jpeg"
+      },
+      {
+        "id": 2,
+        "name": "Anna Johnson",
+        "role": "Electronics Lead",
+        "description": "Specializing in solar cell optimization and power management systems.",
+        "imageSrc": "/team.jpeg"
+      },
+      {
+        "id": 3,
+        "name": "Michael Brown",
+        "role": "Software Engineer",
+        "description": "Developing flight control systems and navigation algorithms.",
+        "imageSrc": "/team.jpeg"
+      },
+      {
+        "id": 4,
+        "name": "Sarah Wilson",
+        "role": "Mechanical Engineer",
+        "description": "Responsible for structural design and material selection.",
+        "imageSrc": "/team.jpeg"
+      }
+    ]
   }
 } 
