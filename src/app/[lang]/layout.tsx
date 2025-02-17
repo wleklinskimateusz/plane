@@ -2,6 +2,7 @@ import { Navigation } from "@/components/navigation";
 import { getTranslations } from "@/translations/common/dictionary";
 
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { Footer } from "@/components/footer";
 
 export function generateStaticParams() {
   return ["pl", "en"].map((lang) => ({ lang }));
@@ -29,6 +30,7 @@ export default async function RootLayout({
       <main className="flex-1 flex flex-col max-w-screen-3xl mx-auto w-full mt-[80px]">
         {children}
       </main>
+      <Footer translations={commonDictionary} />
     </div>
   );
 }

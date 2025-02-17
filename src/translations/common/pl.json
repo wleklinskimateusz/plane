@@ -11,5 +11,105 @@
         }
       }
     }
+  },
+  "footer": {
+    "organization": {
+      "description": "Organizacja studencka zajmująca się budową innowacyjnych samolotów solarnych."
+    },
+    "navigation": {
+      "title": "Nawigacja",
+      "home": "Strona Główna",
+      "projects": "Projekty",
+      "about": "O Nas",
+      "join": "Dołącz do Nas"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "email": "Email: contact@aghsolarplane.pl",
+      "location": "Lokalizacja: AGH, Kraków",
+      "building": "Budynek: D-1, Sala 017"
+    },
+    "newsletter": {
+      "title": "Bądź na Bieżąco",
+      "description": "Zapisz się, aby śledzić naszą podróż w lotnictwie solarnym.",
+      "placeholder": "Wpisz swój email",
+      "button": "Zapisz się"
+    },
+    "sponsors": {
+      "title": "Nasi Sponsorzy"
+    },
+    "copyright": "Wszelkie prawa zastrzeżone."
+  },
+  "timeline": {
+    "items": [
+      {
+        "date": "2020",
+        "title": "Początek Projektu",
+        "description": "Utworzenie zespołu AGH Solar Plane i rozpoczęcie prac nad koncepcją pierwszego samolotu solarnego.",
+        "imageSrc": "/team.jpeg"
+      },
+      {
+        "date": "2021",
+        "title": "Pierwszy Prototyp",
+        "description": "Rozwój i budowa pierwszego prototypu, w tym obszerne testy konfiguracji ogniw słonecznych.",
+        "imageSrc": "/team.jpeg"
+      },
+      {
+        "date": "2022",
+        "title": "Sukces w Zawodach",
+        "description": "Udział w międzynarodowych zawodach i uznanie za innowacyjne rozwiązania projektowe.",
+        "imageSrc": "/team.jpeg"
+      },
+      {
+        "date": "2023",
+        "title": "Projekt Uszatek",
+        "description": "Rozpoczęcie projektu Uszatek, naszego najbardziej ambitnego projektu samolotu solarnego.",
+        "imageSrc": "/team.jpeg"
+      }
+    ]
+  },
+  "carousel": {
+    "items": [
+      {
+        "id": 1,
+        "title": "Faza Projektowa",
+        "description": "Początkowy projekt i obliczenia aerodynamiczne dla naszego samolotu solarnego.",
+        "imageSrc": "/team.jpeg",
+        "dimensions": {
+          "width": "400px",
+          "height": "300px"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Integracja Ogniw Słonecznych",
+        "description": "Rozwój innowacyjnego rozmieszczenia ogniw słonecznych i systemów zarządzania energią.",
+        "imageSrc": "/team.jpeg",
+        "dimensions": {
+          "width": "450px",
+          "height": "320px"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Systemy Sterowania",
+        "description": "Implementacja zaawansowanych systemów kontroli lotu i nawigacji.",
+        "imageSrc": "/team.jpeg",
+        "dimensions": {
+          "width": "380px",
+          "height": "285px"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Faza Testów",
+        "description": "Rygorystyczne testy wszystkich komponentów i systemów w różnych warunkach.",
+        "imageSrc": "/team.jpeg",
+        "dimensions": {
+          "width": "420px",
+          "height": "315px"
+        }
+      }
+    ]
   }
 }

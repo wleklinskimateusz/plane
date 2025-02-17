@@ -13,7 +13,22 @@ function getLocale(request: NextRequest) {
 
 export function middleware(request: NextRequest) {
   // skip all static files
-  if (request.nextUrl.pathname.endsWith(".jpeg")) return;
+  if (
+    [
+      ".jpeg",
+      ".jpg",
+      ".png",
+      ".gif",
+      ".svg",
+      ".webp",
+      ".ico",
+      ".mp4",
+      ".webm",
+      ".mov",
+      ".pdf",
+    ].some((ext) => request.nextUrl.pathname.endsWith(ext))
+  )
+    return;
 
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl;
