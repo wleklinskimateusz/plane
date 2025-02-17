@@ -3,7 +3,6 @@ import { getTranslations } from "@/translations/common/dictionary";
 import { ImageCard } from "@/components/image-card";
 import { BlueprintWrapper } from "@/components/blueprint-wrapper";
 
-import Autoplay from "embla-carousel-autoplay";
 import {
   CarouselContent,
   CarouselItem,

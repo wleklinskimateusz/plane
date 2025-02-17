@@ -34,11 +34,11 @@ export const BlueprintWrapper = ({
       </div>
 
       {/* Right measurement arrow */}
-      <div className="absolute right-8 top-24 bottom-24 w-12 flex items-center">
+      <div className="absolute right-8 top-24 bottom-12 w-12 flex items-center">
         <div className="absolute left-1/2 -translate-x-1/2 h-full w-[3px] bg-white" />
         <div className="absolute top-0 -translate-y-1/2 h-[3px] w-4 left-1/2 -translate-x-1/2 bg-white" />
         <div className="absolute bottom-0 translate-y-1/2 h-[3px] w-4 left-1/2 -translate-x-1/2 bg-white" />
-        <div className="absolute top-1/2 -translate-y-1/2 left-6 -rotate-90 text-base font-medium text-white origin-left">
+        <div className="absolute top-1/2 -translate-y-1/2 left-10 -rotate-90 text-base font-medium text-white origin-left">
           {rightText}
         </div>
       </div>
