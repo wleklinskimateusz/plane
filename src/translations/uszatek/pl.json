@@ -1,5 +1,7 @@
 {
   "carousel": {
+    "title": "Postęp Projektu",
+    "description": "Kluczowe etapy rozwoju Uszatka",
     "items": [
       {
         "id": 1,
@@ -44,6 +46,8 @@
     ]
   },
   "timeline": {
+    "title": "Nasza Podróż",
+    "description": "Ewolucja projektu Uszatek w czasie",
     "items": [
       {
         "date": "2020",
@@ -104,5 +108,11 @@
         "imageSrc": "/team.jpeg"
       }
     ]
+  },
+  "video": {
+    "title": "Zobacz Uszatka w Akcji",
+    "description": "Obejrzyj nasz najnowszy lot testowy i postęp prac",
+    "thumbnailSrc": "/team.jpeg",
+    "videoSrc": "/video.mp4"
   }
 } 

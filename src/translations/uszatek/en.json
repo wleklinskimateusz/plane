@@ -1,5 +1,7 @@
 {
   "carousel": {
+    "title": "Project Progress",
+    "description": "Key stages in the development of Uszatek",
     "items": [
       {
         "id": 1,
@@ -44,6 +46,8 @@
     ]
   },
   "timeline": {
+    "title": "Our Journey",
+    "description": "The evolution of the Uszatek project through time",
     "items": [
       {
         "date": "2020",
@@ -104,5 +108,11 @@
         "imageSrc": "/team.jpeg"
       }
     ]
+  },
+  "video": {
+    "title": "See Uszatek in Action",
+    "description": "Watch our latest test flight and development progress",
+    "thumbnailSrc": "/team.jpeg",
+    "videoSrc": "/video.mp4"
   }
 } 

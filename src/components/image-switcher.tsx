@@ -36,7 +36,7 @@ export const ImageSwitcher = ({
   useEffect(() => {
     const timer = setInterval(handleNext, autoSwitchInterval);
     return () => clearInterval(timer);
-  }, [autoSwitchInterval]);
+  }, [autoSwitchInterval, handleNext]);
 
   const currentMember = members[currentIndex];
 

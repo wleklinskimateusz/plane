@@ -3,6 +3,7 @@ import { getTranslations } from "@/translations/common/dictionary";
 import { getUszatekTranslations } from "@/translations/uszatek/dictionary";
 import { ImageCard } from "@/components/image-card";
 import { ImageSwitcher } from "@/components/image-switcher";
+import { VideoPlayer } from "@/components/video-player";
 
 import {
   CarouselContent,
@@ -38,8 +39,17 @@ export default async function Uszatek({
         </div>
       </section>
 
+      {/* Carousel Section */}
       <section className="py-16 px-16">
         <div className="w-full gap-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-white mb-4">
+              {uszatekTranslations.carousel.title}
+            </h2>
+            <p className="text-white/80 text-xl">
+              {uszatekTranslations.carousel.description}
+            </p>
+          </div>
           <Carousel opts={{ loop: true }}>
             <CarouselContent className="-ml-16">
               {uszatekTranslations.carousel.items.map((item, index) => (
@@ -63,8 +73,36 @@ export default async function Uszatek({
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-16 px-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-white mb-4">
+              {uszatekTranslations.video.title}
+            </h2>
+            <p className="text-white/80 text-xl">
+              {uszatekTranslations.video.description}
+            </p>
+          </div>
+          <VideoPlayer
+            thumbnailSrc={uszatekTranslations.video.thumbnailSrc}
+            videoSrc={uszatekTranslations.video.videoSrc}
+            title={uszatekTranslations.video.title}
+          />
+        </div>
+      </section>
+
+      {/* Timeline Section */}
       <section className="py-16 px-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              {uszatekTranslations.timeline.title}
+            </h2>
+            <p className="text-gray-600 text-xl">
+              {uszatekTranslations.timeline.description}
+            </p>
+          </div>
           <Timeline items={uszatekTranslations.timeline.items} />
         </div>
       </section>
