@@ -41,7 +41,7 @@ export default async function Uszatek({
 
       {/* Carousel Section */}
       <section className="py-16 px-16">
-        <div className="w-full gap-8">
+        <div className="max-w-[1680px] mx-auto gap-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">
               {uszatekTranslations.carousel.title}
@@ -75,7 +75,7 @@ export default async function Uszatek({
 
       {/* Video Section */}
       <section className="py-16 px-16">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1680px] mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">
               {uszatekTranslations.video.title}
@@ -93,8 +93,8 @@ export default async function Uszatek({
       </section>
 
       {/* Timeline Section */}
-      <section className="py-16 px-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+      <section className=" bg-gray-50 py-16">
+        <div className=" max-w-[1680px] mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               {uszatekTranslations.timeline.title}
@@ -103,24 +103,28 @@ export default async function Uszatek({
               {uszatekTranslations.timeline.description}
             </p>
           </div>
-          <Timeline items={uszatekTranslations.timeline.items} />
+          <div className="px-16">
+            <Timeline items={uszatekTranslations.timeline.items} />
+          </div>
         </div>
       </section>
 
       {/* Team Section */}
       <section className="w-full bg-gray-50 py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            {uszatekTranslations.team.title}
-          </h2>
-          <p className="text-gray-600 text-xl">
-            {uszatekTranslations.team.description}
-          </p>
+        <div className="max-w-[1680px] mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              {uszatekTranslations.team.title}
+            </h2>
+            <p className="text-gray-600 text-xl">
+              {uszatekTranslations.team.description}
+            </p>
+          </div>
+          <ImageSwitcher
+            members={uszatekTranslations.team.members}
+            autoSwitchInterval={5000}
+          />
         </div>
-        <ImageSwitcher
-          members={uszatekTranslations.team.members}
-          autoSwitchInterval={5000}
-        />
       </section>
     </div>
   );
