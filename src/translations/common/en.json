@@ -29,87 +29,9 @@
       "location": "Location: AGH UST, Kraków",
       "building": "Building: D-1, Room 017"
     },
-    "newsletter": {
-      "title": "Stay Updated",
-      "description": "Subscribe to follow our journey in solar-powered aviation.",
-      "placeholder": "Enter your email",
-      "button": "Subscribe"
-    },
     "sponsors": {
       "title": "Our Sponsors"
     },
     "copyright": "All rights reserved."
-  },
-  "timeline": {
-    "items": [
-      {
-        "date": "2020",
-        "title": "Project Started",
-        "description": "Formation of AGH Solar Plane team and initial concept development of our first solar-powered aircraft.",
-        "imageSrc": "/team.jpeg"
-      },
-      {
-        "date": "2021",
-        "title": "First Prototype",
-        "description": "Development and construction of our first prototype, including extensive testing of solar cell configurations.",
-        "imageSrc": "/team.jpeg"
-      },
-      {
-        "date": "2022",
-        "title": "Competition Success",
-        "description": "Participation in international competitions and recognition for innovative design solutions.",
-        "imageSrc": "/team.jpeg"
-      },
-      {
-        "date": "2023",
-        "title": "Uszatek Project",
-        "description": "Launch of the Uszatek project, our most ambitious solar aircraft design to date.",
-        "imageSrc": "/team.jpeg"
-      }
-    ]
-  },
-  "carousel": {
-    "items": [
-      {
-        "id": 1,
-        "title": "Design Phase",
-        "description": "Initial design and aerodynamic calculations for our solar-powered aircraft.",
-        "imageSrc": "/team.jpeg",
-        "dimensions": {
-          "width": "400px",
-          "height": "300px"
-        }
-      },
-      {
-        "id": 2,
-        "title": "Solar Cell Integration",
-        "description": "Development of innovative solar cell placement and power management systems.",
-        "imageSrc": "/team.jpeg",
-        "dimensions": {
-          "width": "450px",
-          "height": "320px"
-        }
-      },
-      {
-        "id": 3,
-        "title": "Control Systems",
-        "description": "Implementation of advanced flight control and navigation systems.",
-        "imageSrc": "/team.jpeg",
-        "dimensions": {
-          "width": "380px",
-          "height": "285px"
-        }
-      },
-      {
-        "id": 4,
-        "title": "Testing Phase",
-        "description": "Rigorous testing of all components and systems in various conditions.",
-        "imageSrc": "/team.jpeg",
-        "dimensions": {
-          "width": "420px",
-          "height": "315px"
-        }
-      }
-    ]
   }
 }

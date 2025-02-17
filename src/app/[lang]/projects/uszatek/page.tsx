@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "@/translations/common/dictionary";
+import { getUszatekTranslations } from "@/translations/uszatek/dictionary";
 import { ImageCard } from "@/components/image-card";
 
 import {
@@ -18,6 +19,9 @@ export default async function Uszatek({
 }) {
   const { lang } = await params;
   const translations = await getTranslations(lang === "pl" ? "pl" : "en");
+  const uszatekTranslations = await getUszatekTranslations(
+    lang === "pl" ? "pl" : "en"
+  );
   const { title, description } = translations.links.projects.items.uszatek;
 
   return (
@@ -43,7 +47,7 @@ export default async function Uszatek({
         <div className="w-full gap-8">
           <Carousel opts={{ loop: true }}>
             <CarouselContent className="-ml-16">
-              {translations.carousel.items.map((item, index) => (
+              {uszatekTranslations.carousel.items.map((item, index) => (
                 <CarouselItem
                   className="basis-full md:basis-1/3 pl-16"
                   key={item.id}
@@ -66,7 +70,7 @@ export default async function Uszatek({
 
       <section className="py-16 px-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <Timeline items={translations.timeline.items} />
+          <Timeline items={uszatekTranslations.timeline.items} />
         </div>
       </section>
     </div>
