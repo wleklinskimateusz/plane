@@ -21,7 +21,7 @@ export function Navigation({
   commonDictionary: Translations;
 }) {
   return (
-    <NavigationMenu className="py-4 ">
+    <NavigationMenu className="py-4">
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>

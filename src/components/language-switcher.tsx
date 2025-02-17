@@ -12,10 +12,10 @@ export const LanguageSwitcher = ({ lang }: { lang: string }) => {
     pl: "Polish",
   };
   return (
-    <div className="fixed top-0 right-0">
+    <div className="absolute right-4 top-1/2 -translate-y-1/2 z-10">
       <Link
         href={`/${oppositeLang}${pathnameWithoutLang}`}
-        className="flex items-center gap-2"
+        className="flex items-center gap-2 hover:opacity-70 transition-opacity"
       >
         <LanguagesIcon className="w-4 h-4" />
         {languageMap[oppositeLang]}
