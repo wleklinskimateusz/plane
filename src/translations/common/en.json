@@ -2,6 +2,7 @@
   "links": {
     "home": "Home",
     "about": "About",
+    "join": "Join Us",
     "projects": {
       "label": "Projects",
       "items": {
@@ -19,9 +20,9 @@
     "navigation": {
       "title": "Navigation",
       "home": "Home",
-      "projects": "Projects",
       "about": "About Us",
-      "join": "Join Us"
+      "join": "Join Us",
+      "projects": "Projects"
     },
     "contact": {
       "title": "Contact",

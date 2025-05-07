@@ -7,7 +7,7 @@ import { LanguageSwitcher } from "./language-switcher";
 import { MobileLink, MobileNav } from "./mobile-navigation-menu";
 
 export function Navigation({
-  linksTranslations: { home, about, projects },
+  linksTranslations: { home, about, join, projects },
   lang,
 }: {
   linksTranslations: Translations["links"];
@@ -25,10 +25,16 @@ export function Navigation({
             {home}
           </Link>
           <Link
-            href="/about"
+            href="/#about"
             className="px-4 py-2 text-sm font-medium text-white hover:text-gray-300 transition-colors"
           >
             {about}
+          </Link>
+          <Link
+            href="/#join"
+            className="px-4 py-2 text-sm font-medium text-white hover:text-gray-300 transition-colors"
+          >
+            {join}
           </Link>
           <div className="relative group">
             <button className="px-4 py-2 text-sm font-medium text-white hover:text-gray-300 transition-colors">

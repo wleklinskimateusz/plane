@@ -6,7 +6,12 @@ import { useRouter } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
 import { useCallback, useState } from "react";
 
 export function MobileNav({ children }: { children: React.ReactNode }) {
@@ -44,6 +49,9 @@ export function MobileNav({ children }: { children: React.ReactNode }) {
         </Button>
       </DrawerTrigger>
       <DrawerContent className="max-h-[80svh] p-0">
+        <DrawerTitle hidden className="hidden">
+          Menu
+        </DrawerTitle>
         <div className="overflow-auto p-6">
           <div className="flex flex-col space-y-3">{children}</div>
         </div>
