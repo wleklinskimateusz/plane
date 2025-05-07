@@ -1,7 +1,6 @@
 import { Navigation } from "@/components/navigation";
 import { getTranslations } from "@/translations/common/dictionary";
 
-import { LanguageSwitcher } from "@/components/language-switcher";
 import { Footer } from "@/components/footer";
 
 export function generateStaticParams() {

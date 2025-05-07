@@ -2,11 +2,6 @@
 
 import { motion } from "framer-motion";
 
-interface Section {
-  title: string;
-  description: string;
-}
-
 export function SectionCard({
   title,
   description,

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -24,9 +24,9 @@ export const ImageSwitcher = ({
 }: ImageSwitcherProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % members.length);
-  };
+  }, [members]);
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev - 1 + members.length) % members.length);
