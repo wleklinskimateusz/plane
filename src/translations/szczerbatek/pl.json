@@ -1,7 +1,7 @@
 {
   "carousel": {
     "title": "Postęp Projektu",
-    "description": "Kluczowe etapy rozwoju Uszatka",
+    "description": "Kluczowe etapy rozwoju Szczerbatka",
     "items": [
       {
         "id": 1,
@@ -110,7 +110,7 @@
     ]
   },
   "video": {
-    "title": "Zobacz Uszatka w Akcji",
+    "title": "Zobacz Szczerbatka w Akcji",
     "description": "Obejrzyj nasz najnowszy lot testowy i postęp prac",
     "thumbnailSrc": "/team.jpeg",
     "videoSrc": "/video.mp4"
