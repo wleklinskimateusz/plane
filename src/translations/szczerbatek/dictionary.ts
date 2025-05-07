@@ -5,9 +5,9 @@ const dictionaries = {
   pl: () => import("./pl.json").then((module) => module.default),
 };
 
-export type UszatekTranslations = Awaited<
-  ReturnType<typeof getUszatekTranslations>
+export type SzczerbatekTranslations = Awaited<
+  ReturnType<typeof getSzczerbatekTranslations>
 >;
 
-export const getUszatekTranslations = async (locale: string) =>
+export const getSzczerbatekTranslations = async (locale: string) =>
   dictionaries[locale === "pl" ? "pl" : "en"]();

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "@/translations/common/dictionary";
-import { getUszatekTranslations } from "@/translations/uszatek/dictionary";
+import { getSzczerbatekTranslations } from "@/translations/szczerbatek/dictionary";
 import { ImageCard } from "@/components/image-card";
 import { ImageSwitcher } from "@/components/image-switcher";
 import { VideoPlayer } from "@/components/video-player";
@@ -14,27 +14,28 @@ import {
 import { Carousel } from "@/components/ui/carousel";
 import { Timeline } from "@/components/timeline";
 
-export default async function Uszatek({
+export default async function Szczerbatek({
   params,
 }: {
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
   const translations = await getTranslations(lang === "pl" ? "pl" : "en");
-  const uszatekTranslations = await getUszatekTranslations(lang);
-  const { title, description } = translations.links.projects.items.uszatek;
+  const szczerbatekTranslations = await getSzczerbatekTranslations(lang);
+  const { title, description } = translations.links.projects.items.szczerbatek;
 
   return (
     <div className="flex flex-col w-full  mx-auto">
       <section className="relative h-[100vh] w-full">
         <Image
           src="/team.jpeg"
-          alt="Uszatek"
+          alt="Szczerbatek"
           fill
           sizes="100vw"
           style={{
-            objectFit: "cover"
-          }} />
+            objectFit: "cover",
+          }}
+        />
         <div className="absolute inset-0 bg-black/30" />
         <div className="absolute bottom-32 left-16 max-w-xl">
           <div className="bg-black/40 backdrop-blur-md p-8 rounded-lg">
@@ -48,15 +49,15 @@ export default async function Uszatek({
         <div className="max-w-[1680px] mx-auto gap-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">
-              {uszatekTranslations.carousel.title}
+              {szczerbatekTranslations.carousel.title}
             </h2>
             <p className="text-white/80 text-xl">
-              {uszatekTranslations.carousel.description}
+              {szczerbatekTranslations.carousel.description}
             </p>
           </div>
           <Carousel opts={{ loop: true }}>
             <CarouselContent className="-ml-16">
-              {uszatekTranslations.carousel.items.map((item, index) => (
+              {szczerbatekTranslations.carousel.items.map((item, index) => (
                 <CarouselItem
                   className="basis-full md:basis-1/3 pl-16"
                   key={item.id}
@@ -81,16 +82,16 @@ export default async function Uszatek({
         <div className="max-w-[1680px] mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">
-              {uszatekTranslations.video.title}
+              {szczerbatekTranslations.video.title}
             </h2>
             <p className="text-white/80 text-xl">
-              {uszatekTranslations.video.description}
+              {szczerbatekTranslations.video.description}
             </p>
           </div>
           <VideoPlayer
-            thumbnailSrc={uszatekTranslations.video.thumbnailSrc}
-            videoSrc={uszatekTranslations.video.videoSrc}
-            title={uszatekTranslations.video.title}
+            thumbnailSrc={szczerbatekTranslations.video.thumbnailSrc}
+            videoSrc={szczerbatekTranslations.video.videoSrc}
+            title={szczerbatekTranslations.video.title}
           />
         </div>
       </section>
@@ -99,14 +100,14 @@ export default async function Uszatek({
         <div className=" max-w-[1680px] mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              {uszatekTranslations.timeline.title}
+              {szczerbatekTranslations.timeline.title}
             </h2>
             <p className="text-gray-600 text-xl">
-              {uszatekTranslations.timeline.description}
+              {szczerbatekTranslations.timeline.description}
             </p>
           </div>
           <div className="px-16">
-            <Timeline items={uszatekTranslations.timeline.items} />
+            <Timeline items={szczerbatekTranslations.timeline.items} />
           </div>
         </div>
       </section>
@@ -115,14 +116,14 @@ export default async function Uszatek({
         <div className="max-w-[1680px] mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              {uszatekTranslations.team.title}
+              {szczerbatekTranslations.team.title}
             </h2>
             <p className="text-gray-600 text-xl">
-              {uszatekTranslations.team.description}
+              {szczerbatekTranslations.team.description}
             </p>
           </div>
           <ImageSwitcher
-            members={uszatekTranslations.team.members}
+            members={szczerbatekTranslations.team.members}
             autoSwitchInterval={5000}
           />
         </div>
