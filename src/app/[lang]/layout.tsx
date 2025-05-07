@@ -17,19 +17,19 @@ export default async function RootLayout({
 }>) {
   const { lang } = await params;
 
-  const commonDictionary = await getTranslations(lang === "pl" ? "pl" : "en");
+  const { footer, links } = await getTranslations(lang);
 
   return (
     <div className="min-h-screen flex flex-col">
       <div className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm h-[80px]">
         <div className="flex w-full justify-center relative h-full">
-          <Navigation commonDictionary={commonDictionary} lang={lang} />
+          <Navigation linksTranslations={links} lang={lang} />
         </div>
       </div>
       <main className="flex-1 flex flex-col max-w-screen-3xl mx-auto w-full mt-[80px]">
         {children}
       </main>
-      <Footer translations={commonDictionary} />
+      <Footer translations={footer} />
     </div>
   );
 }

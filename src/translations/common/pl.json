@@ -31,8 +31,28 @@
     },
 
     "sponsors": {
-      "title": "Nasi Sponsorzy"
+      "title": "Nasi Sponsorzy",
+      "list": [
+        {
+          "name": "Sponsor 1",
+          "logo": "/vercel.svg"
+        },
+        {
+          "name": "Sponsor 2",
+          "logo": "/vercel.svg"
+        },
+        {
+          "name": "Sponsor 3",
+          "logo": "/vercel.svg"
+        }
+      ]
     },
     "copyright": "Wszelkie prawa zastrzeżone."
+  },
+  "notFound": {
+    "title": "Nie znaleziono strony",
+    "description": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
+    "goBack": "Wróć",
+    "goHome": "Strona główna"
   }
 }

@@ -2,119 +2,75 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu } from "lucide-react";
-
-import { cn } from "@/lib/utils";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
-import {
-  Drawer,
-  DrawerContent,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
-import { Button } from "@/components/ui/button";
 import { Translations } from "@/translations/common/dictionary";
 import { LanguageSwitcher } from "./language-switcher";
 import { MobileLink, MobileNav } from "./mobile-navigation-menu";
 
 export function Navigation({
-  commonDictionary,
+  linksTranslations: { home, about, projects },
   lang,
 }: {
-  commonDictionary: Translations;
+  linksTranslations: Translations["links"];
   lang: string;
 }) {
-  const [isOpen, setIsOpen] = React.useState(false);
-
   return (
     <div className="py-4 flex items-center gap-4">
       {/* Desktop Navigation */}
       <div className="hidden md:flex items-center gap-4">
-        <NavigationMenu>
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  {commonDictionary.links.home}
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/about" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  {commonDictionary.links.about}
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>
-                {commonDictionary.links.projects.label}
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="flex flex-col gap-3 p-6 md:w-[200px] lg:w-[300px]">
-                  {Object.entries(commonDictionary.links.projects.items).map(
-                    ([key, { title, description }]) => (
-                      <ListItem
-                        key={key}
-                        title={title}
-                        href={`/projects/${key}`}
-                      >
+        <nav className="flex items-center gap-2">
+          <Link
+            href="/"
+            className="px-4 py-2 text-sm font-medium text-white hover:text-gray-300 transition-colors"
+          >
+            {home}
+          </Link>
+          <Link
+            href="/about"
+            className="px-4 py-2 text-sm font-medium text-white hover:text-gray-300 transition-colors"
+          >
+            {about}
+          </Link>
+          <div className="relative group">
+            <button className="px-4 py-2 text-sm font-medium text-white hover:text-gray-300 transition-colors">
+              {projects.label}
+            </button>
+            <div className="absolute top-full left-0 hidden group-hover:block pt-2">
+              <div className="bg-white rounded-md shadow-lg p-4 min-w-[200px]">
+                {Object.entries(projects.items).map(
+                  ([key, { title, description }]) => (
+                    <Link
+                      key={key}
+                      href={`/projects/${key}`}
+                      className="block p-2 hover:bg-gray-100 rounded-sm"
+                    >
+                      <div className="text-sm font-medium text-gray-900">
+                        {title}
+                      </div>
+                      <p className="text-sm text-gray-500 mt-1 line-clamp-2">
                         {description}
-                      </ListItem>
-                    )
-                  )}
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+                      </p>
+                    </Link>
+                  )
+                )}
+              </div>
+            </div>
+          </div>
+        </nav>
         <LanguageSwitcher lang={lang} />
       </div>
 
       {/* Mobile Navigation */}
       <MobileNav>
         <>
-          <MobileLink href="/">{commonDictionary.links.home}</MobileLink>
-          <MobileLink href="/about">{commonDictionary.links.about}</MobileLink>
+          <MobileLink href="/">{home}</MobileLink>
+          <MobileLink href="/about">{about}</MobileLink>
+          {Object.entries(projects.items).map(([key, { title }]) => (
+            <MobileLink key={key} href={`/projects/${key}`}>
+              {title}
+            </MobileLink>
+          ))}
         </>
       </MobileNav>
     </div>
   );
 }
-
-const ListItem = ({
-  className,
-  title,
-  children,
-  ref,
-  ...props
-}: React.ComponentProps<"a">) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  );
-};
-ListItem.displayName = "ListItem";

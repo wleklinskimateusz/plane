@@ -5,28 +5,21 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import type { Translations } from "@/translations/common/dictionary";
 
-// Temporary sponsor data - replace with actual sponsors later
-const sponsors = [
-  { name: "Sponsor 1", logo: "/vercel.svg" },
-  { name: "Sponsor 2", logo: "/vercel.svg" },
-  { name: "Sponsor 3", logo: "/vercel.svg" },
-  { name: "Sponsor 4", logo: "/vercel.svg" },
-  { name: "Sponsor 5", logo: "/vercel.svg" },
-];
-
-export const Footer = ({ translations }: { translations: Translations }) => {
-  const t = translations.footer;
-
+export const Footer = ({
+  translations: { sponsors, organization, navigation, contact, copyright },
+}: {
+  translations: Translations["footer"];
+}) => {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-5xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         {/* Sponsors Section */}
         <div className="mb-12">
           <h3 className="text-white text-lg font-semibold text-center mb-6">
-            {t.sponsors.title}
+            {sponsors.title}
           </h3>
           <div className="flex flex-wrap justify-center gap-8 items-center">
-            {sponsors.map((sponsor, index) => (
+            {sponsors.list.map((sponsor, index) => (
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.05 }}
@@ -53,7 +46,7 @@ export const Footer = ({ translations }: { translations: Translations }) => {
             <h3 className="text-white text-lg font-semibold">
               AGH Solar Plane
             </h3>
-            <p className="text-sm max-w-sm">{t.organization.description}</p>
+            <p className="text-sm max-w-sm">{organization.description}</p>
             <div className="flex space-x-4">
               <motion.a
                 href="https://www.linkedin.com/company/agh-solar-plane"
@@ -79,12 +72,12 @@ export const Footer = ({ translations }: { translations: Translations }) => {
           {/* Quick Links */}
           <div className="space-y-4 flex flex-col items-center">
             <h3 className="text-white text-lg font-semibold">
-              {t.navigation.title}
+              {navigation.title}
             </h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="hover:text-white">
-                  {t.navigation.home}
+                  {navigation.home}
                 </Link>
               </li>
               <li>
@@ -108,12 +101,12 @@ export const Footer = ({ translations }: { translations: Translations }) => {
           {/* Contact Info */}
           <div className="space-y-4 flex flex-col items-center">
             <h3 className="text-white text-lg font-semibold">
-              {t.contact.title}
+              {contact.title}
             </h3>
             <ul className="space-y-2 text-sm">
-              <li>{t.contact.email}</li>
-              <li>{t.contact.location}</li>
-              <li>{t.contact.building}</li>
+              <li>{contact.email}</li>
+              <li>{contact.location}</li>
+              <li>{contact.building}</li>
             </ul>
           </div>
         </div>
@@ -121,7 +114,7 @@ export const Footer = ({ translations }: { translations: Translations }) => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-800 text-sm text-center">
           <p>
-            © {new Date().getFullYear()} AGH Solar Plane. {t.copyright}
+            © {new Date().getFullYear()} AGH Solar Plane. {copyright}
           </p>
         </div>
       </div>
