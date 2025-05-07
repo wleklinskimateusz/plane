@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getTranslations } from "@/translations/common/dictionary";
 import { organizationConfig } from "@/config/organization";
-import { SectionCard } from "@/components/sections-grid";
+import { SectionCard } from "@/components/sections-cards";
 
 export default async function Home({
   params,
@@ -9,7 +9,7 @@ export default async function Home({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const { hero, about, sections } = await getTranslations(lang);
+  const { hero, about, sections, join } = await getTranslations(lang);
 
   return (
     <div className="flex flex-col w-full">
@@ -83,6 +83,61 @@ export default async function Home({
                 delay={index * 0.2}
               />
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="join" className="py-24 bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">{join.title}</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              {join.description}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 text-center">
+              <h3 className="text-2xl font-semibold text-white mb-4">
+                {join.options.recruitment.title}
+              </h3>
+              <p className="text-gray-300 mb-6">
+                {join.options.recruitment.description}
+              </p>
+              <div className="flex justify-center gap-4">
+                <a
+                  href="https://www.linkedin.com/company/agh-solar-plane"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-gray-300 transition-colors"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href="https://www.facebook.com/aghsolarplane"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-gray-300 transition-colors"
+                >
+                  Facebook
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 text-center">
+              <h3 className="text-2xl font-semibold text-white mb-4">
+                {join.options.direct.title}
+              </h3>
+              <p className="text-gray-300 mb-6">
+                {join.options.direct.description}
+              </p>
+              <a
+                href="mailto:contact@aghsolarplane.pl"
+                className="text-white hover:text-gray-300 transition-colors"
+              >
+                contact@aghsolarplane.pl
+              </a>
+            </div>
           </div>
         </div>
       </section>

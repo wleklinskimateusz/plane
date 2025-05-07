@@ -1,5 +1,4 @@
 import { getTranslations } from "@/translations/common/dictionary";
-import { Navigation } from "@/components/navigation";
 import { NotFound as NotFoundComponent } from "@/components/not-found";
 
 export default async function NotFound({
@@ -8,7 +7,7 @@ export default async function NotFound({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const { links, notFound } = await getTranslations(lang);
+  const { notFound } = await getTranslations(lang);
   return (
     <div className="flex w-full justify-center">
       <NotFoundComponent translations={notFound} />

@@ -90,5 +90,19 @@
         "description": "Promujemy nasz projekt i dostarczamy informacje o naszej działalności."
       }
     }
+  },
+  "join": {
+    "title": "Dołącz do Nas",
+    "description": "Chcesz mieć wpływ na rozwój zrównoważonego lotnictwa? Zawsze szukamy pasjonatów do naszego zespołu.",
+    "options": {
+      "recruitment": {
+        "title": "Śledź Rekrutację",
+        "description": "Obserwuj nas w mediach społecznościowych, aby być na bieżąco z okresami rekrutacji i wydarzeniami."
+      },
+      "direct": {
+        "title": "Skontaktuj się z Nami",
+        "description": "Masz pytania lub nie możesz się doczekać? Napisz do nas na contact@aghsolarplane.pl"
+      }
+    }
   }
 }

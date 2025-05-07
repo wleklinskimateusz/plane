@@ -90,5 +90,19 @@
         "description": "Promoting our project and getting the word out there."
       }
     }
+  },
+  "join": {
+    "title": "Join Our Team",
+    "description": "Ready to make an impact in sustainable aviation? We're always looking for passionate students to join our team.",
+    "options": {
+      "recruitment": {
+        "title": "Watch for Recruitment",
+        "description": "Follow us on social media to stay updated about our recruitment periods and events."
+      },
+      "direct": {
+        "title": "Contact Us Directly",
+        "description": "Have questions or can't wait? Drop us an email at contact@aghsolarplane.pl"
+      }
+    }
   }
 }
