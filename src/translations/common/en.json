@@ -2,6 +2,7 @@
   "links": {
     "home": "Home",
     "about": "About",
+    "join": "Join Us",
     "projects": {
       "label": "Projects",
       "items": {
@@ -19,9 +20,9 @@
     "navigation": {
       "title": "Navigation",
       "home": "Home",
-      "projects": "Projects",
       "about": "About Us",
-      "join": "Join Us"
+      "join": "Join Us",
+      "projects": "Projects"
     },
     "contact": {
       "title": "Contact",
@@ -30,8 +31,28 @@
       "building": "Building: D-1, Room 017"
     },
     "sponsors": {
-      "title": "Our Sponsors"
+      "title": "Our Sponsors",
+      "list": [
+        {
+          "name": "Sponsor 1",
+          "logo": "/vercel.svg"
+        },
+        {
+          "name": "Sponsor 2",
+          "logo": "/vercel.svg"
+        },
+        {
+          "name": "Sponsor 3",
+          "logo": "/vercel.svg"
+        }
+      ]
     },
     "copyright": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for doesn't exist or has been moved.",
+    "goBack": "Go Back",
+    "goHome": "Go Home"
   }
 }

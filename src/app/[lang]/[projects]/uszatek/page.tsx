@@ -21,9 +21,7 @@ export default async function Uszatek({
 }) {
   const { lang } = await params;
   const translations = await getTranslations(lang === "pl" ? "pl" : "en");
-  const uszatekTranslations = await getUszatekTranslations(
-    lang === "pl" ? "pl" : "en"
-  );
+  const uszatekTranslations = await getUszatekTranslations(lang);
   const { title, description } = translations.links.projects.items.uszatek;
 
   return (
