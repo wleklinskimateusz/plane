@@ -47,7 +47,7 @@
   },
   "timeline": {
     "title": "Nasza Podróż",
-    "description": "Ewolucja projektu Uszatek w czasie",
+    "description": "Ewolucja projektu Szczerbatek w czasie",
     "items": [
       {
         "date": "2020",
@@ -69,15 +69,15 @@
       },
       {
         "date": "2023",
-        "title": "Projekt Uszatek",
-        "description": "Rozpoczęcie projektu Uszatek, naszego najbardziej ambitnego projektu samolotu solarnego.",
+        "title": "Projekt Szczerbatek",
+        "description": "Rozpoczęcie projektu Szczerbatek, naszego najbardziej ambitnego projektu samolotu solarnego.",
         "imageSrc": "/team.jpeg"
       }
     ]
   },
   "team": {
     "title": "Poznaj Nasz Zespół",
-    "description": "Pasjonaci stojący za projektem Uszatek",
+    "description": "Pasjonaci stojący za projektem Szczerbatek",
     "members": [
       {
         "id": 1,
@@ -114,5 +114,10 @@
     "description": "Obejrzyj nasz najnowszy lot testowy i postęp prac",
     "thumbnailSrc": "/team.jpeg",
     "videoSrc": "/video.mp4"
+  },
+  "organization": {
+    "title": "Część AGH Solar Plane",
+    "description": "Szczerbatek jest rozwijany przez AGH Solar Plane - organizację studencką dedykowaną przesuwaniu granic lotnictwa solarnego. Dołącz do nas w misji rewolucjonizowania zrównoważonego lotnictwa.",
+    "cta": "Poznaj Naszą Organizację"
   }
 } 

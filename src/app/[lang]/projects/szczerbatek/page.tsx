@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "@/translations/common/dictionary";
-import { getUszatekTranslations } from "@/translations/uszatek/dictionary";
+import { getSzczerbatekTranslations } from "@/translations/szczerbatek/dictionary";
 import { ImageCard } from "@/components/image-card";
 import { ImageSwitcher } from "@/components/image-switcher";
 import { VideoPlayer } from "@/components/video-player";
@@ -13,28 +13,30 @@ import {
 } from "@/components/ui/carousel";
 import { Carousel } from "@/components/ui/carousel";
 import { Timeline } from "@/components/timeline";
+import Link from "next/link";
 
-export default async function Uszatek({
+export default async function Szczerbatek({
   params,
 }: {
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
   const translations = await getTranslations(lang === "pl" ? "pl" : "en");
-  const uszatekTranslations = await getUszatekTranslations(lang);
-  const { title, description } = translations.links.projects.items.uszatek;
+  const szczerbatekTranslations = await getSzczerbatekTranslations(lang);
+  const { title, description } = translations.links.projects.items.szczerbatek;
 
   return (
     <div className="flex flex-col w-full  mx-auto">
       <section className="relative h-[100vh] w-full">
         <Image
           src="/team.jpeg"
-          alt="Uszatek"
+          alt="Szczerbatek"
           fill
           sizes="100vw"
           style={{
-            objectFit: "cover"
-          }} />
+            objectFit: "cover",
+          }}
+        />
         <div className="absolute inset-0 bg-black/30" />
         <div className="absolute bottom-32 left-16 max-w-xl">
           <div className="bg-black/40 backdrop-blur-md p-8 rounded-lg">
@@ -48,15 +50,15 @@ export default async function Uszatek({
         <div className="max-w-[1680px] mx-auto gap-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">
-              {uszatekTranslations.carousel.title}
+              {szczerbatekTranslations.carousel.title}
             </h2>
             <p className="text-white/80 text-xl">
-              {uszatekTranslations.carousel.description}
+              {szczerbatekTranslations.carousel.description}
             </p>
           </div>
           <Carousel opts={{ loop: true }}>
             <CarouselContent className="-ml-16">
-              {uszatekTranslations.carousel.items.map((item, index) => (
+              {szczerbatekTranslations.carousel.items.map((item, index) => (
                 <CarouselItem
                   className="basis-full md:basis-1/3 pl-16"
                   key={item.id}
@@ -81,16 +83,16 @@ export default async function Uszatek({
         <div className="max-w-[1680px] mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">
-              {uszatekTranslations.video.title}
+              {szczerbatekTranslations.video.title}
             </h2>
             <p className="text-white/80 text-xl">
-              {uszatekTranslations.video.description}
+              {szczerbatekTranslations.video.description}
             </p>
           </div>
           <VideoPlayer
-            thumbnailSrc={uszatekTranslations.video.thumbnailSrc}
-            videoSrc={uszatekTranslations.video.videoSrc}
-            title={uszatekTranslations.video.title}
+            thumbnailSrc={szczerbatekTranslations.video.thumbnailSrc}
+            videoSrc={szczerbatekTranslations.video.videoSrc}
+            title={szczerbatekTranslations.video.title}
           />
         </div>
       </section>
@@ -99,14 +101,14 @@ export default async function Uszatek({
         <div className=" max-w-[1680px] mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              {uszatekTranslations.timeline.title}
+              {szczerbatekTranslations.timeline.title}
             </h2>
             <p className="text-gray-600 text-xl">
-              {uszatekTranslations.timeline.description}
+              {szczerbatekTranslations.timeline.description}
             </p>
           </div>
           <div className="px-16">
-            <Timeline items={uszatekTranslations.timeline.items} />
+            <Timeline items={szczerbatekTranslations.timeline.items} />
           </div>
         </div>
       </section>
@@ -115,16 +117,48 @@ export default async function Uszatek({
         <div className="max-w-[1680px] mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              {uszatekTranslations.team.title}
+              {szczerbatekTranslations.team.title}
             </h2>
             <p className="text-gray-600 text-xl">
-              {uszatekTranslations.team.description}
+              {szczerbatekTranslations.team.description}
             </p>
           </div>
           <ImageSwitcher
-            members={uszatekTranslations.team.members}
+            members={szczerbatekTranslations.team.members}
             autoSwitchInterval={5000}
           />
+        </div>
+      </section>
+      {/* Organization Section */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              {szczerbatekTranslations.organization.title}
+            </h2>
+            <p className="text-xl text-gray-600 mb-8">
+              {szczerbatekTranslations.organization.description}
+            </p>
+            <Link
+              href={`/${lang}`}
+              className="inline-flex items-center gap-2 bg-gray-900/10 hover:bg-gray-900/20 text-gray-900 px-8 py-4 rounded-lg transition-colors backdrop-blur-sm"
+            >
+              {szczerbatekTranslations.organization.cta}
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
     </div>

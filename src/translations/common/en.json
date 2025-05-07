@@ -6,9 +6,9 @@
     "projects": {
       "label": "Projects",
       "items": {
-        "uszatek": {
-          "title": "Teddy Drop Ear",
-          "description": "A plane that's going to fly around, scan and drop things, maybe it won't crash and will be overall great."
+        "szczerbatek": {
+          "title": "Szczerbatek",
+          "description": "Our flagship solar plane named 'Szczerbatek' (pronounced 'Sh-cher-ba-tek', meaning 'Toothless' in Polish - yes, we know it's a tongue twister!). A versatile aircraft designed for autonomous flight, data collection, and maybe even making dentists nervous."
         }
       }
     }
