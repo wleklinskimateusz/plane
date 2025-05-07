@@ -59,5 +59,14 @@
   "hero": {
     "title": "AGH Solar Plane",
     "subtitle": "Dołącz do nas w rewolucjonizowaniu zrównoważonego lotnictwa - gdzie studencka innowacja spotyka się z mocą słońca"
+  },
+  "about": {
+    "title": "O Nas",
+    "description": "Jesteśmy zespołem pasjonatów z Akademii Górniczo-Hutniczej, którzy dążą do przesuwania granic lotnictwa solarnego. Naszą misją jest projektowanie, budowa i latanie innowacyjnymi samolotami zasilanymi energią słoneczną, jednocześnie rozwijając zrównoważone rozwiązania dla przyszłości lotnictwa.",
+    "stats": {
+      "members": "Członków Zespołu",
+      "projects": "Aktywne Projekty",
+      "years": "Lata Innowacji"
+    }
   }
 }

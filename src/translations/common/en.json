@@ -58,5 +58,14 @@
   "hero": {
     "title": "AGH Solar Plane",
     "subtitle": "Join us in revolutionizing sustainable aviation - where student innovation meets the power of the sun"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We are a passionate team of students from AGH University of Science and Technology, dedicated to pushing the boundaries of solar aviation. Our mission is to design, build, and fly innovative solar-powered aircraft while developing sustainable solutions for the future of aviation.",
+    "stats": {
+      "members": "Team Members",
+      "projects": "Active Projects",
+      "years": "Years of Innovation"
+    }
   }
 }
