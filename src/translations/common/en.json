@@ -17,18 +17,8 @@
     "organization": {
       "description": "Student organization dedicated to building innovative solar-powered aircraft."
     },
-    "navigation": {
-      "title": "Navigation",
-      "home": "Home",
-      "about": "About Us",
-      "join": "Join Us",
-      "projects": "Projects"
-    },
     "contact": {
-      "title": "Contact",
-      "email": "Email: contact@aghsolarplane.pl",
-      "location": "Location: AGH UST, Kraków",
-      "building": "Building: D-1, Room 017"
+      "title": "Contact"
     },
     "sponsors": {
       "title": "Our Sponsors",
@@ -101,8 +91,16 @@
       },
       "direct": {
         "title": "Contact Us Directly",
-        "description": "Have questions or can't wait? Drop us an email at contact@aghsolarplane.pl"
+        "description": "Have questions or can't wait? Drop us an email"
       }
+    }
+  },
+  "sponsor": {
+    "title": "Become a Sponsor",
+    "description": "Support the future of sustainable aviation. By sponsoring our project, you'll help develop innovative solar-powered aircraft while gaining visibility in the aerospace industry.",
+    "cta": {
+      "title": "Partner With Us",
+      "description": "Interested in supporting our mission? Contact us to discuss partnership opportunities."
     }
   }
 }

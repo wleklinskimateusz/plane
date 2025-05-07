@@ -17,18 +17,8 @@
     "organization": {
       "description": "Organizacja studencka zajmująca się budową innowacyjnych samolotów solarnych."
     },
-    "navigation": {
-      "title": "Nawigacja",
-      "home": "Strona Główna",
-      "projects": "Projekty",
-      "about": "O Nas",
-      "join": "Dołącz do Nas"
-    },
     "contact": {
-      "title": "Kontakt",
-      "email": "Email: contact@aghsolarplane.pl",
-      "location": "Lokalizacja: AGH, Kraków",
-      "building": "Budynek: D-1, Sala 017"
+      "title": "Kontakt"
     },
 
     "sponsors": {
@@ -101,8 +91,16 @@
       },
       "direct": {
         "title": "Skontaktuj się z Nami",
-        "description": "Masz pytania lub nie możesz się doczekać? Napisz do nas na contact@aghsolarplane.pl"
+        "description": "Masz pytania lub nie możesz się doczekać? Napisz do nas"
       }
+    }
+  },
+  "sponsor": {
+    "title": "Zostań Sponsorem",
+    "description": "Wesprzyj przyszłość zrównoważonego lotnictwa. Sponsorując nasz projekt, pomożesz w rozwoju innowacyjnych samolotów solarnych i zyskasz widoczność w branży lotniczej.",
+    "cta": {
+      "title": "Nawiąż Współpracę",
+      "description": "Zainteresowany wsparciem naszej misji? Skontaktuj się z nami, aby omówić możliwości współpracy."
     }
   }
 }

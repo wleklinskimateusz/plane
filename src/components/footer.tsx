@@ -4,14 +4,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "motion/react";
 import type { Translations } from "@/translations/common/dictionary";
+import { organizationConfig } from "@/config/organization";
 
 export const Footer = ({
-  translations: { sponsors, organization, navigation, contact, copyright },
+  translations: { sponsors, organization, contact, copyright },
 }: {
   translations: Translations["footer"];
 }) => {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-black text-gray-300">
       <div className="max-w-5xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         {/* Sponsors Section */}
         <div className="mb-12">
@@ -33,8 +34,9 @@ export const Footer = ({
                   className="object-contain brightness-0 invert"
                   style={{
                     maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
                 <span className="text-xs text-gray-400 text-center">
                   {sponsor.name}
                 </span>
@@ -43,7 +45,7 @@ export const Footer = ({
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
           {/* Organization Info */}
           <div className="space-y-4 flex flex-col items-center">
             <h3 className="text-white text-lg font-semibold">
@@ -52,7 +54,34 @@ export const Footer = ({
             <p className="text-sm max-w-sm">{organization.description}</p>
             <div className="flex space-x-4">
               <motion.a
-                href="https://www.linkedin.com/company/agh-solar-plane"
+                href={organizationConfig.socials.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1 }}
+                className="hover:text-white"
+              >
+                Instagram
+              </motion.a>
+              <motion.a
+                href={organizationConfig.socials.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1 }}
+                className="hover:text-white"
+              >
+                Facebook
+              </motion.a>
+              <motion.a
+                href={organizationConfig.socials.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1 }}
+                className="hover:text-white"
+              >
+                YouTube
+              </motion.a>
+              <motion.a
+                href={organizationConfig.socials.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
@@ -60,45 +89,7 @@ export const Footer = ({
               >
                 LinkedIn
               </motion.a>
-              <motion.a
-                href="https://github.com/agh-solar-plane"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1 }}
-                className="hover:text-white"
-              >
-                GitHub
-              </motion.a>
             </div>
-          </div>
-
-          {/* Quick Links */}
-          <div className="space-y-4 flex flex-col items-center">
-            <h3 className="text-white text-lg font-semibold">
-              {navigation.title}
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/" className="hover:text-white">
-                  {navigation.home}
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects" className="hover:text-white">
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="hover:text-white">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-white">
-                  Join Us
-                </Link>
-              </li>
-            </ul>
           </div>
 
           {/* Contact Info */}
@@ -107,14 +98,17 @@ export const Footer = ({
               {contact.title}
             </h3>
             <ul className="space-y-2 text-sm">
-              <li>{contact.email}</li>
-              <li>{contact.location}</li>
-              <li>{contact.building}</li>
+              <li>
+                <a href={`mailto:${organizationConfig.contact.generalMail}`}>
+                  {organizationConfig.contact.generalMail}
+                </a>
+              </li>
+              <li>{organizationConfig.contact.location}</li>
+              <li>{organizationConfig.contact.building}</li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-800 text-sm text-center">
           <p>
             © {new Date().getFullYear()} AGH Solar Plane. {copyright}

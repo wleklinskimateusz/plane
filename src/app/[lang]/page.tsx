@@ -9,10 +9,10 @@ export default async function Home({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const { hero, about, sections, join } = await getTranslations(lang);
+  const { hero, about, sections, join, sponsor } = await getTranslations(lang);
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full bg-gray-950">
       <section className="relative h-[100vh] w-full">
         <Image
           src="/team.jpeg"
@@ -33,7 +33,7 @@ export default async function Home({
 
       <section
         id="about"
-        className="relative py-24 bg-gradient-to-b from-black to-gray-900"
+        className="relative py-24 bg-gradient-to-b from-black via-gray-950 to-gray-900"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -87,7 +87,10 @@ export default async function Home({
         </div>
       </section>
 
-      <section id="join" className="py-24 bg-gray-800">
+      <section
+        id="join"
+        className="py-32 bg-gradient-to-b from-gray-900 to-gray-950"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">{join.title}</h2>
@@ -106,15 +109,15 @@ export default async function Home({
               </p>
               <div className="flex justify-center gap-4">
                 <a
-                  href="https://www.linkedin.com/company/agh-solar-plane"
+                  href={organizationConfig.socials.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-gray-300 transition-colors"
                 >
-                  LinkedIn
+                  Instagram
                 </a>
                 <a
-                  href="https://www.facebook.com/aghsolarplane"
+                  href={organizationConfig.socials.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-gray-300 transition-colors"
@@ -132,10 +135,51 @@ export default async function Home({
                 {join.options.direct.description}
               </p>
               <a
-                href="mailto:contact@aghsolarplane.pl"
+                href={`mailto:${organizationConfig.contact.generalMail}`}
                 className="text-white hover:text-gray-300 transition-colors"
               >
-                contact@aghsolarplane.pl
+                {organizationConfig.contact.generalMail}
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-gradient-to-b from-gray-950 to-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">
+              {sponsor.title}
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              {sponsor.description}
+            </p>
+          </div>
+
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 text-center">
+              <h3 className="text-2xl font-semibold text-white mb-4">
+                {sponsor.cta.title}
+              </h3>
+              <p className="text-gray-300 mb-6">{sponsor.cta.description}</p>
+              <a
+                href={`mailto:${organizationConfig.contact.sponsorMail}`}
+                className="inline-flex items-center gap-2 text-white hover:text-gray-300 transition-colors text-lg"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                {organizationConfig.contact.sponsorMail}
               </a>
             </div>
           </div>
