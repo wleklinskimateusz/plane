@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/carousel";
 import { Carousel } from "@/components/ui/carousel";
 import { Timeline } from "@/components/timeline";
+import Link from "next/link";
 
 export default async function Szczerbatek({
   params,
@@ -126,6 +127,38 @@ export default async function Szczerbatek({
             members={szczerbatekTranslations.team.members}
             autoSwitchInterval={5000}
           />
+        </div>
+      </section>
+      {/* Organization Section */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              {szczerbatekTranslations.organization.title}
+            </h2>
+            <p className="text-xl text-gray-600 mb-8">
+              {szczerbatekTranslations.organization.description}
+            </p>
+            <Link
+              href={`/${lang}`}
+              className="inline-flex items-center gap-2 bg-gray-900/10 hover:bg-gray-900/20 text-gray-900 px-8 py-4 rounded-lg transition-colors backdrop-blur-sm"
+            >
+              {szczerbatekTranslations.organization.cta}
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
     </div>

@@ -114,5 +114,10 @@
     "description": "Watch our latest test flight and development progress",
     "thumbnailSrc": "/team.jpeg",
     "videoSrc": "/video.mp4"
+  },
+  "organization": {
+    "title": "Part of AGH Solar Plane",
+    "description": "Szczerbatek is being developed by AGH Solar Plane - a student organization dedicated to pushing the boundaries of solar aviation. Join us in our mission to revolutionize sustainable flight.",
+    "cta": "Learn More About Our Organization"
   }
 } 
