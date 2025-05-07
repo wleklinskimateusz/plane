@@ -17,18 +17,8 @@
     "organization": {
       "description": "Student organization dedicated to building innovative solar-powered aircraft."
     },
-    "navigation": {
-      "title": "Navigation",
-      "home": "Home",
-      "about": "About Us",
-      "join": "Join Us",
-      "projects": "Projects"
-    },
     "contact": {
-      "title": "Contact",
-      "email": "Email: contact@aghsolarplane.pl",
-      "location": "Location: AGH UST, Kraków",
-      "building": "Building: D-1, Room 017"
+      "title": "Contact"
     },
     "sponsors": {
       "title": "Our Sponsors",
@@ -54,5 +44,63 @@
     "description": "The page you are looking for doesn't exist or has been moved.",
     "goBack": "Go Back",
     "goHome": "Go Home"
+  },
+  "hero": {
+    "title": "AGH Solar Plane",
+    "subtitle": "Join us in revolutionizing sustainable aviation - where student innovation meets the power of the sun"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We are a passionate team of students from AGH University of Science and Technology, dedicated to pushing the boundaries of solar aviation. Our mission is to design, build, and fly innovative solar-powered aircraft while developing sustainable solutions for the future of aviation.",
+    "stats": {
+      "members": "Team Members",
+      "projects": "Active Projects",
+      "years": "Years of Innovation"
+    }
+  },
+  "sections": {
+    "title": "Our Sections",
+    "description": "We operate across multiple specialized teams, each contributing to our mission",
+    "items": {
+
+      "electronics": {
+        "title": "Electronics and Power",
+        "description": "Developing intelligent control systems and power solutions for efficient flight and data collection."
+      },
+      "mechanics": {
+        "title": "Mechanics",
+        "description": "Creating innovative structural solutions using lightweight materials and advanced manufacturing techniques."
+      },
+      "software": {
+        "title": "Software",
+        "description": "Building cutting-edge applications for flight control, data analysis, and mission planning."
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "Promoting our project and getting the word out there."
+      }
+    }
+  },
+  "join": {
+    "title": "Join Our Team",
+    "description": "Ready to make an impact in sustainable aviation? We're always looking for passionate students to join our team.",
+    "options": {
+      "recruitment": {
+        "title": "Watch for Recruitment",
+        "description": "Follow us on social media to stay updated about our recruitment periods and events."
+      },
+      "direct": {
+        "title": "Contact Us Directly",
+        "description": "Have questions or can't wait? Drop us an email"
+      }
+    }
+  },
+  "sponsor": {
+    "title": "Become a Sponsor",
+    "description": "Support the future of sustainable aviation. By sponsoring our project, you'll help develop innovative solar-powered aircraft while gaining visibility in the aerospace industry.",
+    "cta": {
+      "title": "Partner With Us",
+      "description": "Interested in supporting our mission? Contact us to discuss partnership opportunities."
+    }
   }
 }

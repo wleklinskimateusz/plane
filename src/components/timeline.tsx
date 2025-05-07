@@ -48,7 +48,6 @@ const TimelineItem = ({
           <p className="text-gray-600">{description}</p>
         </div>
       </motion.div>
-
       {/* Timeline center */}
       <div className="relative flex h-full w-16 items-center justify-center">
         <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 border-l-2 border-dashed border-blue-200" />
@@ -59,7 +58,6 @@ const TimelineItem = ({
           transition={{ duration: 0.4 }}
         />
       </div>
-
       {/* Image */}
       <motion.div
         className="w-1/2"

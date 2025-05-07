@@ -19,19 +19,19 @@ export function Navigation({
       <div className="hidden md:flex items-center gap-4">
         <nav className="flex items-center gap-2">
           <Link
-            href="/"
+            href={`/${lang}`}
             className="px-4 py-2 text-sm font-medium text-white hover:text-gray-300 transition-colors"
           >
             {home}
           </Link>
           <Link
-            href="/#about"
+            href={`/${lang}/#about`}
             className="px-4 py-2 text-sm font-medium text-white hover:text-gray-300 transition-colors"
           >
             {about}
           </Link>
           <Link
-            href="/#join"
+            href={`/${lang}/#join`}
             className="px-4 py-2 text-sm font-medium text-white hover:text-gray-300 transition-colors"
           >
             {join}
@@ -46,7 +46,7 @@ export function Navigation({
                   ([key, { title, description }]) => (
                     <Link
                       key={key}
-                      href={`/projects/${key}`}
+                      href={`/${lang}/projects/${key}`}
                       className="block p-2 hover:bg-gray-100 rounded-sm"
                     >
                       <div className="text-sm font-medium text-gray-900">
@@ -68,10 +68,11 @@ export function Navigation({
       {/* Mobile Navigation */}
       <MobileNav>
         <>
-          <MobileLink href="/">{home}</MobileLink>
-          <MobileLink href="/about">{about}</MobileLink>
+          <MobileLink href={`/${lang}`}>{home}</MobileLink>
+          <MobileLink href={`/${lang}/#about`}>{about}</MobileLink>
+          <MobileLink href={`/${lang}/#join`}>{join}</MobileLink>
           {Object.entries(projects.items).map(([key, { title }]) => (
-            <MobileLink key={key} href={`/projects/${key}`}>
+            <MobileLink key={key} href={`/${lang}/projects/${key}`}>
               {title}
             </MobileLink>
           ))}

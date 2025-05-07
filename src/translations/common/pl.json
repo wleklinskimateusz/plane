@@ -17,18 +17,8 @@
     "organization": {
       "description": "Organizacja studencka zajmująca się budową innowacyjnych samolotów solarnych."
     },
-    "navigation": {
-      "title": "Nawigacja",
-      "home": "Strona Główna",
-      "projects": "Projekty",
-      "about": "O Nas",
-      "join": "Dołącz do Nas"
-    },
     "contact": {
-      "title": "Kontakt",
-      "email": "Email: contact@aghsolarplane.pl",
-      "location": "Lokalizacja: AGH, Kraków",
-      "building": "Budynek: D-1, Sala 017"
+      "title": "Kontakt"
     },
 
     "sponsors": {
@@ -55,5 +45,62 @@
     "description": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
     "goBack": "Wróć",
     "goHome": "Strona główna"
+  },
+  "hero": {
+    "title": "AGH Solar Plane",
+    "subtitle": "Dołącz do nas w rewolucjonizowaniu zrównoważonego lotnictwa - gdzie studencka innowacja spotyka się z mocą słońca"
+  },
+  "about": {
+    "title": "O Nas",
+    "description": "Jesteśmy zespołem pasjonatów z Akademii Górniczo-Hutniczej, którzy dążą do przesuwania granic lotnictwa solarnego. Naszą misją jest projektowanie, budowa i latanie innowacyjnymi samolotami zasilanymi energią słoneczną, jednocześnie rozwijając zrównoważone rozwiązania dla przyszłości lotnictwa.",
+    "stats": {
+      "members": "Członków Zespołu",
+      "projects": "Aktywne Projekty",
+      "years": "Lata Innowacji"
+    }
+  },
+  "sections": {
+    "title": "Nasze Sekcje",
+    "description": "Działamy w wielu wyspecjalizowanych zespołach, z których każdy przyczynia się do naszej misji",
+    "items": {
+      "electronics": {
+        "title": "Elektronika i Zasilanie",
+        "description": "Rozwój inteligentnych systemów sterowania i elektroniki zapewniających precyzyjne sterowanie lotem i zbieranie danych."
+      },
+      "mechanics": {
+        "title": "Konstrukcja",
+        "description": "Tworzenie innowacyjnych rozwiązań konstrukcyjnych z wykorzystaniem lekkich materiałów i zaawansowanych technik produkcji."
+      },
+      "software": {
+        "title": "Oprogramowanie",
+        "description": "Budowa nowoczesnych aplikacji do sterowania lotem, analizy danych i planowania misji."
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "Promujemy nasz projekt i dostarczamy informacje o naszej działalności."
+      }
+    }
+  },
+  "join": {
+    "title": "Dołącz do Nas",
+    "description": "Chcesz mieć wpływ na rozwój zrównoważonego lotnictwa? Zawsze szukamy pasjonatów do naszego zespołu.",
+    "options": {
+      "recruitment": {
+        "title": "Śledź Rekrutację",
+        "description": "Obserwuj nas w mediach społecznościowych, aby być na bieżąco z okresami rekrutacji i wydarzeniami."
+      },
+      "direct": {
+        "title": "Skontaktuj się z Nami",
+        "description": "Masz pytania lub nie możesz się doczekać? Napisz do nas"
+      }
+    }
+  },
+  "sponsor": {
+    "title": "Zostań Sponsorem",
+    "description": "Wesprzyj przyszłość zrównoważonego lotnictwa. Sponsorując nasz projekt, pomożesz w rozwoju innowacyjnych samolotów solarnych i zyskasz widoczność w branży lotniczej.",
+    "cta": {
+      "title": "Nawiąż Współpracę",
+      "description": "Zainteresowany wsparciem naszej misji? Skontaktuj się z nami, aby omówić możliwości współpracy."
+    }
   }
 }

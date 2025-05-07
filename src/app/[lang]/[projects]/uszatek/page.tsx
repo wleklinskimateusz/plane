@@ -27,7 +27,14 @@ export default async function Uszatek({
   return (
     <div className="flex flex-col w-full  mx-auto">
       <section className="relative h-[100vh] w-full">
-        <Image src="/team.jpeg" alt="Uszatek" layout="fill" objectFit="cover" />
+        <Image
+          src="/team.jpeg"
+          alt="Uszatek"
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover"
+          }} />
         <div className="absolute inset-0 bg-black/30" />
         <div className="absolute bottom-32 left-16 max-w-xl">
           <div className="bg-black/40 backdrop-blur-md p-8 rounded-lg">
@@ -36,7 +43,6 @@ export default async function Uszatek({
           </div>
         </div>
       </section>
-
       {/* Carousel Section */}
       <section className="py-16 px-16">
         <div className="max-w-[1680px] mx-auto gap-8">
@@ -70,7 +76,6 @@ export default async function Uszatek({
           </Carousel>
         </div>
       </section>
-
       {/* Video Section */}
       <section className="py-16 px-16">
         <div className="max-w-[1680px] mx-auto">
@@ -89,7 +94,6 @@ export default async function Uszatek({
           />
         </div>
       </section>
-
       {/* Timeline Section */}
       <section className=" bg-gray-50 py-16">
         <div className=" max-w-[1680px] mx-auto">
@@ -106,7 +110,6 @@ export default async function Uszatek({
           </div>
         </div>
       </section>
-
       {/* Team Section */}
       <section className="w-full bg-gray-50 py-16">
         <div className="max-w-[1680px] mx-auto">
