@@ -68,5 +68,27 @@
       "projects": "Aktywne Projekty",
       "years": "Lata Innowacji"
     }
+  },
+  "sections": {
+    "title": "Nasze Sekcje",
+    "description": "Działamy w wielu wyspecjalizowanych zespołach, z których każdy przyczynia się do naszej misji",
+    "items": {
+      "electronics": {
+        "title": "Elektronika i Zasilanie",
+        "description": "Rozwój inteligentnych systemów sterowania i elektroniki zapewniających precyzyjne sterowanie lotem i zbieranie danych."
+      },
+      "mechanics": {
+        "title": "Konstrukcja",
+        "description": "Tworzenie innowacyjnych rozwiązań konstrukcyjnych z wykorzystaniem lekkich materiałów i zaawansowanych technik produkcji."
+      },
+      "software": {
+        "title": "Oprogramowanie",
+        "description": "Budowa nowoczesnych aplikacji do sterowania lotem, analizy danych i planowania misji."
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "Promujemy nasz projekt i dostarczamy informacje o naszej działalności."
+      }
+    }
   }
 }

@@ -67,5 +67,28 @@
       "projects": "Active Projects",
       "years": "Years of Innovation"
     }
+  },
+  "sections": {
+    "title": "Our Sections",
+    "description": "We operate across multiple specialized teams, each contributing to our mission",
+    "items": {
+
+      "electronics": {
+        "title": "Electronics and Power",
+        "description": "Developing intelligent control systems and power solutions for efficient flight and data collection."
+      },
+      "mechanics": {
+        "title": "Mechanics",
+        "description": "Creating innovative structural solutions using lightweight materials and advanced manufacturing techniques."
+      },
+      "software": {
+        "title": "Software",
+        "description": "Building cutting-edge applications for flight control, data analysis, and mission planning."
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "Promoting our project and getting the word out there."
+      }
+    }
   }
 }

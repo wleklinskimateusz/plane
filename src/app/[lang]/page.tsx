@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { getTranslations } from "@/translations/common/dictionary";
 import { organizationConfig } from "@/config/organization";
+import { SectionCard } from "@/components/sections-grid";
 
 export default async function Home({
   params,
@@ -8,7 +9,7 @@ export default async function Home({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const { hero, about } = await getTranslations(lang);
+  const { hero, about, sections } = await getTranslations(lang);
 
   return (
     <div className="flex flex-col w-full">
@@ -59,6 +60,29 @@ export default async function Home({
               }+`}
               label={about.stats.years}
             />
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">
+              {sections.title}
+            </h2>
+            <p className="text-xl text-gray-300">{sections.description}</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {Object.entries(sections.items).map(([key, item], index) => (
+              <SectionCard
+                key={key}
+                title={item.title}
+                description={item.description}
+                icon="aerodynamics"
+                delay={index * 0.2}
+              />
+            ))}
           </div>
         </div>
       </section>
