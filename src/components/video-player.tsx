@@ -21,7 +21,7 @@ export const VideoPlayer = ({
     <div className="relative aspect-video w-full max-w-5xl mx-auto rounded-lg overflow-hidden">
       {!isPlaying ? (
         // Thumbnail with play button
-        (<div
+        <div
           className="relative w-full h-full group cursor-pointer"
           onClick={() => setIsPlaying(true)}
         >
@@ -32,17 +32,18 @@ export const VideoPlayer = ({
               <Play className="h-10 w-10 text-gray-900 ml-1" />
             </div>
           </div>
-        </div>)
+        </div>
       ) : (
         // Video player
-        (<video
+        <video
           autoPlay
           controls
           className="w-full h-full"
           onEnded={() => setIsPlaying(false)}
         >
-          <source src={videoSrc} type="video/mp4" />Your browser does not support the video tag.
-                  </video>)
+          <source src={videoSrc} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       )}
     </div>
   );

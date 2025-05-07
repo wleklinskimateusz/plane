@@ -55,5 +55,9 @@
     "description": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
     "goBack": "Wróć",
     "goHome": "Strona główna"
+  },
+  "hero": {
+    "title": "AGH Solar Plane",
+    "subtitle": "Dołącz do nas w rewolucjonizowaniu zrównoważonego lotnictwa - gdzie studencka innowacja spotyka się z mocą słońca"
   }
 }

@@ -31,7 +31,10 @@ export const Footer = ({
                   width={40}
                   height={40}
                   className="object-contain brightness-0 invert"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
                 <span className="text-xs text-gray-400 text-center">
                   {sponsor.name}
                 </span>

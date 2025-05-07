@@ -5,7 +5,6 @@ import { match } from "@formatjs/intl-localematcher";
 const locales = ["en-US", "pl"];
 const defaultLocale = "en-US";
 
-// Get the preferred locale, similar to the above or using a library
 function getLocale(request: NextRequest) {
   const headers = Object.fromEntries(request.headers.entries());
   return match(new Negotiator({ headers }).languages(), locales, defaultLocale);

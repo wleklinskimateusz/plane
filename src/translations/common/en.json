@@ -54,5 +54,9 @@
     "description": "The page you are looking for doesn't exist or has been moved.",
     "goBack": "Go Back",
     "goHome": "Go Home"
+  },
+  "hero": {
+    "title": "AGH Solar Plane",
+    "subtitle": "Join us in revolutionizing sustainable aviation - where student innovation meets the power of the sun"
   }
 }
