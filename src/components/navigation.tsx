@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import { Menu } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import {
@@ -13,48 +14,79 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import { Button } from "@/components/ui/button";
 import { Translations } from "@/translations/common/dictionary";
+import { LanguageSwitcher } from "./language-switcher";
+import { MobileLink, MobileNav } from "./mobile-navigation-menu";
 
 export function Navigation({
   commonDictionary,
+  lang,
 }: {
   commonDictionary: Translations;
+  lang: string;
 }) {
+  const [isOpen, setIsOpen] = React.useState(false);
+
   return (
-    <NavigationMenu className="py-4">
-      <NavigationMenuList>
-        <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              {commonDictionary.links.home}
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/about" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              {commonDictionary.links.about}
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>
-            {commonDictionary.links.projects.label}
-          </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="flex flex-col gap-3 p-6 md:w-[200px] lg:w-[300px] ">
-              {Object.entries(commonDictionary.links.projects.items).map(
-                ([key, { title, description }]) => (
-                  <ListItem key={key} title={title} href={`/projects/${key}`}>
-                    {description}
-                  </ListItem>
-                )
-              )}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
+    <div className="py-4 flex items-center gap-4">
+      {/* Desktop Navigation */}
+      <div className="hidden md:flex items-center gap-4">
+        <NavigationMenu>
+          <NavigationMenuList>
+            <NavigationMenuItem>
+              <Link href="/" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  {commonDictionary.links.home}
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/about" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  {commonDictionary.links.about}
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>
+                {commonDictionary.links.projects.label}
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="flex flex-col gap-3 p-6 md:w-[200px] lg:w-[300px]">
+                  {Object.entries(commonDictionary.links.projects.items).map(
+                    ([key, { title, description }]) => (
+                      <ListItem
+                        key={key}
+                        title={title}
+                        href={`/projects/${key}`}
+                      >
+                        {description}
+                      </ListItem>
+                    )
+                  )}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
+        <LanguageSwitcher lang={lang} />
+      </div>
+
+      {/* Mobile Navigation */}
+      <MobileNav>
+        <>
+          <MobileLink href="/">{commonDictionary.links.home}</MobileLink>
+          <MobileLink href="/about">{commonDictionary.links.about}</MobileLink>
+        </>
+      </MobileNav>
+    </div>
   );
 }
 
