@@ -45,40 +45,99 @@
     "description": "Ewolucja projektu Szczerbatek w czasie",
     "items": [
       {
-        "date": "2020",
-        "title": "Początek Projektu",
-        "description": "Utworzenie zespołu AGH Solar Plane i rozpoczęcie prac nad koncepcją pierwszego samolotu solarnego.",
-        "imageSrc": "/team.jpeg"
+        "date": "Październik 2024",
+        "title": "Pierwsze dyskusje i planowanie",
+        "description": "Zespół organizuje pierwsze spotkania. Ustalane są cele projektu, przypisywane role i opracowywany ogólny plan działania. Tworzona jest wizja projektu.",
+        "imageSrc": "/szczerbatek/timeline/modelFusion.png"
       },
       {
-        "date": "2021",
-        "title": "Pierwszy Prototyp",
-        "description": "Rozwój i budowa pierwszego prototypu, w tym obszerne testy konfiguracji ogniw słonecznych.",
-        "imageSrc": "/team.jpeg"
+        "date": "Początek listopada 2024",
+        "title": "Faza projektowania koncepcji, obliczenia aerodynamiczne i strukturalne",
+        "description": "Rozpoczyna się projektowanie koncepcji BSP – powstaje podstawowy układ konstrukcji, powierzchnie sterujące. Przeprowadzane są symulacje aerodynamiczne skrzydeł i kadłuba, a także modelowanie 3D samolotu w programie Fusion.",
+        "imageSrc": "/szczerbatek/timeline/aero.png"
       },
       {
-        "date": "2022",
-        "title": "Sukces w Zawodach",
-        "description": "Udział w międzynarodowych zawodach i uznanie za innowacyjne rozwiązania projektowe.",
-        "imageSrc": "/team.jpeg"
+        "date": "Koniec listopada 2024",
+        "title": "Dobór elektroniki pokładowej i materiałów, obliczenia zapotrzebowania na energię",
+        "description": "Zespół dokonuje wyboru odpowiednich systemów elektronicznych (np. autopilot, sensory, moduły telemetryczne) oraz materiałów (np. kompozyty, żywice), kierując się wymaganiami misji oraz efektywnością masową i energetyczną. Prowadzone są szczegółowe obliczenia zapotrzebowania na energię dla napędu, elektroniki pokładowej oraz systemów zadaniowych.",
+        "imageSrc": "/szczerbatek/timeline/elektronika-tymczasowe.jpg"
       },
       {
-        "date": "2023",
-        "title": "Projekt Szczerbatek",
-        "description": "Rozpoczęcie projektu Szczerbatek, naszego najbardziej ambitnego projektu samolotu solarnego.",
-        "imageSrc": "/team.jpeg"
+        "date": "Grudzień 2024",
+        "title": "Projektowanie, wykonanie i testy systemu zrzutu oraz mechanizmu zabezpieczającego",
+        "description": "Rozpoczyna się projektowanie systemu zrzutu ładunku oraz mechanizmu ochrony zrzutu – z naciskiem na precyzję, masę i niezawodność. Następnie budowane są elementy mechaniczne systemu, które poddawane są testom i ulepszeniom.",
+        "imageSrc": "/szczerbatek/timeline/zrzut.png"
+      },
+      {
+        "date": "Styczeń 2025",
+        "title": "Frezowanie form CNC, projektowanie oprogramowania",
+        "description": "Wykonywane jest precyzyjne frezowanie form do elementów aerodynamicznych (skrzydła, powłoki kadłuba) za pomocą maszyn CNC. Zespół rozpoczyna projektowanie rozwiązań programistycznych.",
+        "imageSrc": "/szczerbatek/timeline/frezowanie.jpg"
+      },
+      {
+        "date": "Luty 2025",
+        "title": "Proces laminowania",
+        "description": "Przeprowadzana jest laminacja elementów samolotu z zastosowaniem wybranych materiałów kompozytowych oraz technologii próżniowej.",
+        "imageSrc": "/szczerbatek/timeline/laminowanie.jpg"
+      },
+      {
+        "date": "Luty – Marzec 2025",
+        "title": "Implementacja systemów elektroniki i telemetrii",
+        "description": "Następuje fizyczna integracja i montaż komponentów elektronicznych, modułów telemetrii, sensorów oraz autopilota.",
+        "imageSrc": "/szczerbatek/timeline/kontroler.jpg"
+      },
+      {
+        "date": "Luty – Kwiecień 2025",
+        "title": "Implementacja oprogramowania",
+        "description": "Wgrywane i testowane są autorskie rozwiązania programistyczne, w tym algorytmy do mapowania terenu oraz systemy autonomicznego zrzutu.",
+        "imageSrc": "/szczerbatek/timeline/soft-tymczasowe.jpg"
+      },
+      {
+        "date": "Marzec 2025",
+        "title": "Końcowe udoskonalenia konstrukcji",
+        "description": "Na podstawie testów prototypu wprowadzane są poprawki mające na celu optymalizację stabilności lotu, udźwigu i ogólnej efektywności misji.",
+        "imageSrc": "/szczerbatek/timeline/finalne-poprawki.jpg"
+      },
+      {
+        "date": "Kwiecień 2025",
+        "title": "Testy plenerowe",
+        "description": "Przeprowadzane są testy w terenie w celu sprawdzenia wydajności lotu, działania mechanizmów zrzutu oraz zbierania danych telemetrycznych w warunkach rzeczywistych.",
+        "imageSrc": "/szczerbatek/timeline/testy-plenerowe.jpg"
+      },
+      {
+        "date": "Maj 2025",
+        "title": "Poprawki oprogramowania",
+        "description": "Wprowadzane są poprawki błędów, optymalizacja kodu oraz końcowe aktualizacje oprogramowania na podstawie danych z testów.",
+        "imageSrc": "/szczerbatek/timeline/soft-tymczasowe.jpg"
+      },
+      {
+        "date": "Maj – Czerwiec 2025",
+        "title": "Testy misji i komunikacji zespołu",
+        "description": "Przeprowadzane są symulacje pełnej misji mające na celu sprawdzenie skuteczności komunikacji zespołu, protokołów komunikacyjnych i realizacji zadań.",
+        "imageSrc": "/szczerbatek/timeline/testy-zespolu.jpg"
+      },
+      {
+        "date": "5–6 czerwca 2025",
+        "title": "Testy końcowe podczas wydarzenia Droniada",
+        "description": "Podczas wydarzenia Droniada odbywają się ostatnie testy w warunkach zbliżonych do tych, z którymi zespół spotka się na docelowych zawodach.",
+        "imageSrc": "/szczerbatek/timeline/droniada.png"
+      },
+      {
+        "date": "24–26 czerwca 2025",
+        "title": "Prezentacja misji na zawodach SUAS",
+        "description": "Zespół bierze udział w konkursie SUAS, prezentując swoje rozwiązanie i realizując zaplanowaną misję.",
+        "imageSrc": "/szczerbatek/timeline/suas.png"
       }
     ]
   },
   "team": {
     "title": "Poznaj Nasz Zespół",
     "description": "Pasjonaci stojący za projektem Szczerbatek",
-    "members":  {
+    "members": {
       "iza": {
         "name": "Izabella Rosikoń",
         "role": "Lider Zespołu",
         "description": "Zarządza pracą zespołu i koordynuje wszystkie działania."
-    
       },
       "kacper": {
         "name": "Kacper Krempa",
@@ -109,7 +168,7 @@
         "name": "Filip Kulka",
         "role": "Konstrukcja",
         "description": "Jako operator zapewnia bezpieczeństwo podczas lotów."
-      }, 
+      },
       "wojtek": {
         "name": "Wojciech Wiszniewski",
         "role": "Elektronika i Zasilanie",
@@ -117,7 +176,7 @@
       },
       "lukasz": {
         "name": "Łukasz Bogacz",
-          "role": "Elektronika i Zasilanie",
+        "role": "Elektronika i Zasilanie",
         "description": "Implementuje oprogramowanie do zapewnienia stabilnej i precyzyjnej kontroli lotu bezzałogowego statku powietrznego."
       },
       "ignacy": {
@@ -151,4 +210,4 @@
     "description": "Szczerbatek jest rozwijany przez AGH Solar Plane - organizację studencką dedykowaną przesuwaniu granic lotnictwa solarnego. Dołącz do nas w misji rewolucjonizowania zrównoważonego lotnictwa.",
     "cta": "Poznaj Naszą Organizację"
   }
-} 
+}

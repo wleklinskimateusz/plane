@@ -46,28 +46,88 @@
     "description": "The evolution of the Szczerbatek project through time",
     "items": [
       {
-        "date": "2020",
-        "title": "Project Started",
-        "description": "Formation of AGH Solar Plane team and initial concept development of our first solar-powered aircraft.",
-        "imageSrc": "/team.jpeg"
+        "date": "October 2024",
+        "title": "Initial Discussions and Planning",
+        "description": "The team holds first coordination meetings. Objectives are set, responsibilities assigned, and a general project roadmap is outlined. The vision of the project is created.",
+        "imageSrc": "/szczerbatek/timeline/modelFusion.png"
       },
       {
-        "date": "2021",
-        "title": "First Prototype",
-        "description": "Development and construction of our first prototype, including extensive testing of solar cell configurations.",
-        "imageSrc": "/team.jpeg"
+        "date": "Early November 2024",
+        "title": "Conceptual Design Phase, Aerodynamic and Structural Calculations",
+        "description": "Development of the aircraft concept begins. Core structural layout, control surfaces, and configuration are sketched. Aerodynamic simulations of the wings and fuselage are performed. Fusion-based 3D modeling of the aircraft structure is undertaken.",
+        "imageSrc": "/szczerbatek/timeline/aero.png"
       },
       {
-        "date": "2022",
-        "title": "Competition Success",
-        "description": "Participation in international competitions and recognition for innovative design solutions.",
-        "imageSrc": "/team.jpeg"
+        "date": "Late November 2024",
+        "title": "Selection of Onboard Electronics and Materials, Power Requirement Calculations",
+        "description": "The team selects appropriate onboard electronic systems (flight controllers, sensors, telemetry modules) and materials (composites, resins) based on mission criteria and weight/power efficiency. Detailed calculations of total power needs are conducted, including propulsion, onboard systems, and mission-specific devices.",
+        "imageSrc": "/szczerbatek/timeline/elektronika-tymczasowe.jpg"
       },
       {
-        "date": "2023",
-        "title": "Szczerbatek Project",
-        "description": "Launch of the Szczerbatek project, our most ambitious solar aircraft design to date.",
-        "imageSrc": "/team.jpeg"
+        "date": "December 2024",
+        "title": "Air Drop System and Retardant Mechanism Design, Execution and Testing",
+        "description": "Design begins on the payload delivery system and retardant mechanism deployment, focusing on precision, weight, and reliability. The mechanical components of the air drop system mechanism are built, tested, and refined.",
+        "imageSrc": "/szczerbatek/timeline/zrzut.png"
+      },
+      {
+        "date": "January 2025",
+        "title": "Mold CNC Milling, Software Design",
+        "description": "High-precision CNC milling of molds for aerodynamic parts (wings, fuselage shells) is completed. The team begins designing software solutions.",
+        "imageSrc": "/szczerbatek/timeline/frezowanie.jpg"
+      },
+      {
+        "date": "February 2025",
+        "title": "Laminating Process",
+        "description": "Composite lay-up and vacuum-assisted lamination of the aircraft components are carried out using selected materials.",
+        "imageSrc": "/szczerbatek/timeline/laminowanie.jpg"
+      },
+      {
+        "date": "February – March 2025",
+        "title": "Electronics and Telemetry System Implementation",
+        "description": "Physical integration and wiring of electronic components, telemetry modules, sensors, and flight controllers into the aircraft.",
+        "imageSrc": "/szczerbatek/timeline/kontroler.jpg"
+      },
+      {
+        "date": "February – April 2025",
+        "title": "Software Implementation",
+        "description": "Uploading and testing custom software solutions, including algorithms for terrain mapping and autonomous release systems.",
+        "imageSrc": "/szczerbatek/timeline/soft-tymczasowe.jpg"
+      },
+      {
+        "date": "March 2025",
+        "title": "Final Aircraft Improvements",
+        "description": "Based on prototype testing, design tweaks are implemented to optimize flight stability, payload capacity, and overall mission performance.",
+        "imageSrc": "/szczerbatek/timeline/finalne-poprawki.jpg"
+      },
+      {
+        "date": "April 2025",
+        "title": "Outdoor Flight Testing",
+        "description": "Field tests are conducted to validate aircraft performance, test drop mechanisms, and collect telemetry data in real conditions.",
+        "imageSrc": "/szczerbatek/timeline/testy-plenerowe.jpg"
+      },
+      {
+        "date": "May 2025",
+        "title": "Software Adjustments",
+        "description": "Bug fixes, code optimization, and final software updates based on flight data and performance logs.",
+        "imageSrc": "/szczerbatek/timeline/soft-tymczasowe.jpg"
+      },
+      {
+        "date": "May – June 2025",
+        "title": "Mission Performance and Team Communication Tests",
+        "description": "Simulated mission runs are performed to verify teamwork efficiency, communication protocols, and mission execution.",
+        "imageSrc": "/szczerbatek/timeline/testy-zespolu.jpg"
+      },
+      {
+        "date": "5–6 June 2025",
+        "title": "Final Tests during Droniada event",
+        "description": "Final full-scale tests are conducted under conditions replicating the competition during the Droniada event.",
+        "imageSrc": "/szczerbatek/timeline/droniada.png"
+      },
+      {
+        "date": "24–26 June 2025",
+        "title": "SUAS Mission Demonstration",
+        "description": "Participation in the SUAS competition.",
+        "imageSrc": "/szczerbatek/timeline/suas.png"
       }
     ]
   },
@@ -140,7 +200,6 @@
         "role": "Programming Section",
         "description": "Software developer specializing in visual recognition systems."
       }
-        
     }
   },
   "video": {
@@ -152,4 +211,4 @@
     "description": "Szczerbatek is being developed by AGH Solar Plane - a student organization dedicated to pushing the boundaries of solar aviation. Join us in our mission to revolutionize sustainable flight.",
     "cta": "Learn More About Our Organization"
   }
-} 
+}
