@@ -139,9 +139,7 @@
   },
   "video": {
     "title": "Zobacz Szczerbatka w Akcji",
-    "description": "Obejrzyj nasz najnowszy lot testowy i postęp prac",
-    "thumbnailSrc": "/team.jpeg",
-    "videoSrc": "/video.mp4"
+    "description": "Obejrzyj nasz najnowszy lot testowy i postęp prac"
   },
   "organization": {
     "title": "Część AGH Solar Plane",

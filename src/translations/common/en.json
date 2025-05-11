@@ -24,20 +24,17 @@
     },
     "sponsors": {
       "title": "Our Sponsors",
-      "list": [
-        {
-          "name": "Sponsor 1",
-          "logo": "/vercel.svg"
-        },
-        {
-          "name": "Sponsor 2",
-          "logo": "/vercel.svg"
-        },
-        {
-          "name": "Sponsor 3",
-          "logo": "/vercel.svg"
-        }
-      ]
+      "partners": {
+        "AGH": "AGH University of Cracow",
+        "EU": "European Union",
+        "IDUB": "Institute of Data University of Jagiellonian University",
+        "MNiSW": "Ministry of Science and Higher Education",
+        "aeroklub": "Aeroklub Podhalański",
+        "WIMIR": "Faculty of Mechanical Engineering and Robotics",
+        "WEiP": "Faculty of Energy and Fuels",
+        "WEAIiB": "Faculty of Electrical Engineering, Automation, Computer Science and Biomedical Engineering",
+        "Elektrobot": "Elektrobot"
+      }
     },
     "copyright": "All rights reserved."
   },

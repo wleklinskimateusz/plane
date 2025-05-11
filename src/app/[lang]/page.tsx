@@ -15,16 +15,15 @@ export default async function Home({
     <div className="flex flex-col w-full bg-gray-950">
       <section className="relative h-[100vh] w-full">
         <Image
-          src="/team.jpeg"
+          src="/hero.jpeg"
           alt="AGH Solar Plane"
           priority
           fill
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-          <div className="max-w-3xl">
+        <div className="absolute inset-0 flex flex-col items-end text-center py-40 px-20">
+          <div className="max-w-3xl bg-black/60 px-4 py-8 rounded-lg">
             <h1 className="text-6xl font-bold text-white mb-6">{hero.title}</h1>
             <p className="text-white/90 text-xl md:text-2xl">{hero.subtitle}</p>
           </div>

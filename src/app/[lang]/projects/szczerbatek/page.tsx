@@ -7,6 +7,7 @@ import { Timeline } from "@/components/timeline";
 import Link from "next/link";
 import { OurSolutions } from "./_components/sections/OurSolutions";
 import { Team } from "./_components/sections/Team";
+import { VideoSection } from "./_components/sections/VideoSection";
 
 export default async function Szczerbatek({
   params,
@@ -46,23 +47,7 @@ export default async function Szczerbatek({
       </section>
       <OurSolutions translations={szczerbatekTranslations.ourSolutions} />
       {/* Video Section */}
-      <section className="py-16 px-16">
-        <div className="max-w-[1680px] mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">
-              {szczerbatekTranslations.video.title}
-            </h2>
-            <p className="text-white/80 text-xl">
-              {szczerbatekTranslations.video.description}
-            </p>
-          </div>
-          <VideoPlayer
-            thumbnailSrc={szczerbatekTranslations.video.thumbnailSrc}
-            videoSrc={szczerbatekTranslations.video.videoSrc}
-            title={szczerbatekTranslations.video.title}
-          />
-        </div>
-      </section>
+      <VideoSection translations={szczerbatekTranslations.video} />
       {/* Timeline Section */}
       <section className=" bg-gray-50 py-16">
         <div className=" max-w-[1680px] mx-auto">

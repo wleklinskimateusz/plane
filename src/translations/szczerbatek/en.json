@@ -140,9 +140,7 @@
   },
   "video": {
     "title": "See Szczerbatek in Action",
-    "description": "Watch our latest test flight and development progress",
-    "thumbnailSrc": "/team.jpeg",
-    "videoSrc": "/video.mp4"
+    "description": "Watch our latest test flight and development progress"
   },
   "organization": {
     "title": "Part of AGH Solar Plane",
