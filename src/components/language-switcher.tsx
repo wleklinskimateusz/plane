@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { LanguagesIcon } from "lucide-react";
 import { usePathname } from "next/navigation";
+
 export const LanguageSwitcher = ({ lang }: { lang: string }) => {
   const pathname = usePathname();
   const pathnameWithoutLang = pathname.replace(`/${lang}`, "");
@@ -12,7 +13,7 @@ export const LanguageSwitcher = ({ lang }: { lang: string }) => {
     pl: "Polish",
   };
   return (
-    <div className="absolute right-4 top-1/2 -translate-y-1/2 z-10">
+    <div className="">
       <Link
         href={`/${oppositeLang}${pathnameWithoutLang}`}
         className="flex items-center gap-2 hover:opacity-70 transition-opacity"
