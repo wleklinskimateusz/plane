@@ -13,12 +13,13 @@ export const OurSolutions = ({
   translations: SzczerbatekTranslations["ourSolutions"];
 }) => {
   const orderedItems = [
-    { name: "design", image: "design.png" },
+    { name: "aero", image: "aero.png" },
     { name: "laminating", image: "laminating.jpg" },
     { name: "onboardElectronics", image: "onboard-electronics.jpg" },
     { name: "3DPrinting", image: "3DPrinting.jpg" },
     { name: "programming", image: "programming.jpg" },
     { name: "cncMilling", image: "cnc.jpg" },
+    { name: "fusion", image: "fusion.png" },
   ];
 
   return (

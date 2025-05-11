@@ -8,7 +8,7 @@
     "title": "Nasze Rozwiązania",
     "description": "Budujemy. Programujemy. Latamy.",
     "items": {
-      "design": {
+      "aero": {
         "title": "Projekt",
         "description": "Początkowy projekt i obliczenia aerodynamiczne dla naszego samolotu solarnego.",
         "imageAlt": ""
@@ -36,6 +36,11 @@
       "cncMilling": {
         "title": "Frezowanie CNC",
         "description": "Precyzyjne wytwarzanie elementów konstrukcyjnych.",
+        "imageAlt": ""
+      },
+      "fusion": {
+        "title": "Modelowanie 3D",
+        "description": "Modelowanie 3D w Fusion 360 dla precyzyjnego projektowania.",
         "imageAlt": ""
       }
     }

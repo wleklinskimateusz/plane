@@ -9,8 +9,8 @@
     "description": "We build it. We code it. We fly it.",
 
     "items": {
-      "design": {
-        "title": "Design",
+      "aero": {
+        "title": "Analisysis and design",
         "description": "Initial design and aerodynamic calculations for our aircraft.",
         "imageAlt": ""
       },
@@ -37,6 +37,11 @@
       "cncMilling": {
         "title": "CNC milling",
         "description": "Precision manufactured moulds for high quality construction.",
+        "imageAlt": ""
+      },
+      "fusion": {
+        "title": "Fusion-based 3D modeling",
+        "description": "Designing the aircraft in a 3D environment to ensure precision and accuracy.",
         "imageAlt": ""
       }
     }
