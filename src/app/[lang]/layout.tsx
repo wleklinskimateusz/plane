@@ -7,6 +7,26 @@ export function generateStaticParams() {
   return ["pl", "en"].map((lang) => ({ lang }));
 }
 
+export const generateMetadata = async ({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) => {
+  const { lang } = await params;
+  if (lang === "pl") {
+    return {
+      title: "AGH Solar Plane",
+      description:
+        "Koło Naukowe AGH Solar Plane - zespół studentów AGH, którzy zajmują się projektem autonomicznego samolotu napędzanego energią słoneczną.",
+    };
+  }
+  return {
+    title: "AGH Solar Plane",
+    description:
+      "Student's organization from AGH University of Science and Technology in Krakow, Poland, working on autonomous solar plane project.",
+  };
+};
+
 export default async function RootLayout({
   children,
   params,
