@@ -13,13 +13,14 @@ export const OurSolutions = ({
   translations: SzczerbatekTranslations["ourSolutions"];
 }) => {
   const orderedItems = [
-    "design",
-    "laminating",
-    "onboardElectronics",
-    "3DPrinting",
-    "programming",
-    "cncMilling",
-  ] satisfies (keyof SzczerbatekTranslations["ourSolutions"]["items"])[];
+    { name: "aero", image: "aero.png" },
+    { name: "laminating", image: "laminating.jpg" },
+    { name: "onboardElectronics", image: "onboard-electronics.jpg" },
+    { name: "3DPrinting", image: "3DPrinting.jpg" },
+    { name: "programming", image: "programming.jpg" },
+    { name: "cncMilling", image: "cnc.jpg" },
+    { name: "fusion", image: "fusion.png" },
+  ];
 
   return (
     <section className="py-32 px-16" id="solutions">
@@ -32,12 +33,14 @@ export const OurSolutions = ({
         </div>
         <Carousel opts={{ loop: true }}>
           <CarouselContent className="-ml-16">
-            {orderedItems.map((item, index) => (
+            {orderedItems.map(({ name, image }, index) => (
               <SolutionCard
-                key={item}
+                key={name}
                 index={index}
-                imageSrc={`/szczerbatek/ourSolutions/${item}.jpg`}
-                translation={translations.items[item]}
+                imageSrc={`/szczerbatek/ourSolutions/${image}`}
+                translation={
+                  translations.items[name as keyof typeof translations.items]
+                }
               />
             ))}
           </CarouselContent>

@@ -9,8 +9,8 @@
     "description": "We build it. We code it. We fly it.",
 
     "items": {
-      "design": {
-        "title": "Design",
+      "aero": {
+        "title": "Analisysis and design",
         "description": "Initial design and aerodynamic calculations for our aircraft.",
         "imageAlt": ""
       },
@@ -38,6 +38,11 @@
         "title": "CNC milling",
         "description": "Precision manufactured moulds for high quality construction.",
         "imageAlt": ""
+      },
+      "fusion": {
+        "title": "Fusion-based 3D modeling",
+        "description": "Designing the aircraft in a 3D environment to ensure precision and accuracy.",
+        "imageAlt": ""
       }
     }
   },
@@ -61,13 +66,17 @@
         "date": "Late November 2024",
         "title": "Selection of Onboard Electronics and Materials, Power Requirement Calculations",
         "description": "The team selects appropriate onboard electronic systems (flight controllers, sensors, telemetry modules) and materials (composites, resins) based on mission criteria and weight/power efficiency. Detailed calculations of total power needs are conducted, including propulsion, onboard systems, and mission-specific devices.",
-        "imageSrc": "/szczerbatek/timeline/elektronika-tymczasowe.jpg"
+        "imageSrc": "/szczerbatek/timeline/elektronika-schemat.png"
       },
       {
         "date": "December 2024",
         "title": "Air Drop System and Retardant Mechanism Design, Execution and Testing",
         "description": "Design begins on the payload delivery system and retardant mechanism deployment, focusing on precision, weight, and reliability. The mechanical components of the air drop system mechanism are built, tested, and refined.",
-        "imageSrc": "/szczerbatek/timeline/zrzut.png"
+        "imageSrc": "/szczerbatek/timeline/zrzut.png",
+        "additionalMedia": {
+          "name": "Air Drop System documentation",
+          "path": "/szczerbatek/timeline/AirDropSystem.pdf"
+        }
       },
       {
         "date": "January 2025",
@@ -167,7 +176,7 @@
       },
       "filip": {
         "name": "Filip Kulka",
-        "role": "Construction Section",
+        "role": "Electronics Section Leader",
         "description": "As Main Ground Station Operator, ensures safety during flight missions."
       },
       "wojtek": {
