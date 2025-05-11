@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import type { Translations } from "@/translations/common/dictionary";
 import { organizationConfig } from "@/config/organization";
+import Link from "next/link";
 
 export const Footer = ({
   translations: { sponsors, organization, contact, copyright },
@@ -44,7 +45,7 @@ export const Footer = ({
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
           {/* Organization Info */}
           <div className="space-y-4 flex flex-col items-center">
             <h3 className="text-white text-lg font-semibold">
@@ -98,13 +99,25 @@ export const Footer = ({
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href={`mailto:${organizationConfig.contact.generalMail}`}>
+                <Link href={`mailto:${organizationConfig.contact.generalMail}`}>
                   {organizationConfig.contact.generalMail}
-                </a>
+                </Link>
               </li>
               <li>{organizationConfig.contact.location}</li>
               <li>{organizationConfig.contact.building}</li>
             </ul>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h4 className="text-white font-semibold">
+              {contact.chairman}: {organizationConfig.personel.chairman.name}
+            </h4>
+
+            <Link href={`mailto:${organizationConfig.personel.chairman.email}`}>
+              {organizationConfig.personel.chairman.email}
+            </Link>
+            <Link href={`tel:${organizationConfig.personel.chairman.phone}`}>
+              {organizationConfig.personel.chairman.phone}
+            </Link>
           </div>
         </div>
 

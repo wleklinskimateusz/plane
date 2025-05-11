@@ -79,7 +79,7 @@ export default async function Home({
                 key={key}
                 title={item.title}
                 description={item.description}
-                icon="aerodynamics"
+                icon={key as keyof typeof sections.items}
                 delay={index * 0.2}
               />
             ))}

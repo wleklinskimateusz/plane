@@ -1,19 +1,12 @@
 import Image from "next/image";
 import { getTranslations } from "@/translations/common/dictionary";
 import { getSzczerbatekTranslations } from "@/translations/szczerbatek/dictionary";
-import { ImageCard } from "@/components/image-card";
-import { ImageSwitcher } from "@/components/image-switcher";
 import { VideoPlayer } from "@/components/video-player";
 
-import {
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import { Carousel } from "@/components/ui/carousel";
 import { Timeline } from "@/components/timeline";
 import Link from "next/link";
+import { OurSolutions } from "./_components/sections/OurSolutions";
+import { Team } from "./_components/sections/Team";
 
 export default async function Szczerbatek({
   params,
@@ -21,10 +14,16 @@ export default async function Szczerbatek({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const translations = await getTranslations(lang === "pl" ? "pl" : "en");
+  const {
+    links: {
+      projects: {
+        items: {
+          szczerbatek: { title, description },
+        },
+      },
+    },
+  } = await getTranslations(lang === "pl" ? "pl" : "en");
   const szczerbatekTranslations = await getSzczerbatekTranslations(lang);
-  const { title, description } = translations.links.projects.items.szczerbatek;
-
   return (
     <div className="flex flex-col w-full  mx-auto">
       <section className="relative h-[100vh] w-full">
@@ -45,39 +44,7 @@ export default async function Szczerbatek({
           </div>
         </div>
       </section>
-      {/* Carousel Section */}
-      <section className="py-16 px-16">
-        <div className="max-w-[1680px] mx-auto gap-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">
-              {szczerbatekTranslations.carousel.title}
-            </h2>
-            <p className="text-white/80 text-xl">
-              {szczerbatekTranslations.carousel.description}
-            </p>
-          </div>
-          <Carousel opts={{ loop: true }}>
-            <CarouselContent className="-ml-16">
-              {szczerbatekTranslations.carousel.items.map((item, index) => (
-                <CarouselItem
-                  className="basis-full md:basis-1/3 pl-16"
-                  key={item.id}
-                >
-                  <ImageCard
-                    imageSrc={item.imageSrc}
-                    alt={item.title}
-                    index={index}
-                    title={item.title}
-                    description={item.description}
-                  />
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="hidden md:block" />
-            <CarouselNext className="hidden md:block" />
-          </Carousel>
-        </div>
-      </section>
+      <OurSolutions translations={szczerbatekTranslations.ourSolutions} />
       {/* Video Section */}
       <section className="py-16 px-16">
         <div className="max-w-[1680px] mx-auto">
@@ -112,23 +79,7 @@ export default async function Szczerbatek({
           </div>
         </div>
       </section>
-      {/* Team Section */}
-      <section className="w-full bg-gray-50 py-16">
-        <div className="max-w-[1680px] mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              {szczerbatekTranslations.team.title}
-            </h2>
-            <p className="text-gray-600 text-xl">
-              {szczerbatekTranslations.team.description}
-            </p>
-          </div>
-          <ImageSwitcher
-            members={szczerbatekTranslations.team.members}
-            autoSwitchInterval={5000}
-          />
-        </div>
-      </section>
+      <Team translations={szczerbatekTranslations.team} />
       {/* Organization Section */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-8">

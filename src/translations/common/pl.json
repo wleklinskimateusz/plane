@@ -18,7 +18,9 @@
       "description": "Organizacja studencka zajmująca się budową innowacyjnych samolotów solarnych."
     },
     "contact": {
-      "title": "Kontakt"
+      "title": "Kontakt",
+      "chairman": "Przewodnicząca",
+      "viceChairman": "Wiceprzewodnicząca"
     },
 
     "sponsors": {
@@ -67,16 +69,16 @@
         "title": "Elektronika i Zasilanie",
         "description": "Rozwój inteligentnych systemów sterowania i elektroniki zapewniających precyzyjne sterowanie lotem i zbieranie danych."
       },
-      "mechanics": {
+      "construction": {
         "title": "Konstrukcja",
         "description": "Tworzenie innowacyjnych rozwiązań konstrukcyjnych z wykorzystaniem lekkich materiałów i zaawansowanych technik produkcji."
       },
-      "software": {
-        "title": "Oprogramowanie",
+      "programming": {
+        "title": "Programowanie",
         "description": "Budowa nowoczesnych aplikacji do sterowania lotem, analizy danych i planowania misji."
       },
       "marketing": {
-        "title": "Marketing",
+        "title": "Marketing i Dokumentacja",
         "description": "Promujemy nasz projekt i dostarczamy informacje o naszej działalności."
       }
     }

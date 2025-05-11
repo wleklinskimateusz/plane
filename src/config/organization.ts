@@ -15,4 +15,17 @@ export const organizationConfig = {
     linkedin: "https://www.linkedin.com/company/agh-solar-plane",
     youtube: "https://www.youtube.com/@aghsolarplane",
   },
+  personel: {
+    chairman: {
+      name: "Izabella Rosikoń",
+      email: "izabella.rosikon@solarplane.agh.edu.pl",
+      phone: "+48 790 697 577",
+      image: "/images/personel/izabella-rosikon.jpg",
+    },
+    viceChairman: {
+      name: "Róża Łopusiewicz",
+      email: "roza.lopusiewicz@solarplane.agh.edu.pl",
+      image: "/images/personel/roza-lopusiewicz.jpg",
+    },
+  },
 } as const;

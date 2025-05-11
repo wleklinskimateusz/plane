@@ -1,49 +1,40 @@
 {
-  "carousel": {
-    "title": "Project Progress",
-    "description": "Key stages in the development of Szczerbatek",
-    "items": [
-      {
-        "id": 1,
-        "title": "Design Phase",
-        "description": "Initial design and aerodynamic calculations for our solar-powered aircraft.",
-        "imageSrc": "/team.jpeg",
-        "dimensions": {
-          "width": "400px",
-          "height": "300px"
-        }
+  "ourSolutions": {
+    "title": "Our Solutions",
+    "description": "We build it. We code it. We fly it.",
+
+    "items": {
+      "design": {
+        "title": "Design",
+        "description": "Initial design and aerodynamic calculations for our aircraft.",
+        "imageAlt": ""
       },
-      {
-        "id": 2,
-        "title": "Solar Cell Integration",
-        "description": "Development of innovative solar cell placement and power management systems.",
-        "imageSrc": "/team.jpeg",
-        "dimensions": {
-          "width": "450px",
-          "height": "320px"
-        }
+      "laminating": {
+        "title": "Laminating",
+        "description": "Carbon fiber composite for robust construction.",
+        "imageAlt": ""
       },
-      {
-        "id": 3,
-        "title": "Control Systems",
-        "description": "Implementation of advanced flight control and navigation systems.",
-        "imageSrc": "/team.jpeg",
-        "dimensions": {
-          "width": "380px",
-          "height": "285px"
-        }
+      "onboardElectronics": {
+        "title": "Onboard electronics",
+        "description": "Tested components for reliable control and safe flight.",
+        "imageAlt": ""
       },
-      {
-        "id": 4,
-        "title": "Testing Phase",
-        "description": "Rigorous testing of all components and systems in various conditions.",
-        "imageSrc": "/team.jpeg",
-        "dimensions": {
-          "width": "420px",
-          "height": "315px"
-        }
+      "3DPrinting": {
+        "title": "3D printing",
+        "description": "Custom components for our needs.",
+        "imageAlt": ""
+      },
+      "programming": {
+        "title": "Programming",
+        "description": "Visual recognition system for highest mission performance.",
+        "imageAlt": ""
+      },
+      "cncMilling": {
+        "title": "CNC milling",
+        "description": "Precision manufactured moulds for high quality construction.",
+        "imageAlt": ""
       }
-    ]
+    }
   },
   "timeline": {
     "title": "Our Journey",
@@ -77,37 +68,75 @@
   },
   "team": {
     "title": "Meet Our Team",
-    "description": "The passionate individuals behind the Szczerbatek project",
-    "members": [
-      {
-        "id": 1,
-        "name": "John Smith",
-        "role": "Project Lead",
-        "description": "Aerospace engineering student with a focus on aerodynamics and system integration.",
-        "imageSrc": "/team.jpeg"
+    "description": "The passionate individuals behind the Szczerbatek project, bringing together diverse skills and experience to solve challenging problems and deliver innovative solutions.",
+    "members": {
+      "iza": {
+        "name": "Izabella Rosikoń",
+        "role": "Team Leader",
+        "description": "Manages workflow and coordinates team efforts to ensure efficient and timely task execution."
       },
-      {
-        "id": 2,
-        "name": "Anna Johnson",
-        "role": "Electronics Lead",
-        "description": "Specializing in solar cell optimization and power management systems.",
-        "imageSrc": "/team.jpeg"
+      "kacper": {
+        "name": "Kacper Krempa",
+        "role": "Construction Section Co-Leader & Main Pilot",
+        "description": "Operates UAVs, ensuring accurate and safe flight missions. Responsible for the design of the plane."
       },
-      {
-        "id": 3,
-        "name": "Michael Brown",
-        "role": "Software Engineer",
-        "description": "Developing flight control systems and navigation algorithms.",
-        "imageSrc": "/team.jpeg"
+      "roza": {
+        "name": "Róża Łopusiewicz",
+        "role": "Vice-Leader",
+        "description": "Helps with technical documentation and construction tasks, applying experience gained as an aerospace engineer."
       },
-      {
-        "id": 4,
-        "name": "Sarah Wilson",
-        "role": "Mechanical Engineer",
-        "description": "Responsible for structural design and material selection.",
-        "imageSrc": "/team.jpeg"
+      "sebastian": {
+        "name": "Sebastian Bucior",
+        "role": "Construction Section Co-Leader",
+        "description": "Responsible for planning and executing the lamination process."
+      },
+      "krzysztof": {
+        "name": "Krzysztof Piekarski",
+        "role": "Construction Section",
+        "description": "Specializes in 3D printing solutions and the design of the drop system."
+      },
+      "piotr": {
+        "name": "Piotr Kur",
+        "role": "Construction Section",
+        "description": "Operates CNC machines, ensuring accuracy and quality in the manufacturing process."
+      },
+      "filip": {
+        "name": "Filip Kulka",
+        "role": "Construction Section",
+        "description": "As Main Ground Station Operator, ensures safety during flight missions."
+      },
+      "wojtek": {
+        "name": "Wojciech Wiszniewski",
+        "role": "Electronics and Power Section",
+        "description": "Manages and ensures the reliability of the communication unit between the UAV and ground station during operations."
+      },
+      "lukasz": {
+        "name": "Łukasz Bogacz",
+        "role": "Electronics and Power Section",
+        "description": "Implements software to ensure stable and precise UAV flight control."
+      },
+      "ignacy": {
+        "name": "Ignacy Kępa",
+        "role": "Electronics and Power Section",
+        "description": "Responsible for integration of onboard electronics."
+      },
+      "filipG": {
+        "name": "Filip Gajda",
+        "role": "Electronics and Power Section",
+        "description": "Oversees the design and integration of electronic systems and power solutions to ensure optimal performance and reliability."
+      },
+      "marta": {
+        "name": "Marta Łopusiewicz",
+        "role": "Programming & Documentation Sections",
+        "description": "Responsible for drop system software and technical documentation of the project."
+      },
+      "radek": {
+        "name": "Radosław Benedykciński",
+        "role": "Programming Section",
+        "description": "Software developer specializing in visual recognition systems."
       }
-    ]
+        
+    }
   },
   "video": {
     "title": "See Szczerbatek in Action",

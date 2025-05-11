@@ -8,7 +8,7 @@
       "items": {
         "szczerbatek": {
           "title": "Szczerbatek",
-          "description": "Our flagship solar plane named 'Szczerbatek' (pronounced 'Sh-cher-ba-tek', meaning 'Toothless' in Polish - yes, we know it's a tongue twister!). A versatile aircraft designed for autonomous flight, data collection, and maybe even making dentists nervous."
+          "description": "Our flagship plane is named 'Szczerbatek' (pronounced 'Sh-cher-ba-tek', meaning 'Toothless' in Polish - yes, we know it's a tongue twister!). A versatile aircraft designed for autonomous flight, data collection, and maybe even making dentists nervous."
         }
       }
     }
@@ -18,7 +18,9 @@
       "description": "Student organization dedicated to building innovative solar-powered aircraft."
     },
     "contact": {
-      "title": "Contact"
+      "title": "Contact",
+      "chairman": "Chairman",
+      "viceChairman": "Vice Chairman"
     },
     "sponsors": {
       "title": "Our Sponsors",
@@ -65,18 +67,18 @@
 
       "electronics": {
         "title": "Electronics and Power",
-        "description": "Developing intelligent control systems and power solutions for efficient flight and data collection."
+        "description": "Developing electronics systems, power solutions for efficient flight and gathering telemetry data."
       },
-      "mechanics": {
-        "title": "Mechanics",
+      "construction": {
+        "title": "Construction",
         "description": "Creating innovative structural solutions using lightweight materials and advanced manufacturing techniques."
       },
-      "software": {
-        "title": "Software",
+      "programming": {
+        "title": "Programming",
         "description": "Building cutting-edge applications for flight control, data analysis, and mission planning."
       },
       "marketing": {
-        "title": "Marketing",
+        "title": "Marketing and Documentation",
         "description": "Promoting our project and getting the word out there."
       }
     }

@@ -1,49 +1,39 @@
 {
-  "carousel": {
-    "title": "Postęp Projektu",
-    "description": "Kluczowe etapy rozwoju Szczerbatka",
-    "items": [
-      {
-        "id": 1,
-        "title": "Faza Projektowa",
+  "ourSolutions": {
+    "title": "Nasze Rozwiązania",
+    "description": "Budujemy. Programujemy. Latamy.",
+    "items": {
+      "design": {
+        "title": "Projekt",
         "description": "Początkowy projekt i obliczenia aerodynamiczne dla naszego samolotu solarnego.",
-        "imageSrc": "/team.jpeg",
-        "dimensions": {
-          "width": "400px",
-          "height": "300px"
-        }
+        "imageAlt": ""
       },
-      {
-        "id": 2,
-        "title": "Integracja Ogniw Słonecznych",
-        "description": "Rozwój innowacyjnego rozmieszczenia ogniw słonecznych i systemów zarządzania energią.",
-        "imageSrc": "/team.jpeg",
-        "dimensions": {
-          "width": "450px",
-          "height": "320px"
-        }
+      "laminating": {
+        "title": "Laminowanie",
+        "description": "Włókna węglowe i tworzywo sztuczne dla solidnej konstrukcji.",
+        "imageAlt": ""
       },
-      {
-        "id": 3,
-        "title": "Systemy Sterowania",
-        "description": "Implementacja zaawansowanych systemów kontroli lotu i nawigacji.",
-        "imageSrc": "/team.jpeg",
-        "dimensions": {
-          "width": "380px",
-          "height": "285px"
-        }
+      "onboardElectronics": {
+        "title": "Elektronika pokładowa",
+        "description": "Testowane komponenty dla niezawodnej kontroli i bezpiecznego lotu.",
+        "imageAlt": ""
       },
-      {
-        "id": 4,
-        "title": "Faza Testów",
-        "description": "Rygorystyczne testy wszystkich komponentów i systemów w różnych warunkach.",
-        "imageSrc": "/team.jpeg",
-        "dimensions": {
-          "width": "420px",
-          "height": "315px"
-        }
+      "3DPrinting": {
+        "title": "Drukowanie 3D",
+        "description": "komponenty zaprojektowane specjalnie dla naszych potrzeb.",
+        "imageAlt": ""
+      },
+      "programming": {
+        "title": "Programowanie",
+        "description": "System rozpoznawania obrazów dla najlepszej wydajności misji.",
+        "imageAlt": ""
+      },
+      "cncMilling": {
+        "title": "Frezowanie CNC",
+        "description": "Precyzyjne wytwarzanie elementów konstrukcyjnych.",
+        "imageAlt": ""
       }
-    ]
+    }
   },
   "timeline": {
     "title": "Nasza Podróż",
@@ -78,36 +68,74 @@
   "team": {
     "title": "Poznaj Nasz Zespół",
     "description": "Pasjonaci stojący za projektem Szczerbatek",
-    "members": [
-      {
-        "id": 1,
-        "name": "Jan Kowalski",
-        "role": "Kierownik Projektu",
-        "description": "Student inżynierii lotniczej specjalizujący się w aerodynamice i integracji systemów.",
-        "imageSrc": "/team.jpeg"
+    "members":  {
+      "iza": {
+        "name": "Izabella Rosikoń",
+        "role": "Lider Zespołu",
+        "description": "Zarządza pracą zespołu i koordynuje wszystkie działania."
+    
       },
-      {
-        "id": 2,
-        "name": "Anna Nowak",
-        "role": "Kierownik ds. Elektroniki",
-        "description": "Specjalizuje się w optymalizacji ogniw słonecznych i systemach zarządzania energią.",
-        "imageSrc": "/team.jpeg"
+      "kacper": {
+        "name": "Kacper Krempa",
+        "role": "Koordynator Konstrukcji",
+        "description": "Operuje bezzałogowymi statkami powietrznymi, zapewniając dokładne i bezpieczne misje lotnicze. Odpowiedzialny za projekt samolotu."
       },
-      {
-        "id": 3,
-        "name": "Michał Wiśniewski",
-        "role": "Inżynier Oprogramowania",
-        "description": "Rozwija systemy kontroli lotu i algorytmy nawigacyjne.",
-        "imageSrc": "/team.jpeg"
+      "roza": {
+        "name": "Róża Łopusiewicz",
+        "role": "Zastępca Lidera",
+        "description": "Pomaga w dokumentacji technicznej i konstrukcyjnej, stosując swoje doświadczenie jako inżynier lotniczy."
       },
-      {
-        "id": 4,
-        "name": "Sara Wójcik",
-        "role": "Inżynier Mechanik",
-        "description": "Odpowiada za projekt konstrukcyjny i dobór materiałów.",
-        "imageSrc": "/team.jpeg"
+      "sebastian": {
+        "name": "Sebastian Bucior",
+        "role": "Koordynator Konstrukcji",
+        "description": "Odpowiada za planowanie i wykonywanie procesu laminowania."
+      },
+      "krzysztof": {
+        "name": "Krzysztof Piekarski",
+        "role": "Konstrukcja",
+        "description": "Specjalizuje się w 3D druku i projektowaniu systemu spadania."
+      },
+      "piotr": {
+        "name": "Piotr Kur",
+        "role": "Konstrukcja",
+        "description": "Operuje CNC, zapewniając precyzję i jakość w procesie produkcji."
+      },
+      "filip": {
+        "name": "Filip Kulka",
+        "role": "Konstrukcja",
+        "description": "Jako operator zapewnia bezpieczeństwo podczas lotów."
+      }, 
+      "wojtek": {
+        "name": "Wojciech Wiszniewski",
+        "role": "Elektronika i Zasilanie",
+        "description": "Zarządza i zapewnia niezawodność jednostki komunikacyjnej między bezzałogowym statkiem powietrznym a stacją podstawową podczas operacji."
+      },
+      "lukasz": {
+        "name": "Łukasz Bogacz",
+          "role": "Elektronika i Zasilanie",
+        "description": "Implementuje oprogramowanie do zapewnienia stabilnej i precyzyjnej kontroli lotu bezzałogowego statku powietrznego."
+      },
+      "ignacy": {
+        "name": "Ignacy Kępa",
+        "role": "Elektronika i Zasilanie",
+        "description": "Odpowiada za integrację elektroniki na pokładzie."
+      },
+      "filipG": {
+        "name": "Filip Gajda",
+        "role": "Elektronika i Zasilanie",
+        "description": "Zarządza projektem i integracją elektroniki i zasilania."
+      },
+      "marta": {
+        "name": "Marta Łopusiewicz",
+        "role": "Programowanie i Dokumentacja",
+        "description": "Odpowiada za oprogramowanie systemu spadania i dokumentację projektu."
+      },
+      "radek": {
+        "name": "Radosław Benedykciński",
+        "role": "Programowanie",
+        "description": "Programista specjalizujący się w systemach rozpoznawania obrazów."
       }
-    ]
+    }
   },
   "video": {
     "title": "Zobacz Szczerbatka w Akcji",
