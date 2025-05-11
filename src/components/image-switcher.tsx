@@ -24,27 +24,33 @@ export const ImageSwitcher = ({
   backgroundImage,
 }: ImageSwitcherProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [wasArrowClicked, setWasArrowClicked] = useState(false);
 
   const handleNext = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % members.length);
+    setWasArrowClicked(true);
   }, [members]);
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev - 1 + members.length) % members.length);
+    setWasArrowClicked(true);
   };
 
   // Auto-switch setup
   useEffect(() => {
     const timer = setInterval(handleNext, autoSwitchInterval);
+    if (wasArrowClicked) {
+      clearInterval(timer);
+    }
     return () => clearInterval(timer);
-  }, [autoSwitchInterval, handleNext]);
+  }, [autoSwitchInterval, handleNext, wasArrowClicked]);
 
   const currentMember = members[currentIndex];
 
   return (
     <div className="relative w-full h-full ">
       <div className="flex gap-8 justify-center items-stretch h-full w-full max-w-[70vw] mx-auto">
-        <div className="2xl:block self-center hidden aspect-[3/2] shrink-1 grow-1">
+        <div className="lg:block self-center hidden aspect-[3/2] shrink-1 grow-1">
           <Image
             src={backgroundImage}
             alt={"AGH Solar Plane Team"}
@@ -68,9 +74,9 @@ export const ImageSwitcher = ({
             alt={currentMember.name}
             width={400}
             height={600}
-            className="rounded-sm order-3 2xl:order-4"
+            className="rounded-sm order-3 lg:order-4"
           />
-          <p className="text-gray-700 grow-1 2xl:order-3 order-4 leading-relaxed">
+          <p className="text-gray-700 grow-1 lg:order-3 order-4 leading-relaxed">
             {currentMember.description}
           </p>
         </div>

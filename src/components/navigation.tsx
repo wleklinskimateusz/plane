@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Translations } from "@/translations/common/dictionary";
 import { LanguageSwitcher } from "./language-switcher";
 import { MobileLink, MobileNav } from "./mobile-navigation-menu";
@@ -14,10 +15,18 @@ export function Navigation({
   lang: string;
 }) {
   return (
-    <div className="py-4 flex items-center gap-4">
+    <div className="w-full py-4 px-8 justify-between flex items-center gap-4">
+      <Link href={`/${lang}`} className="  flex items-center gap-2">
+        <Image
+          src="/logo.png"
+          alt="AGH Solar Plane Team"
+          width={64}
+          height={32}
+        />
+      </Link>
       {/* Desktop Navigation */}
-      <div className="hidden md:flex items-center gap-4">
-        <nav className="flex items-center gap-2">
+      <div className="hidden md:flex items-center grow gap-4">
+        <nav className="flex items-center gap-2 mx-auto">
           <Link
             href={`/${lang}`}
             className="px-4 py-2 text-sm font-medium text-white hover:text-gray-300 transition-colors"
@@ -66,7 +75,7 @@ export function Navigation({
       </div>
 
       {/* Mobile Navigation */}
-      <MobileNav>
+      <MobileNav lang={lang}>
         <>
           <MobileLink href={`/${lang}`}>{home}</MobileLink>
           <MobileLink href={`/${lang}/#about`}>{about}</MobileLink>
