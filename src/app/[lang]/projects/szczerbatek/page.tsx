@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "@/translations/common/dictionary";
 import { getSzczerbatekTranslations } from "@/translations/szczerbatek/dictionary";
-import { VideoPlayer } from "@/components/video-player";
 
 import { Timeline } from "@/components/timeline";
 import Link from "next/link";
