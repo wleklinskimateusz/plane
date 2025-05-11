@@ -19,8 +19,12 @@
     },
     "contact": {
       "title": "Kontakt",
-      "chairman": "Przewodnicząca",
-      "viceChairman": "Wiceprzewodnicząca"
+      "personnel": {
+        "title": "Personel",
+        "president": "Przewodnicząca",
+        "vicePresident": "Wiceprzewodnicząca",
+        "advisor": "Opiekun Koła"
+      }
     },
 
     "sponsors": {
