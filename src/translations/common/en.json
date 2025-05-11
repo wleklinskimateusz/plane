@@ -19,8 +19,12 @@
     },
     "contact": {
       "title": "Contact",
-      "chairman": "Chairman",
-      "viceChairman": "Vice Chairman"
+      "personnel": {
+        "title": "Personnel",
+        "president": "President",
+        "vicePresident": "Vice President",
+        "advisor": "Faculty Advisor"
+      }
     },
     "sponsors": {
       "title": "Our Sponsors",

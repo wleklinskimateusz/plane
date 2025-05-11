@@ -16,16 +16,18 @@ export const organizationConfig = {
     youtube: "https://www.youtube.com/@aghsolarplane",
   },
   personel: {
-    chairman: {
-      name: "Izabella Rosikoń",
+    president: {
+      name: "inż. Izabella Rosikoń",
       email: "izabella.rosikon@solarplane.agh.edu.pl",
       phone: "+48 790 697 577",
-      image: "/images/personel/izabella-rosikon.jpg",
     },
-    viceChairman: {
-      name: "Róża Łopusiewicz",
+    vicePresident: {
+      name: "inż. Róża Łopusiewicz",
       email: "roza.lopusiewicz@solarplane.agh.edu.pl",
-      image: "/images/personel/roza-lopusiewicz.jpg",
+    },
+    advisor: {
+      name: "dr hab. inż. Krzysztof Sornek",
+      email: "ksornek@agh.edu.pl",
     },
   },
   partners: [

@@ -18,7 +18,7 @@ export const Footer = ({
 }) => {
   const sponsors = organizationConfig.partners;
   return (
-    <footer className="bg-black text-gray-300">
+    <footer className="bg-gray-950 text-gray-300">
       <div className="max-w-5xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         {/* Sponsors Section */}
         <div className="mb-12">
@@ -112,21 +112,58 @@ export const Footer = ({
                   {organizationConfig.contact.generalMail}
                 </Link>
               </li>
+              <li>
+                <Link
+                  href={`tel:${organizationConfig.personel.president.phone}`}
+                >
+                  {organizationConfig.personel.president.phone}
+                </Link>
+              </li>
               <li>{organizationConfig.contact.location}</li>
               <li>{organizationConfig.contact.building}</li>
             </ul>
           </div>
-          <div className="flex flex-col gap-2">
-            <h4 className="text-white font-semibold">
-              {contact.chairman}: {organizationConfig.personel.chairman.name}
-            </h4>
 
-            <Link href={`mailto:${organizationConfig.personel.chairman.email}`}>
-              {organizationConfig.personel.chairman.email}
-            </Link>
-            <Link href={`tel:${organizationConfig.personel.chairman.phone}`}>
-              {organizationConfig.personel.chairman.phone}
-            </Link>
+          {/* Personnel */}
+          <div className="space-y-4 flex flex-col items-center">
+            <h3 className="text-white text-lg font-semibold">
+              {contact.personnel.title}
+            </h3>
+            <div className="space-y-4 text-sm">
+              <div>
+                <h4 className="text-white font-semibold">
+                  {contact.personnel.president}
+                </h4>
+                <p>{organizationConfig.personel.president.name}</p>
+                <Link
+                  href={`mailto:${organizationConfig.personel.president.email}`}
+                >
+                  {organizationConfig.personel.president.email}
+                </Link>
+              </div>
+              <div>
+                <h4 className="text-white font-semibold">
+                  {contact.personnel.vicePresident}
+                </h4>
+                <p>{organizationConfig.personel.vicePresident.name}</p>
+                <Link
+                  href={`mailto:${organizationConfig.personel.vicePresident.email}`}
+                >
+                  {organizationConfig.personel.vicePresident.email}
+                </Link>
+              </div>
+              <div>
+                <h4 className="text-white font-semibold">
+                  {contact.personnel.advisor}
+                </h4>
+                <p>{organizationConfig.personel.advisor.name}</p>
+                <Link
+                  href={`mailto:${organizationConfig.personel.advisor.email}`}
+                >
+                  {organizationConfig.personel.advisor.email}
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
 
