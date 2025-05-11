@@ -28,12 +28,10 @@ export const ImageSwitcher = ({
 
   const handleNext = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % members.length);
-    setWasArrowClicked(true);
   }, [members]);
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev - 1 + members.length) % members.length);
-    setWasArrowClicked(true);
   };
 
   // Auto-switch setup
@@ -61,7 +59,7 @@ export const ImageSwitcher = ({
         </div>
 
         {/* Info overlay */}
-        <div className="min-w-[400px] self-stretch  max-w-[400px] flex flex-col gap-2  backdrop-blur-sm">
+        <div className="md:min-w-[400px] self-stretch  md:max-w-[400px] flex flex-col gap-2  backdrop-blur-sm">
           <h3 className="text-2xl order-1 font-bold text-gray-900">
             {currentMember.name}
           </h3>
@@ -74,7 +72,7 @@ export const ImageSwitcher = ({
             alt={currentMember.name}
             width={400}
             height={600}
-            className="rounded-sm order-3 lg:order-4"
+            className="rounded-sm order-3 lg:order-4 w-[90vw] lg:w-auto"
           />
           <p className="text-gray-700 grow-1 lg:order-3 order-4 leading-relaxed">
             {currentMember.description}
@@ -86,7 +84,10 @@ export const ImageSwitcher = ({
           variant="outline"
           size="icon"
           className="absolute left-8 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-white/90 hover:bg-white shadow-lg  border-gray-200 z-10"
-          onClick={handlePrev}
+          onClick={() => {
+            setWasArrowClicked(true);
+            handlePrev();
+          }}
         >
           <ChevronLeft className="h-6 w-6 text-gray-700" />
         </Button>
@@ -94,7 +95,10 @@ export const ImageSwitcher = ({
           variant="outline"
           size="icon"
           className="absolute right-8 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-white/90 hover:bg-white shadow-lg  border-gray-200 z-10"
-          onClick={handleNext}
+          onClick={() => {
+            setWasArrowClicked(true);
+            handleNext();
+          }}
         >
           <ChevronRight className="h-6 w-6 text-gray-700" />
         </Button>
