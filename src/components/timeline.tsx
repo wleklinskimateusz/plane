@@ -29,27 +29,36 @@ const TimelineItem = ({
       ref={ref}
       className={cn(
         "flex w-full items-center justify-center gap-4",
-        isLeft ? "flex-row" : "flex-row-reverse"
+        "flex-col md:flex-row",
+        isLeft ? "md:flex-row" : "md:flex-row-reverse"
       )}
     >
       {/* Content */}
       <motion.div
-        className={cn("w-1/2 p-8", isLeft ? "text-right" : "text-left")}
-        initial={{ opacity: 0, x: isLeft ? -50 : 50 }}
+        className={cn(
+          "w-full md:w-1/2 p-4 md:p-8",
+          "text-center md:text-left",
+          isLeft ? "md:text-right" : "md:text-left"
+        )}
+        initial={{ opacity: 0, y: 50, x: 0 }}
         animate={{
           opacity: isInView ? 1 : 0,
-          x: isInView ? 0 : isLeft ? -50 : 50,
+          y: isInView ? 0 : 50,
+          x: isInView ? 0 : 0,
         }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
         <div className="space-y-4">
           <time className="text-lg font-bold text-blue-600">{date}</time>
-          <h3 className="text-2xl font-bold text-gray-900">{title}</h3>
-          <p className="text-gray-600">{description}</p>
+          <h3 className="text-xl md:text-2xl font-bold text-gray-900">
+            {title}
+          </h3>
+          <p className="text-sm md:text-base text-gray-600">{description}</p>
         </div>
       </motion.div>
-      {/* Timeline center */}
-      <div className="relative flex h-full w-16 items-center justify-center">
+
+      {/* Timeline center - hidden on mobile */}
+      <div className="relative hidden md:flex h-full w-16 items-center justify-center">
         <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 border-l-2 border-dashed border-blue-200" />
         <motion.div
           className="absolute left-1/2 top-[calc(50%-0.5rem)] -translate-x-1/2 h-4 w-4 rounded-full bg-blue-600 ring-4 ring-blue-100 z-10"
@@ -58,18 +67,26 @@ const TimelineItem = ({
           transition={{ duration: 0.4 }}
         />
       </div>
+
       {/* Image */}
       <motion.div
-        className="w-1/2"
-        initial={{ opacity: 0, x: isLeft ? 50 : -50 }}
+        className="w-full md:w-1/2"
+        initial={{ opacity: 0, y: 50, x: 0 }}
         animate={{
           opacity: isInView ? 1 : 0,
-          x: isInView ? 0 : isLeft ? 50 : -50,
+          y: isInView ? 0 : 50,
+          x: isInView ? 0 : 0,
         }}
         transition={{ duration: 0.8, delay: 0.4 }}
       >
         <div className="relative aspect-video w-full overflow-hidden rounded-lg">
-          <Image src={imageSrc} alt={title} fill className="object-cover" />
+          <Image
+            src={imageSrc}
+            alt={title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
         </div>
       </motion.div>
     </div>
@@ -82,9 +99,9 @@ interface TimelineProps {
 
 export const Timeline = ({ items }: TimelineProps) => {
   return (
-    <div className="relative space-y-12 py-12">
-      {/* Continuous vertical line */}
-      <div className="absolute left-1/2 top-0 -translate-x-1/2 h-full w-0 border-l-2 border-dashed border-blue-200" />
+    <div className="relative space-y-8 md:space-y-12 py-8 md:py-12">
+      {/* Continuous vertical line - hidden on mobile */}
+      <div className="absolute left-1/2 top-0 -translate-x-1/2 h-full w-0 border-l-2 border-dashed border-blue-200 hidden md:block" />
 
       {/* Timeline items */}
       {items.map((item, index) => (

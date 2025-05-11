@@ -32,7 +32,7 @@ export const Team = ({
     };
   });
   return (
-    <section className="w-full bg-gray-50 py-16">
+    <section className="w-full bg-gray-50 px-2 py-16">
       <div className="max-w-[1680px] mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
