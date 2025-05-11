@@ -7,6 +7,26 @@ import { OurSolutions } from "./_components/sections/OurSolutions";
 import { Team } from "./_components/sections/Team";
 import { VideoSection } from "./_components/sections/VideoSection";
 
+export const generateMetadata = async ({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) => {
+  const { lang } = await params;
+  if (lang === "pl") {
+    return {
+      title: "AGH Solar Plane - Szczerbatek",
+      description:
+        "Szczerbatek to projekt zespołu AGH Solar Plane, który zajmuje się projektowaniem i budową autonomicznego samolotu napędzanego energią słoneczną.",
+    };
+  }
+  return {
+    title: "AGH Solar Plane - Szczerbatek",
+    description:
+      "Szczerbatek is a project of the AGH Solar Plane team, which is dedicated to designing and building an autonomous solar plane.",
+  };
+};
+
 export default async function Szczerbatek({
   params,
 }: {
