@@ -1,4 +1,9 @@
 {
+  "hero": {
+    "title": "Szczerbatek",
+    "description": "Nasz flagowy samolot solarny, zaprojektowany do autonomicznych lotów, zbierania danych i może nawet do straszenia dentystów.",
+    "cta": "Odkryj co stworzyliśmy!"
+  },
   "ourSolutions": {
     "title": "Nasze Rozwiązania",
     "description": "Budujemy. Programujemy. Latamy.",

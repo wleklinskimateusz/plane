@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { getTranslations } from "@/translations/common/dictionary";
 import { getSzczerbatekTranslations } from "@/translations/szczerbatek/dictionary";
 
 import { Timeline } from "@/components/timeline";
@@ -14,38 +13,39 @@ export default async function Szczerbatek({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const {
-    links: {
-      projects: {
-        items: {
-          szczerbatek: { title, description },
-        },
-      },
-    },
-  } = await getTranslations(lang === "pl" ? "pl" : "en");
   const szczerbatekTranslations = await getSzczerbatekTranslations(lang);
   return (
     <div className="flex flex-col w-full  mx-auto">
       <section className="relative h-[100vh] w-full">
         <Image
-          src="/team.jpeg"
-          alt="Szczerbatek"
+          src="/szczerbatek/hero.jpg"
+          alt="Plane in the sky, and a person in the foreground"
+          priority
           fill
           sizes="100vw"
-          style={{
-            objectFit: "cover",
-          }}
+          className="object-cover"
         />
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="absolute bottom-32 left-16 max-w-xl">
-          <div className="bg-black/40 backdrop-blur-md p-8 rounded-lg">
-            <h1 className="text-5xl font-bold text-white mb-4">{title}</h1>
-            <p className="text-white/90 text-xl">{description}</p>
+        <div className="absolute inset-0 flex flex-col items-end text-center py-40 px-20">
+          <div className="max-w-3xl bg-black/90 px-6 py-12 rounded-lg">
+            <h1 className="text-6xl font-bold text-white mb-6">
+              {szczerbatekTranslations.hero.title}
+            </h1>
+            <p className="text-white/90 text-xl md:text-2xl">
+              {szczerbatekTranslations.hero.description}
+            </p>
+            <Link
+              scroll
+              href="#solutions"
+              className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-lg transition-colors backdrop-blur-sm mt-8"
+            >
+              {szczerbatekTranslations.hero.cta}
+            </Link>
           </div>
         </div>
       </section>
       <OurSolutions translations={szczerbatekTranslations.ourSolutions} />
       {/* Video Section */}
+
       <VideoSection translations={szczerbatekTranslations.video} />
       {/* Timeline Section */}
       <section className=" bg-gray-50 py-16">

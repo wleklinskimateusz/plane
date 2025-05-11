@@ -8,7 +8,7 @@
       "items": {
         "szczerbatek": {
           "title": "Szczerbatek",
-          "description": "Our flagship plane is named 'Szczerbatek' (pronounced 'Sh-cher-ba-tek', meaning 'Toothless' in Polish - yes, we know it's a tongue twister!). A versatile aircraft designed for autonomous flight, data collection, and maybe even making dentists nervous."
+          "description": "Our flagship plane - 'Szczerbatek'"
         }
       }
     }
@@ -46,7 +46,8 @@
   },
   "hero": {
     "title": "AGH Solar Plane",
-    "subtitle": "Join us in revolutionizing sustainable aviation - where student innovation meets the power of the sun"
+    "subtitle": "Join us in revolutionizing sustainable aviation - where student innovation meets the power of the sun",
+    "cta": "Discover what you can create with us!"
   },
   "about": {
     "title": "About Us",

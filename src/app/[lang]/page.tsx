@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getTranslations } from "@/translations/common/dictionary";
 import { organizationConfig } from "@/config/organization";
 import { SectionCard } from "@/components/sections-cards";
+import Link from "next/link";
 
 export default async function Home({
   params,
@@ -26,6 +27,12 @@ export default async function Home({
           <div className="max-w-3xl bg-black/60 px-4 py-8 rounded-lg">
             <h1 className="text-6xl font-bold text-white mb-6">{hero.title}</h1>
             <p className="text-white/90 text-xl md:text-2xl">{hero.subtitle}</p>
+            <Link
+              href="#about"
+              className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-lg transition-colors backdrop-blur-sm mt-8"
+            >
+              {hero.cta}
+            </Link>
           </div>
         </div>
       </section>
