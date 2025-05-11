@@ -1,4 +1,9 @@
 {
+  "hero": {
+    "title": "Szczerbatek",
+    "description": "Our flagship plane is named 'Szczerbatek' (pronounced 'Sh-cher-ba-tek', meaning 'Toothless' in Polish - yes, we know it's a tongue twister!). A versatile aircraft designed for autonomous flight, data collection, and maybe even making dentists nervous.",
+    "cta": "Discover what we made!"
+  },
   "ourSolutions": {
     "title": "Our Solutions",
     "description": "We build it. We code it. We fly it.",
@@ -199,9 +204,7 @@
   },
   "video": {
     "title": "See Szczerbatek in Action",
-    "description": "Watch our latest test flight and development progress",
-    "thumbnailSrc": "/team.jpeg",
-    "videoSrc": "/video.mp4"
+    "description": "Watch our latest test flight and development progress"
   },
   "organization": {
     "title": "Part of AGH Solar Plane",

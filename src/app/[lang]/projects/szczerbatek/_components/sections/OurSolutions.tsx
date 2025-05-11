@@ -22,7 +22,7 @@ export const OurSolutions = ({
   ] satisfies (keyof SzczerbatekTranslations["ourSolutions"]["items"])[];
 
   return (
-    <section className="py-16 px-16">
+    <section className="py-32 px-16" id="solutions">
       <div className="max-w-[1680px] mx-auto gap-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-white mb-4">

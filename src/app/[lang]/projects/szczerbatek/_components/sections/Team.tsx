@@ -41,7 +41,7 @@ export const Team = ({
           <p className="text-gray-600 text-xl">{translations.description}</p>
         </div>
         <ImageSwitcher
-          backgroundImage={"/team/all.jpg"}
+          backgroundImage={"/szczerbatek/team/all.jpg"}
           members={orderedMembers}
           autoSwitchInterval={5000}
         />

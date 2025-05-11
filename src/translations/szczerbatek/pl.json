@@ -1,4 +1,9 @@
 {
+  "hero": {
+    "title": "Szczerbatek",
+    "description": "Nasz flagowy samolot solarny, zaprojektowany do autonomicznych lotów, zbierania danych i może nawet do straszenia dentystów.",
+    "cta": "Odkryj co stworzyliśmy!"
+  },
   "ourSolutions": {
     "title": "Nasze Rozwiązania",
     "description": "Budujemy. Programujemy. Latamy.",
@@ -198,9 +203,7 @@
   },
   "video": {
     "title": "Zobacz Szczerbatka w Akcji",
-    "description": "Obejrzyj nasz najnowszy lot testowy i postęp prac",
-    "thumbnailSrc": "/team.jpeg",
-    "videoSrc": "/video.mp4"
+    "description": "Obejrzyj nasz najnowszy lot testowy i postęp prac"
   },
   "organization": {
     "title": "Część AGH Solar Plane",

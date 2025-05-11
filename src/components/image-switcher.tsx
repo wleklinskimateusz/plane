@@ -55,7 +55,7 @@ export const ImageSwitcher = ({
         </div>
 
         {/* Info overlay */}
-        <div className="min-w-[400px]  max-w-[400px] flex flex-col gap-2  backdrop-blur-sm">
+        <div className="min-w-[400px] self-stretch  max-w-[400px] flex flex-col gap-2  backdrop-blur-sm">
           <h3 className="text-2xl order-1 font-bold text-gray-900">
             {currentMember.name}
           </h3>
@@ -70,7 +70,7 @@ export const ImageSwitcher = ({
             height={600}
             className="rounded-sm order-3 2xl:order-4"
           />
-          <p className="text-gray-700 2xl:order-3 order-4 leading-relaxed">
+          <p className="text-gray-700 grow-1 2xl:order-3 order-4 leading-relaxed">
             {currentMember.description}
           </p>
         </div>

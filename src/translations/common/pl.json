@@ -24,21 +24,18 @@
     },
 
     "sponsors": {
-      "title": "Nasi Sponsorzy",
-      "list": [
-        {
-          "name": "Sponsor 1",
-          "logo": "/vercel.svg"
-        },
-        {
-          "name": "Sponsor 2",
-          "logo": "/vercel.svg"
-        },
-        {
-          "name": "Sponsor 3",
-          "logo": "/vercel.svg"
-        }
-      ]
+      "title": "Sponsorzy i Partnerzy",
+      "partners": {
+        "AGH": "Akademia Górniczo-Hutnicza",
+        "EU": "Unia Europejska",
+        "IDUB": "Instytut Danych Uniwersytetu Jagiellońskiego",
+        "MNiSW": "Ministerstwo Nauki i Szkolnictwa Wyższego",
+        "aeroklub": "Aeroklub Podhalański",
+        "WIMIR": "Wydział Inżynierii Mechanicznej i Robotyki",
+        "WEiP": "Wydział Energetyki i Paliw",
+        "WEAIiB": "Wydział Elektrotechniki, Automatyki, Informatyki i Inzynierii Biomedycznej",
+        "Elektrobot": "Elektrobot"
+      }
     },
     "copyright": "Wszelkie prawa zastrzeżone."
   },
@@ -50,7 +47,8 @@
   },
   "hero": {
     "title": "AGH Solar Plane",
-    "subtitle": "Dołącz do nas w rewolucjonizowaniu zrównoważonego lotnictwa - gdzie studencka innowacja spotyka się z mocą słońca"
+    "subtitle": "Dołącz do nas w rewolucjonizowaniu zrównoważonego lotnictwa - gdzie studencka innowacja spotyka się z mocą słońca",
+    "cta": "Odkryj co możesz tworzyć z nami!"
   },
   "about": {
     "title": "O Nas",

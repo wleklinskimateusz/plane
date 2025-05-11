@@ -50,7 +50,7 @@ export const szczerbatekConfig = {
     } satisfies Images,
     team: {
       all: {
-        src: "/team/all.jpg",
+        src: "/szczerbatek/team/all.jpg",
         width: "1200px",
         height: "800px",
         alt: "All",

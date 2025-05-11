@@ -52,7 +52,7 @@ export function Navigation({
                       <div className="text-sm font-medium text-gray-900">
                         {title}
                       </div>
-                      <p className="text-sm text-gray-500 mt-1 line-clamp-2">
+                      <p className="text-sm text-gray-500 mt-1 ">
                         {description}
                       </p>
                     </Link>
