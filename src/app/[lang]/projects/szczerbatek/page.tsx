@@ -26,17 +26,17 @@ export default async function Szczerbatek({
           className="object-cover"
         />
         <div className="absolute inset-0 flex flex-col items-end text-center py-40 px-20">
-          <div className="max-w-3xl bg-black/90 px-6 py-12 rounded-lg">
-            <h1 className="text-6xl font-bold text-white mb-6">
+          <div className="max-w-3xl bg-black/60 px-6 py-12 rounded-lg">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               {szczerbatekTranslations.hero.title}
             </h1>
-            <p className="text-white/90 text-xl md:text-2xl">
+            <p className="text-white/90 text-xs md:text-2xl">
               {szczerbatekTranslations.hero.description}
             </p>
             <Link
               scroll
               href="#solutions"
-              className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-lg transition-colors backdrop-blur-sm mt-8"
+              className="inline-flex items-center gap-2 text-sm md:text-lg bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-lg transition-colors backdrop-blur-sm mt-8"
             >
               {szczerbatekTranslations.hero.cta}
             </Link>

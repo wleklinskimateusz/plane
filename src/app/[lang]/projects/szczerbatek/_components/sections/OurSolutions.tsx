@@ -43,8 +43,8 @@ export const OurSolutions = ({
               />
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden md:block" />
-          <CarouselNext className="hidden md:block" />
+          <CarouselPrevious />
+          <CarouselNext />
         </Carousel>
       </div>
     </section>
