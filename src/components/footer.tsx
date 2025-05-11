@@ -7,40 +7,49 @@ import { organizationConfig } from "@/config/organization";
 import Link from "next/link";
 
 export const Footer = ({
-  translations: { sponsors, organization, contact, copyright },
+  translations: {
+    sponsors: sponsorsTranslations,
+    organization,
+    contact,
+    copyright,
+  },
 }: {
   translations: Translations["footer"];
 }) => {
+  const sponsors = organizationConfig.partners;
   return (
     <footer className="bg-black text-gray-300">
       <div className="max-w-5xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         {/* Sponsors Section */}
         <div className="mb-12">
           <h3 className="text-white text-lg font-semibold text-center mb-6">
-            {sponsors.title}
+            {sponsorsTranslations.title}
           </h3>
           <div className="flex flex-wrap justify-center gap-8 items-center">
-            {sponsors.list.map((sponsor, index) => (
-              <motion.div
+            {sponsors.map((sponsor, index) => (
+              <Link
+                href={sponsor.href}
+                target="_blank"
+                title={sponsorsTranslations.partners[sponsor.translationKey]}
+                referrerPolicy="no-referrer"
                 key={index}
-                whileHover={{ scale: 1.05 }}
-                className="relative w-32 h-24 bg-white/5 rounded-lg p-2 flex flex-col items-center justify-center gap-2"
               >
-                <Image
-                  src={sponsor.logo}
-                  alt={sponsor.name}
-                  width={40}
-                  height={40}
-                  className="object-contain brightness-0 invert"
-                  style={{
-                    maxWidth: "100%",
-                    height: "auto",
-                  }}
-                />
-                <span className="text-xs text-gray-400 text-center">
-                  {sponsor.name}
-                </span>
-              </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="relative w-32 h-24 bg-white rounded-lg p-2 flex flex-col items-center justify-center gap-2"
+                >
+                  <Image
+                    src={sponsor.image}
+                    alt={sponsor.translationKey}
+                    width={70}
+                    height={70}
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                    }}
+                  />
+                </motion.div>
+              </Link>
             ))}
           </div>
         </div>

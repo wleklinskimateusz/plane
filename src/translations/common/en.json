@@ -8,7 +8,7 @@
       "items": {
         "szczerbatek": {
           "title": "Szczerbatek",
-          "description": "Our flagship plane is named 'Szczerbatek' (pronounced 'Sh-cher-ba-tek', meaning 'Toothless' in Polish - yes, we know it's a tongue twister!). A versatile aircraft designed for autonomous flight, data collection, and maybe even making dentists nervous."
+          "description": "Our flagship plane - 'Szczerbatek'"
         }
       }
     }
@@ -24,20 +24,17 @@
     },
     "sponsors": {
       "title": "Our Sponsors",
-      "list": [
-        {
-          "name": "Sponsor 1",
-          "logo": "/vercel.svg"
-        },
-        {
-          "name": "Sponsor 2",
-          "logo": "/vercel.svg"
-        },
-        {
-          "name": "Sponsor 3",
-          "logo": "/vercel.svg"
-        }
-      ]
+      "partners": {
+        "AGH": "AGH University of Cracow",
+        "EU": "European Union",
+        "IDUB": "Institute of Data University of Jagiellonian University",
+        "MNiSW": "Ministry of Science and Higher Education",
+        "aeroklub": "Aeroklub Podhalański",
+        "WIMIR": "Faculty of Mechanical Engineering and Robotics",
+        "WEiP": "Faculty of Energy and Fuels",
+        "WEAIiB": "Faculty of Electrical Engineering, Automation, Computer Science and Biomedical Engineering",
+        "Elektrobot": "Elektrobot"
+      }
     },
     "copyright": "All rights reserved."
   },
@@ -49,7 +46,8 @@
   },
   "hero": {
     "title": "AGH Solar Plane",
-    "subtitle": "Join us in revolutionizing sustainable aviation - where student innovation meets the power of the sun"
+    "subtitle": "Join us in revolutionizing sustainable aviation - where student innovation meets the power of the sun",
+    "cta": "Discover what you can create with us!"
   },
   "about": {
     "title": "About Us",
