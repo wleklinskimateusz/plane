@@ -44,7 +44,7 @@ const TimelineItem = ({
       >
         <div className="space-y-4">
           <time className="text-lg font-bold text-blue-600">{date}</time>
-          <h3 className="text-2xl font-bold">{title}</h3>
+          <h3 className="text-2xl font-bold text-gray-900">{title}</h3>
           <p className="text-gray-600">{description}</p>
         </div>
       </motion.div>

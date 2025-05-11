@@ -75,11 +75,15 @@
       },
       "programming": {
         "title": "Programowanie",
-        "description": "Budowa nowoczesnych aplikacji do sterowania lotem, analizy danych i planowania misji."
+        "description": "Budowa nowoczesnych aplikacji do sterowania lotem, analizy danych i systemów wizyjnych."
       },
       "marketing": {
         "title": "Marketing i Dokumentacja",
-        "description": "Promujemy nasz projekt i dostarczamy informacje o naszej działalności."
+        "description": "Social media, budowanie relacji z partnerami oraz zajmowanie się nudnymi papierkami."
+      },
+      "solar": {
+        "title": "Systemy Solarne",
+        "description": "Badania nad stosowaniem energii słonecznej w lotnictwie, integracja systemów solarnych i optymalizacja wydajności."
       }
     }
   },

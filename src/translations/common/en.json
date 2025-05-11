@@ -64,7 +64,6 @@
     "title": "Our Sections",
     "description": "We operate across multiple specialized teams, each contributing to our mission",
     "items": {
-
       "electronics": {
         "title": "Electronics and Power",
         "description": "Developing electronics systems, power solutions for efficient flight and gathering telemetry data."
@@ -75,11 +74,15 @@
       },
       "programming": {
         "title": "Programming",
-        "description": "Building cutting-edge applications for flight control, data analysis, and mission planning."
+        "description": "Building cutting-edge applications for flight control, data analysis, and vision systems."
       },
       "marketing": {
         "title": "Marketing and Documentation",
-        "description": "Promoting our project and getting the word out there."
+        "description": "Promoting our projects, managing social media, and taking care of boring paperwork."
+      },
+      "solar": {
+        "title": "Solar Power Systems",
+        "description": "Designing and integrating solar power systems to maximize energy efficiency and performance."
       }
     }
   },

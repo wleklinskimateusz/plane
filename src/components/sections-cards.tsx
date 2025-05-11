@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code, Hammer, File, BatteryCharging } from "lucide-react";
+import { Code, Hammer, File, BatteryCharging, Sun } from "lucide-react";
 
 export function SectionCard({
   title,
@@ -40,6 +40,7 @@ const icons = {
   programming: <Code />,
   marketing: <File />,
   electronics: <BatteryCharging />,
+  solar: <Sun />,
 } as const;
 
 const SectionIcon = ({ section }: { section: keyof typeof icons }) => {
