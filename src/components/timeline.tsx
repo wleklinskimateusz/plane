@@ -5,12 +5,17 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 interface TimelineItemProps {
   date: string;
   title: string;
   description: string;
   imageSrc: string;
+  additionalMedia?: {
+    name: string;
+    path: string;
+  };
   isLeft?: boolean;
 }
 
@@ -19,6 +24,7 @@ const TimelineItem = ({
   title,
   description,
   imageSrc,
+  additionalMedia,
   isLeft,
 }: TimelineItemProps) => {
   const ref = useRef(null);
@@ -46,6 +52,18 @@ const TimelineItem = ({
           <time className="text-lg font-bold text-blue-600">{date}</time>
           <h3 className="text-2xl font-bold text-gray-900">{title}</h3>
           <p className="text-gray-600">{description}</p>
+          {additionalMedia && (
+            <div className="mt-4">
+              <Link
+                href={additionalMedia.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                {additionalMedia.name}
+              </Link>
+            </div>
+          )}
         </div>
       </motion.div>
       {/* Timeline center */}

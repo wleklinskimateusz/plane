@@ -61,13 +61,17 @@
         "date": "Late November 2024",
         "title": "Selection of Onboard Electronics and Materials, Power Requirement Calculations",
         "description": "The team selects appropriate onboard electronic systems (flight controllers, sensors, telemetry modules) and materials (composites, resins) based on mission criteria and weight/power efficiency. Detailed calculations of total power needs are conducted, including propulsion, onboard systems, and mission-specific devices.",
-        "imageSrc": "/szczerbatek/timeline/elektronika-tymczasowe.jpg"
+        "imageSrc": "/szczerbatek/timeline/elektronika-schemat.png"
       },
       {
         "date": "December 2024",
         "title": "Air Drop System and Retardant Mechanism Design, Execution and Testing",
         "description": "Design begins on the payload delivery system and retardant mechanism deployment, focusing on precision, weight, and reliability. The mechanical components of the air drop system mechanism are built, tested, and refined.",
-        "imageSrc": "/szczerbatek/timeline/zrzut.png"
+        "imageSrc": "/szczerbatek/timeline/zrzut.png",
+        "additionalMedia": {
+          "name": "Air Drop System documentation",
+          "path": "/szczerbatek/timeline/AirDropSystem.pdf"
+        }
       },
       {
         "date": "January 2025",
@@ -167,7 +171,7 @@
       },
       "filip": {
         "name": "Filip Kulka",
-        "role": "Construction Section",
+        "role": "Electronics Section Leader",
         "description": "As Main Ground Station Operator, ensures safety during flight missions."
       },
       "wojtek": {
