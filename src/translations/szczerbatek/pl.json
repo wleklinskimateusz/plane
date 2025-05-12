@@ -99,7 +99,7 @@
         "date": "Luty – Kwiecień 2025",
         "title": "Implementacja oprogramowania",
         "description": "Wgrywane i testowane są autorskie rozwiązania programistyczne, w tym algorytmy do mapowania terenu oraz systemy autonomicznego zrzutu.",
-        "imageSrc": "/szczerbatek/timeline/soft-tymczasowe.jpg"
+        "imageSrc": "/szczerbatek/timeline/soft-implementation.png"
       },
       {
         "date": "Marzec 2025",
@@ -117,7 +117,7 @@
         "date": "Maj 2025",
         "title": "Poprawki oprogramowania",
         "description": "Wprowadzane są poprawki błędów, optymalizacja kodu oraz końcowe aktualizacje oprogramowania na podstawie danych z testów.",
-        "imageSrc": "/szczerbatek/timeline/soft-tymczasowe.jpg"
+        "imageSrc": "/szczerbatek/timeline/soft-correction.jpg"
       },
       {
         "date": "Maj – Czerwiec 2025",

@@ -100,7 +100,7 @@
         "date": "February – April 2025",
         "title": "Software Implementation",
         "description": "Uploading and testing custom software solutions, including algorithms for terrain mapping and autonomous release systems.",
-        "imageSrc": "/szczerbatek/timeline/soft-tymczasowe.jpg"
+        "imageSrc": "/szczerbatek/timeline/soft-implementation.png"
       },
       {
         "date": "March 2025",
@@ -118,7 +118,7 @@
         "date": "May 2025",
         "title": "Software Adjustments",
         "description": "Bug fixes, code optimization, and final software updates based on flight data and performance logs.",
-        "imageSrc": "/szczerbatek/timeline/soft-tymczasowe.jpg"
+        "imageSrc": "/szczerbatek/timeline/soft-correction.jpg"
       },
       {
         "date": "May – June 2025",
