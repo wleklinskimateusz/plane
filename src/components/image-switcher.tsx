@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { motion, PanInfo } from "framer-motion";
 
 interface Member {
   name: string;
@@ -34,6 +35,15 @@ export const ImageSwitcher = ({
     setCurrentIndex((prev) => (prev - 1 + members.length) % members.length);
   };
 
+  const handleDragEnd = (_event: TouchEvent, info: PanInfo) => {
+    const swipeThreshold = 50;
+    if (info.offset.x > swipeThreshold) {
+      handlePrev();
+    } else if (info.offset.x < -swipeThreshold) {
+      handleNext();
+    }
+  };
+
   // Auto-switch setup
   useEffect(() => {
     const timer = setInterval(handleNext, autoSwitchInterval);
@@ -46,7 +56,7 @@ export const ImageSwitcher = ({
   const currentMember = members[currentIndex];
 
   return (
-    <div className="relative w-full h-full ">
+    <div className="relative w-full h-full">
       <div className="flex gap-8 justify-center items-stretch h-full w-full max-w-[70vw] mx-auto">
         <div className="lg:block self-center hidden aspect-[3/2] shrink-1 grow-1">
           <Image
@@ -58,8 +68,14 @@ export const ImageSwitcher = ({
           />
         </div>
 
-        {/* Info overlay */}
-        <div className="md:min-w-[400px] self-stretch  md:max-w-[400px] flex flex-col gap-2  backdrop-blur-sm">
+        {/* Info overlay with swipe gestures */}
+        <motion.div
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          dragElastic={0.2}
+          onDragEnd={handleDragEnd}
+          className="md:min-w-[400px] self-stretch md:max-w-[400px] flex flex-col gap-2 backdrop-blur-sm touch-pan-x"
+        >
           <h3 className="text-2xl order-1 font-bold text-gray-900">
             {currentMember.name}
           </h3>
@@ -67,23 +83,31 @@ export const ImageSwitcher = ({
             {currentMember.role}
           </p>
 
-          <Image
-            src={currentMember.imageSrc}
-            alt={currentMember.name}
-            width={400}
-            height={600}
-            className="rounded-sm order-3 lg:order-4 w-[90vw] lg:w-auto"
-          />
+          <motion.div
+            key={currentMember.imageSrc}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Image
+              src={currentMember.imageSrc}
+              alt={currentMember.name}
+              width={400}
+              height={600}
+              className="rounded-sm order-3 lg:order-4 w-[90vw] lg:w-auto"
+            />
+          </motion.div>
           <p className="text-gray-700 grow-1 lg:order-3 order-4 leading-relaxed">
             {currentMember.description}
           </p>
-        </div>
+        </motion.div>
 
         {/* Navigation buttons */}
         <Button
           variant="outline"
           size="icon"
-          className="absolute left-8 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-white/90 hover:bg-white shadow-lg  border-gray-200 z-10"
+          className="absolute left-8 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-white/90 hover:bg-white shadow-lg border-gray-200 z-10 hidden md:flex"
           onClick={() => {
             setWasArrowClicked(true);
             handlePrev();
@@ -94,7 +118,7 @@ export const ImageSwitcher = ({
         <Button
           variant="outline"
           size="icon"
-          className="absolute right-8 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-white/90 hover:bg-white shadow-lg  border-gray-200 z-10"
+          className="absolute right-8 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-white/90 hover:bg-white shadow-lg border-gray-200 z-10 hidden md:flex"
           onClick={() => {
             setWasArrowClicked(true);
             handleNext();
