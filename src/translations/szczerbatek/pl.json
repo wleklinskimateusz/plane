@@ -65,7 +65,11 @@
         "date": "Koniec listopada 2024",
         "title": "Dobór elektroniki pokładowej i materiałów, obliczenia zapotrzebowania na energię",
         "description": "Zespół dokonuje wyboru odpowiednich systemów elektronicznych (np. autopilot, sensory, moduły telemetryczne) oraz materiałów (np. kompozyty, żywice), kierując się wymaganiami misji oraz efektywnością masową i energetyczną. Prowadzone są szczegółowe obliczenia zapotrzebowania na energię dla napędu, elektroniki pokładowej oraz systemów zadaniowych.",
-        "imageSrc": "/szczerbatek/timeline/elektronika-schemat.png"
+        "imageSrc": "/szczerbatek/timeline/elektronika-schemat.png",
+        "additionalMedia": {
+          "name": "Cyfrowy system statku powietrznego - Jak to działa?",
+          "path": "/szczerbatek/timeline/DigitalSystemPL.pdf"
+        }
       },
       {
         "date": "Grudzień 2024",

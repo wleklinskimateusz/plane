@@ -66,7 +66,11 @@
         "date": "Late November 2024",
         "title": "Selection of Onboard Electronics and Materials, Power Requirement Calculations",
         "description": "The team selects appropriate onboard electronic systems (flight controllers, sensors, telemetry modules) and materials (composites, resins) based on mission criteria and weight/power efficiency. Detailed calculations of total power needs are conducted, including propulsion, onboard systems, and mission-specific devices.",
-        "imageSrc": "/szczerbatek/timeline/elektronika-schemat.png"
+        "imageSrc": "/szczerbatek/timeline/elektronika-schemat.png",
+        "additionalMedia": {
+          "name": "Digital system of the aircraft - How does it work?",
+          "path": "/szczerbatek/timeline/DigitalSystem.pdf"
+        }
       },
       {
         "date": "December 2024",
