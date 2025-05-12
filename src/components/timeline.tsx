@@ -15,7 +15,7 @@ interface TimelineItemProps {
   additionalMedia?: {
     name: string;
     path: string;
-  };
+  }[];
   isLeft?: boolean;
 }
 
@@ -60,16 +60,19 @@ const TimelineItem = ({
             {title}
           </h3>
           <p className="text-sm text-gray-600 md:text-base">{description}</p>
-          {additionalMedia && (
-            <div className="mt-4">
-              <Link
-                href={additionalMedia.path}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                {additionalMedia.name}
-              </Link>
+          {additionalMedia?.length && (
+            <div className="mt-4 flex flex-col gap-2">
+              {additionalMedia.map((media) => (
+                <Link
+                  key={media.name}
+                  href={media.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  {media.name}
+                </Link>
+              ))}
             </div>
           )}
         </div>
