@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Szczerbatek",
-    "description": "Nasz flagowy samolot solarny, zaprojektowany do autonomicznych lotów, zbierania danych i może nawet do straszenia dentystów.",
+    "description": "Nasz flagowy samolot, zaprojektowany do autonomicznych lotów, zbierania danych i może nawet do straszenia dentystów.",
     "cta": "Odkryj nasze rozwiązania!"
   },
   "ourSolutions": {
@@ -80,6 +80,10 @@
           {
             "name": "Cyfrowy system statku powietrznego - Jak to działa?",
             "path": "/szczerbatek/timeline/DigitalSystemPL.pdf"
+          },
+          {
+            "name": "Battery and motor selection",
+            "path": "/szczerbatek/timeline/Battery_Choice.pdf"
           }
         ]
       },
@@ -105,7 +109,13 @@
         "date": "Luty 2025",
         "title": "Proces laminowania",
         "description": "Przeprowadzana jest laminacja elementów samolotu z zastosowaniem wybranych materiałów kompozytowych oraz technologii próżniowej.",
-        "imageSrc": "/szczerbatek/timeline/laminowanie.jpg"
+        "imageSrc": "/szczerbatek/timeline/laminowanie.jpg",
+        "additionalMedia": [
+          {
+            "name": "Proces laminowania skrzydeł",
+            "path": "/szczerbatek/timeline/WingConstruction.pdf"
+          }
+        ]
       },
       {
         "date": "Luty – Marzec 2025",
