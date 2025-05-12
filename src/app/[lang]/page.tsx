@@ -23,13 +23,15 @@ export default async function Home({
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 flex flex-col items-end text-center py-40 px-20">
-          <div className="max-w-3xl bg-black/60 px-4 py-8 rounded-lg">
-            <h1 className="text-6xl font-bold text-white mb-6">{hero.title}</h1>
-            <p className="text-white/90 text-xl md:text-2xl">{hero.subtitle}</p>
+        <div className="absolute inset-0 flex flex-col items-center md:items-end text-center py-40 px-4 md:px-20">
+          <div className="max-w-3xl bg-black/60 px-4 md:px-6 py-8 md:py-12 rounded-lg">
+            <h1 className="text-3xl md:text-6xl font-bold text-white mb-4 md:mb-6">
+              {hero.title}
+            </h1>
+            <p className="text-white/90 text-sm md:text-2xl">{hero.subtitle}</p>
             <Link
               href="#about"
-              className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-lg transition-colors backdrop-blur-sm mt-8"
+              className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg transition-colors backdrop-blur-sm mt-6 md:mt-8 text-sm md:text-lg"
             >
               {hero.cta}
             </Link>

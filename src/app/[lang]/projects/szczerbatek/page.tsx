@@ -35,7 +35,7 @@ export default async function Szczerbatek({
   const { lang } = await params;
   const szczerbatekTranslations = await getSzczerbatekTranslations(lang);
   return (
-    <div className="flex flex-col w-full  mx-auto">
+    <div className="flex flex-col w-full mx-auto">
       <section className="relative h-[100vh] w-full">
         <Image
           src="/szczerbatek/hero.jpg"
@@ -45,18 +45,18 @@ export default async function Szczerbatek({
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 flex flex-col items-end text-center py-40 px-20">
-          <div className="max-w-3xl bg-black/60 px-6 py-12 rounded-lg">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+        <div className="absolute inset-0 flex flex-col items-center md:items-end text-center py-40 px-4 md:px-20">
+          <div className="max-w-3xl bg-black/60 px-4 md:px-6 py-8 md:py-12 rounded-lg">
+            <h1 className="text-3xl md:text-6xl font-bold text-white mb-4 md:mb-6">
               {szczerbatekTranslations.hero.title}
             </h1>
-            <p className="text-white/90 text-xs md:text-2xl">
+            <p className="text-white/90 text-sm md:text-2xl">
               {szczerbatekTranslations.hero.description}
             </p>
             <Link
               scroll
               href="#solutions"
-              className="inline-flex items-center gap-2 text-sm md:text-lg bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-lg transition-colors backdrop-blur-sm mt-8"
+              className="inline-flex items-center gap-2 text-sm md:text-lg bg-white/20 hover:bg-white/30 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg transition-colors backdrop-blur-sm mt-6 md:mt-8"
             >
               {szczerbatekTranslations.hero.cta}
             </Link>
