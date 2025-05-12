@@ -79,8 +79,12 @@
         "imageSrc": "/szczerbatek/timeline/elektronika-schemat.png",
         "additionalMedia": [
           {
-            "name": "Digital system of the aircraft - How does it work?",
+            "name": "Digital System of the Aircraft Documentation",
             "path": "/szczerbatek/timeline/DigitalSystem.pdf"
+          },
+          {
+            "name": "Battery and motor selection",
+            "path": "/szczerbatek/timeline/Battery_Choice.pdf"
           }
         ]
       },
@@ -91,7 +95,7 @@
         "imageSrc": "/szczerbatek/timeline/zrzut.png",
         "additionalMedia": [
           {
-            "name": "Air Drop System documentation",
+            "name": "Air Drop System Documentation",
             "path": "/szczerbatek/timeline/AirDropSystem.pdf"
           }
         ]
@@ -106,7 +110,13 @@
         "date": "February 2025",
         "title": "Laminating Process",
         "description": "Composite lay-up and vacuum-assisted lamination of the aircraft components are carried out using selected materials.",
-        "imageSrc": "/szczerbatek/timeline/laminowanie.jpg"
+        "imageSrc": "/szczerbatek/timeline/laminowanie.jpg",
+        "additionalMedia": [
+          {
+            "name": "Wing Construction Gallery",
+            "path": "/szczerbatek/timeline/WingConstruction.pdf"
+          }
+        ]
       },
       {
         "date": "February – March 2025",

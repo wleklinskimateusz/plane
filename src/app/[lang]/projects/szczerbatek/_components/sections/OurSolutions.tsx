@@ -17,7 +17,7 @@ export const OurSolutions = ({
     { name: "laminating", image: "laminating.jpg" },
     { name: "onboardElectronics", image: "onboard-electronics.jpg" },
     { name: "3DPrinting", image: "3DPrinting.jpg" },
-    { name: "programming", image: "programming.jpg" },
+    { name: "programming", image: "soft-implementation.png" },
     { name: "cncMilling", image: "cnc.jpg" },
     { name: "fusion", image: "fusion.png" },
   ];
