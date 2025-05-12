@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { motion, PanInfo } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface Member {
   name: string;
@@ -26,22 +26,16 @@ export const ImageSwitcher = ({
 }: ImageSwitcherProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [wasArrowClicked, setWasArrowClicked] = useState(false);
+  const [direction, setDirection] = useState(0); // -1 for left, 1 for right
 
   const handleNext = useCallback(() => {
+    setDirection(1);
     setCurrentIndex((prev) => (prev + 1) % members.length);
   }, [members]);
 
   const handlePrev = () => {
+    setDirection(-1);
     setCurrentIndex((prev) => (prev - 1 + members.length) % members.length);
-  };
-
-  const handleDragEnd = (_event: TouchEvent, info: PanInfo) => {
-    const swipeThreshold = 50;
-    if (info.offset.x > swipeThreshold) {
-      handlePrev();
-    } else if (info.offset.x < -swipeThreshold) {
-      handleNext();
-    }
   };
 
   // Auto-switch setup
@@ -54,6 +48,21 @@ export const ImageSwitcher = ({
   }, [autoSwitchInterval, handleNext, wasArrowClicked]);
 
   const currentMember = members[currentIndex];
+
+  const slideVariants = {
+    enter: (direction: number) => ({
+      x: direction > 0 ? 100 : -100,
+      opacity: 0,
+    }),
+    center: {
+      x: 0,
+      opacity: 1,
+    },
+    exit: (direction: number) => ({
+      x: direction < 0 ? 100 : -100,
+      opacity: 0,
+    }),
+  };
 
   return (
     <div className="relative h-full w-full">
@@ -68,40 +77,43 @@ export const ImageSwitcher = ({
           />
         </div>
 
-        {/* Info overlay with swipe gestures */}
-        <motion.div
-          drag="x"
-          dragConstraints={{ left: 0, right: 0 }}
-          dragElastic={0.2}
-          onDragEnd={handleDragEnd}
-          className="flex touch-pan-x flex-col gap-2 self-stretch backdrop-blur-sm md:max-w-[400px] md:min-w-[400px]"
-        >
-          <h3 className="order-1 text-2xl font-bold text-gray-900">
-            {currentMember.name}
-          </h3>
-          <p className="order-2 text-lg font-medium text-blue-600">
-            {currentMember.role}
-          </p>
+        {/* Info overlay */}
+        <div className="flex flex-col gap-2 self-stretch backdrop-blur-sm md:max-w-[400px] md:min-w-[400px]">
+          <AnimatePresence mode="wait" initial={false} custom={direction}>
+            <motion.div
+              key={currentIndex}
+              custom={direction}
+              variants={slideVariants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{
+                duration: 0.3,
+                ease: "easeInOut",
+              }}
+              className="flex h-full flex-col gap-2"
+            >
+              <h3 className="order-1 text-2xl font-bold text-gray-900">
+                {currentMember.name}
+              </h3>
+              <p className="order-2 text-lg font-medium text-blue-600">
+                {currentMember.role}
+              </p>
 
-          <motion.div
-            key={currentMember.imageSrc}
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -20 }}
-            transition={{ duration: 0.3 }}
-          >
-            <Image
-              src={currentMember.imageSrc}
-              alt={currentMember.name}
-              width={400}
-              height={600}
-              className="order-3 w-[90vw] rounded-sm lg:order-4 lg:w-auto"
-            />
-          </motion.div>
-          <p className="order-4 grow-1 leading-relaxed text-gray-700 lg:order-3">
-            {currentMember.description}
-          </p>
-        </motion.div>
+              <Image
+                src={currentMember.imageSrc}
+                alt={currentMember.name}
+                width={400}
+                height={600}
+                className="order-3 w-[90vw] rounded-sm lg:order-4 lg:w-auto"
+              />
+
+              <p className="order-4 grow-1 leading-relaxed text-gray-700 lg:order-3">
+                {currentMember.description}
+              </p>
+            </motion.div>
+          </AnimatePresence>
+        </div>
 
         {/* Navigation buttons */}
         <Button
