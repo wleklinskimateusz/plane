@@ -23,13 +23,13 @@ export const OurSolutions = ({
   ];
 
   return (
-    <section className="py-32 px-16" id="solutions">
-      <div className="max-w-[1680px] mx-auto gap-8">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">
+    <section className="px-16 py-32" id="solutions">
+      <div className="mx-auto max-w-[1680px] gap-8">
+        <div className="mb-12 text-center">
+          <h2 className="mb-4 font-serif text-4xl font-bold text-white">
             {translations.title}
           </h2>
-          <p className="text-white/80 text-xl">{translations.description}</p>
+          <p className="text-xl text-white/80">{translations.description}</p>
         </div>
         <Carousel opts={{ loop: true }}>
           <CarouselContent className="-ml-16">
@@ -64,7 +64,7 @@ const SolutionCard = ({
   translation: ValueOf<SzczerbatekTranslations["ourSolutions"]["items"]>;
 }) => {
   return (
-    <CarouselItem className="basis-full md:basis-1/3 pl-16">
+    <CarouselItem className="basis-full pl-16 md:basis-1/3">
       <ImageCard
         imageSrc={imageSrc}
         alt={translation.imageAlt}

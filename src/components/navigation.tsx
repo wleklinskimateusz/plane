@@ -15,8 +15,8 @@ export function Navigation({
   lang: string;
 }) {
   return (
-    <div className="w-full py-4 px-8 justify-between flex items-center gap-4">
-      <Link href={`/${lang}`} className="  flex items-center gap-2">
+    <div className="flex w-full items-center justify-between gap-4 px-8 py-4">
+      <Link href={`/${lang}`} className="flex items-center gap-2">
         <Image
           src="/logo.png"
           alt="AGH Solar Plane Team"
@@ -25,47 +25,47 @@ export function Navigation({
         />
       </Link>
       {/* Desktop Navigation */}
-      <div className="hidden md:flex items-center grow gap-4">
-        <nav className="flex items-center gap-2 mx-auto">
+      <div className="hidden grow items-center gap-4 md:flex">
+        <nav className="mx-auto flex items-center gap-2">
           <Link
             href={`/${lang}`}
-            className="px-4 py-2 text-sm font-medium text-white hover:text-gray-300 transition-colors"
+            className="px-4 py-2 text-sm font-medium text-white transition-colors hover:text-gray-300"
           >
             {home}
           </Link>
           <Link
             href={`/${lang}/#about`}
-            className="px-4 py-2 text-sm font-medium text-white hover:text-gray-300 transition-colors"
+            className="px-4 py-2 text-sm font-medium text-white transition-colors hover:text-gray-300"
           >
             {about}
           </Link>
           <Link
             href={`/${lang}/#join`}
-            className="px-4 py-2 text-sm font-medium text-white hover:text-gray-300 transition-colors"
+            className="px-4 py-2 text-sm font-medium text-white transition-colors hover:text-gray-300"
           >
             {join}
           </Link>
-          <div className="relative group">
-            <button className="px-4 py-2 text-sm font-medium text-white hover:text-gray-300 transition-colors">
+          <div className="group relative">
+            <button className="px-4 py-2 text-sm font-medium text-white transition-colors hover:text-gray-300">
               {projects.label}
             </button>
-            <div className="absolute top-full left-0 hidden group-hover:block pt-2">
-              <div className="bg-white rounded-md shadow-lg p-4 min-w-[200px]">
+            <div className="absolute top-full left-0 hidden pt-2 group-hover:block">
+              <div className="min-w-[200px] rounded-md bg-white p-4 shadow-lg">
                 {Object.entries(projects.items).map(
                   ([key, { title, description }]) => (
                     <Link
                       key={key}
                       href={`/${lang}/projects/${key}`}
-                      className="block p-2 hover:bg-gray-100 rounded-sm"
+                      className="block rounded-sm p-2 hover:bg-gray-100"
                     >
                       <div className="text-sm font-medium text-gray-900">
                         {title}
                       </div>
-                      <p className="text-sm text-gray-500 mt-1 ">
+                      <p className="mt-1 text-sm text-gray-500">
                         {description}
                       </p>
                     </Link>
-                  )
+                  ),
                 )}
               </div>
             </div>

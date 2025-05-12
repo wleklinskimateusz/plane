@@ -2,7 +2,7 @@
   "hero": {
     "title": "Szczerbatek",
     "description": "Our flagship plane is named 'Szczerbatek' (pronounced 'Sh-cher-ba-tek', meaning 'Toothless' in Polish - yes, we know it's a tongue twister!). A versatile aircraft designed for autonomous flight, data collection, and maybe even making dentists nervous.",
-    "cta": "Discover what we made!"
+    "cta": "Discover our solutions!"
   },
   "ourSolutions": {
     "title": "Our Solutions",
@@ -60,23 +60,41 @@
         "date": "Early November 2024",
         "title": "Conceptual Design Phase, Aerodynamic and Structural Calculations",
         "description": "Development of the aircraft concept begins. Core structural layout, control surfaces, and configuration are sketched. Aerodynamic simulations of the wings and fuselage are performed. Fusion-based 3D modeling of the aircraft structure is undertaken.",
-        "imageSrc": "/szczerbatek/timeline/aero.png"
+        "imageSrc": "/szczerbatek/timeline/aero.png",
+        "additionalMedia": [
+          {
+            "name": "3D Design Documentation",
+            "path": "/szczerbatek/timeline/3DDesign.pdf"
+          },
+          {
+            "name": "Aerodynamic Design Documentation",
+            "path": "/szczerbatek/timeline/AerodynamicDesign.pdf"
+          }
+        ]
       },
       {
         "date": "Late November 2024",
         "title": "Selection of Onboard Electronics and Materials, Power Requirement Calculations",
         "description": "The team selects appropriate onboard electronic systems (flight controllers, sensors, telemetry modules) and materials (composites, resins) based on mission criteria and weight/power efficiency. Detailed calculations of total power needs are conducted, including propulsion, onboard systems, and mission-specific devices.",
-        "imageSrc": "/szczerbatek/timeline/elektronika-schemat.png"
+        "imageSrc": "/szczerbatek/timeline/elektronika-schemat.png",
+        "additionalMedia": [
+          {
+            "name": "Digital system of the aircraft - How does it work?",
+            "path": "/szczerbatek/timeline/DigitalSystem.pdf"
+          }
+        ]
       },
       {
         "date": "December 2024",
         "title": "Air Drop System and Retardant Mechanism Design, Execution and Testing",
         "description": "Design begins on the payload delivery system and retardant mechanism deployment, focusing on precision, weight, and reliability. The mechanical components of the air drop system mechanism are built, tested, and refined.",
         "imageSrc": "/szczerbatek/timeline/zrzut.png",
-        "additionalMedia": {
-          "name": "Air Drop System documentation",
-          "path": "/szczerbatek/timeline/AirDropSystem.pdf"
-        }
+        "additionalMedia": [
+          {
+            "name": "Air Drop System documentation",
+            "path": "/szczerbatek/timeline/AirDropSystem.pdf"
+          }
+        ]
       },
       {
         "date": "January 2025",
@@ -99,8 +117,8 @@
       {
         "date": "February – April 2025",
         "title": "Software Implementation",
-        "description": "Uploading and testing custom software solutions, including algorithms for terrain mapping and autonomous release systems.",
-        "imageSrc": "/szczerbatek/timeline/soft-tymczasowe.jpg"
+        "description": "Developing and testing custom software solutions, including algorithms for terrain mapping and autonomous release systems.",
+        "imageSrc": "/szczerbatek/timeline/soft-implementation.png"
       },
       {
         "date": "March 2025",
@@ -111,14 +129,14 @@
       {
         "date": "April 2025",
         "title": "Outdoor Flight Testing",
-        "description": "Field tests are conducted to validate aircraft performance, test drop mechanisms, and collect telemetry data in real conditions.",
+        "description": "Field tests are conducted to validate aircraft performance, test drop mechanisms, and collect telemetry data in the real world.",
         "imageSrc": "/szczerbatek/timeline/testy-plenerowe.jpg"
       },
       {
         "date": "May 2025",
         "title": "Software Adjustments",
         "description": "Bug fixes, code optimization, and final software updates based on flight data and performance logs.",
-        "imageSrc": "/szczerbatek/timeline/soft-tymczasowe.jpg"
+        "imageSrc": "/szczerbatek/timeline/soft-correction.jpg"
       },
       {
         "date": "May – June 2025",

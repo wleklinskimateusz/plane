@@ -13,7 +13,7 @@ export default async function Home({
   const { hero, about, sections, join, sponsor } = await getTranslations(lang);
 
   return (
-    <div className="flex flex-col w-full bg-gray-950">
+    <div className="flex w-full flex-col bg-gray-950">
       <section className="relative h-[100vh] w-full">
         <Image
           src="/hero.jpeg"
@@ -23,13 +23,15 @@ export default async function Home({
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 flex flex-col items-end text-center py-40 px-20">
-          <div className="max-w-3xl bg-black/60 px-4 py-8 rounded-lg">
-            <h1 className="text-6xl font-bold text-white mb-6">{hero.title}</h1>
-            <p className="text-white/90 text-xl md:text-2xl">{hero.subtitle}</p>
+        <div className="absolute inset-0 flex flex-col items-center px-4 py-40 text-center md:items-end md:px-20">
+          <div className="max-w-3xl rounded-lg bg-black/60 px-4 py-8 backdrop-blur-sm md:px-6 md:py-12">
+            <h1 className="mb-4 font-serif text-3xl font-bold text-white md:mb-6 md:text-6xl">
+              {hero.title}
+            </h1>
+            <p className="text-sm text-white/90 md:text-2xl">{hero.subtitle}</p>
             <Link
               href="#about"
-              className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-lg transition-colors backdrop-blur-sm mt-8"
+              className="mt-6 inline-flex items-center gap-2 rounded-lg bg-white/20 px-6 py-3 text-sm text-white backdrop-blur-sm transition-colors hover:bg-white/30 md:mt-8 md:px-8 md:py-4 md:text-lg"
             >
               {hero.cta}
             </Link>
@@ -39,19 +41,19 @@ export default async function Home({
 
       <section
         id="about"
-        className="relative py-24 bg-gradient-to-b from-black via-gray-950 to-gray-900"
+        className="relative bg-gradient-to-b from-black via-gray-950 to-gray-900 py-24"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-4xl font-bold text-white mb-8">
+            <h2 className="mb-8 font-serif text-4xl font-bold text-white">
               {about.title}
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-16">
+            <p className="mx-auto mb-16 max-w-3xl text-xl text-gray-300">
               {about.description}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-3">
             <Stat
               value={`${organizationConfig.members}+`}
               label={about.stats.members}
@@ -70,16 +72,16 @@ export default async function Home({
         </div>
       </section>
 
-      <section className="py-24 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">
+      <section className="bg-gray-900 py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-16 text-center">
+            <h2 className="mb-4 font-serif text-4xl font-bold text-white">
               {sections.title}
             </h2>
             <p className="text-xl text-gray-300">{sections.description}</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             {Object.entries(sections.items).map(([key, item], index) => (
               <SectionCard
                 key={key}
@@ -95,22 +97,24 @@ export default async function Home({
 
       <section
         id="join"
-        className="py-32 bg-gradient-to-b from-gray-900 to-gray-950"
+        className="bg-gradient-to-b from-gray-900 to-gray-950 py-32"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">{join.title}</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-16 text-center">
+            <h2 className="mb-4 font-serif text-4xl font-bold text-white">
+              {join.title}
+            </h2>
+            <p className="mx-auto max-w-3xl text-xl text-gray-300">
               {join.description}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 text-center">
-              <h3 className="text-2xl font-semibold text-white mb-4">
+          <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="rounded-lg bg-white/5 p-8 text-center backdrop-blur-sm">
+              <h3 className="mb-4 text-2xl font-semibold text-white">
                 {join.options.recruitment.title}
               </h3>
-              <p className="text-gray-300 mb-6">
+              <p className="mb-6 text-gray-300">
                 {join.options.recruitment.description}
               </p>
               <div className="flex justify-center gap-4">
@@ -118,7 +122,7 @@ export default async function Home({
                   href={organizationConfig.socials.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-gray-300 transition-colors"
+                  className="text-white transition-colors hover:text-gray-300"
                 >
                   Instagram
                 </a>
@@ -126,23 +130,23 @@ export default async function Home({
                   href={organizationConfig.socials.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-gray-300 transition-colors"
+                  className="text-white transition-colors hover:text-gray-300"
                 >
                   Facebook
                 </a>
               </div>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 text-center">
-              <h3 className="text-2xl font-semibold text-white mb-4">
+            <div className="rounded-lg bg-white/5 p-8 text-center backdrop-blur-sm">
+              <h3 className="mb-4 text-2xl font-semibold text-white">
                 {join.options.direct.title}
               </h3>
-              <p className="text-gray-300 mb-6">
+              <p className="mb-6 text-gray-300">
                 {join.options.direct.description}
               </p>
               <a
                 href={`mailto:${organizationConfig.contact.generalMail}`}
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white transition-colors hover:text-gray-300"
               >
                 {organizationConfig.contact.generalMail}
               </a>
@@ -151,29 +155,29 @@ export default async function Home({
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-b from-gray-950 to-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">
+      <section className="bg-gradient-to-b from-gray-950 to-black py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-16 text-center">
+            <h2 className="mb-4 font-serif text-4xl font-bold text-white">
               {sponsor.title}
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="mx-auto max-w-3xl text-xl text-gray-300">
               {sponsor.description}
             </p>
           </div>
 
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 text-center">
-              <h3 className="text-2xl font-semibold text-white mb-4">
+          <div className="mx-auto max-w-2xl">
+            <div className="rounded-lg bg-white/5 p-8 text-center backdrop-blur-sm">
+              <h3 className="mb-4 text-2xl font-semibold text-white">
                 {sponsor.cta.title}
               </h3>
-              <p className="text-gray-300 mb-6">{sponsor.cta.description}</p>
+              <p className="mb-6 text-gray-300">{sponsor.cta.description}</p>
               <a
                 href={`mailto:${organizationConfig.contact.sponsorMail}`}
-                className="inline-flex items-center gap-2 text-white hover:text-gray-300 transition-colors text-lg"
+                className="inline-flex items-center gap-2 text-lg text-white transition-colors hover:text-gray-300"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="h-5 w-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -197,8 +201,8 @@ export default async function Home({
 
 const Stat = ({ value, label }: { value: string; label: string }) => {
   return (
-    <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 text-center">
-      <div className="text-4xl font-bold text-white mb-2">{value}</div>
+    <div className="rounded-lg bg-white/10 p-8 text-center backdrop-blur-sm">
+      <div className="mb-2 text-4xl font-bold text-white">{value}</div>
       <div className="text-gray-300">{label}</div>
     </div>
   );

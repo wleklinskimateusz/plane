@@ -33,12 +33,12 @@ export const Team = ({
   });
   return (
     <section className="w-full bg-gray-50 px-2 py-16">
-      <div className="max-w-[1680px] mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+      <div className="mx-auto max-w-[1680px]">
+        <div className="mb-12 text-center">
+          <h2 className="mb-4 font-serif text-4xl font-bold text-gray-900">
             {translations.title}
           </h2>
-          <p className="text-gray-600 text-xl">{translations.description}</p>
+          <p className="text-xl text-gray-600">{translations.description}</p>
         </div>
         <ImageSwitcher
           backgroundImage={"/szczerbatek/team/all.jpg"}

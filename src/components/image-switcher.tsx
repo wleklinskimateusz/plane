@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface Member {
   name: string;
@@ -25,12 +26,15 @@ export const ImageSwitcher = ({
 }: ImageSwitcherProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [wasArrowClicked, setWasArrowClicked] = useState(false);
+  const [direction, setDirection] = useState(0); // -1 for left, 1 for right
 
   const handleNext = useCallback(() => {
+    setDirection(1);
     setCurrentIndex((prev) => (prev + 1) % members.length);
   }, [members]);
 
   const handlePrev = () => {
+    setDirection(-1);
     setCurrentIndex((prev) => (prev - 1 + members.length) % members.length);
   };
 
@@ -45,45 +49,77 @@ export const ImageSwitcher = ({
 
   const currentMember = members[currentIndex];
 
+  const slideVariants = {
+    enter: (direction: number) => ({
+      x: direction > 0 ? 100 : -100,
+      opacity: 0,
+    }),
+    center: {
+      x: 0,
+      opacity: 1,
+    },
+    exit: (direction: number) => ({
+      x: direction < 0 ? 100 : -100,
+      opacity: 0,
+    }),
+  };
+
   return (
-    <div className="relative w-full h-full ">
-      <div className="flex gap-8 justify-center items-stretch h-full w-full max-w-[70vw] mx-auto">
-        <div className="lg:block self-center hidden aspect-[3/2] shrink-1 grow-1">
+    <div className="relative h-full w-full">
+      <div className="mx-auto flex h-full w-full max-w-[70vw] items-stretch justify-center gap-8">
+        <div className="hidden aspect-[3/2] shrink-1 grow-1 self-center lg:block">
           <Image
             src={backgroundImage}
             alt={"AGH Solar Plane Team"}
             width={1200}
             height={800}
-            className="object-cover h-fit rounded-lg"
+            className="h-fit rounded-lg object-cover"
           />
         </div>
 
         {/* Info overlay */}
-        <div className="md:min-w-[400px] self-stretch  md:max-w-[400px] flex flex-col gap-2  backdrop-blur-sm">
-          <h3 className="text-2xl order-1 font-bold text-gray-900">
-            {currentMember.name}
-          </h3>
-          <p className="text-blue-600 order-2 text-lg font-medium">
-            {currentMember.role}
-          </p>
+        <div className="flex flex-col gap-2 self-stretch backdrop-blur-sm md:max-w-[400px] md:min-w-[400px]">
+          <AnimatePresence mode="wait" initial={false} custom={direction}>
+            <motion.div
+              key={currentIndex}
+              custom={direction}
+              variants={slideVariants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{
+                duration: 0.3,
+                ease: "easeInOut",
+              }}
+              className="flex h-full flex-col gap-2"
+            >
+              <h3 className="order-1 text-2xl font-bold text-gray-900">
+                {currentMember.name}
+              </h3>
+              <p className="order-2 text-lg font-medium text-blue-600">
+                {currentMember.role}
+              </p>
 
-          <Image
-            src={currentMember.imageSrc}
-            alt={currentMember.name}
-            width={400}
-            height={600}
-            className="rounded-sm order-3 lg:order-4 w-[90vw] lg:w-auto"
-          />
-          <p className="text-gray-700 grow-1 lg:order-3 order-4 leading-relaxed">
-            {currentMember.description}
-          </p>
+              <Image
+                src={currentMember.imageSrc}
+                alt={currentMember.name}
+                width={400}
+                height={600}
+                className="order-3 w-[90vw] rounded-sm lg:order-4 lg:w-auto"
+              />
+
+              <p className="order-4 grow-1 leading-relaxed text-gray-700 lg:order-3">
+                {currentMember.description}
+              </p>
+            </motion.div>
+          </AnimatePresence>
         </div>
 
         {/* Navigation buttons */}
         <Button
           variant="outline"
           size="icon"
-          className="absolute left-8 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-white/90 hover:bg-white shadow-lg  border-gray-200 z-10"
+          className="absolute top-1/2 left-8 z-10 hidden h-12 w-12 -translate-y-1/2 rounded-full border-gray-200 bg-white/90 shadow-lg hover:bg-white md:flex"
           onClick={() => {
             setWasArrowClicked(true);
             handlePrev();
@@ -94,7 +130,7 @@ export const ImageSwitcher = ({
         <Button
           variant="outline"
           size="icon"
-          className="absolute right-8 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-white/90 hover:bg-white shadow-lg  border-gray-200 z-10"
+          className="absolute top-1/2 right-8 z-10 hidden h-12 w-12 -translate-y-1/2 rounded-full border-gray-200 bg-white/90 shadow-lg hover:bg-white md:flex"
           onClick={() => {
             setWasArrowClicked(true);
             handleNext();

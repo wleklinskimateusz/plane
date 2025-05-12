@@ -2,7 +2,7 @@
   "hero": {
     "title": "Szczerbatek",
     "description": "Nasz flagowy samolot solarny, zaprojektowany do autonomicznych lotów, zbierania danych i może nawet do straszenia dentystów.",
-    "cta": "Odkryj co stworzyliśmy!"
+    "cta": "Odkryj nasze rozwiązania!"
   },
   "ourSolutions": {
     "title": "Nasze Rozwiązania",
@@ -59,23 +59,41 @@
         "date": "Początek listopada 2024",
         "title": "Faza projektowania koncepcji, obliczenia aerodynamiczne i strukturalne",
         "description": "Rozpoczyna się projektowanie koncepcji BSP – powstaje podstawowy układ konstrukcji, powierzchnie sterujące. Przeprowadzane są symulacje aerodynamiczne skrzydeł i kadłuba, a także modelowanie 3D samolotu w programie Fusion.",
-        "imageSrc": "/szczerbatek/timeline/aero.png"
+        "imageSrc": "/szczerbatek/timeline/aero.png",
+        "additionalMedia": [
+          {
+            "name": "3D Design Documentation",
+            "path": "/szczerbatek/timeline/3DDesign.pdf"
+          },
+          {
+            "name": "Aerodynamic Design Documentation",
+            "path": "/szczerbatek/timeline/AerodynamicDesign.pdf"
+          }
+        ]
       },
       {
         "date": "Koniec listopada 2024",
         "title": "Dobór elektroniki pokładowej i materiałów, obliczenia zapotrzebowania na energię",
         "description": "Zespół dokonuje wyboru odpowiednich systemów elektronicznych (np. autopilot, sensory, moduły telemetryczne) oraz materiałów (np. kompozyty, żywice), kierując się wymaganiami misji oraz efektywnością masową i energetyczną. Prowadzone są szczegółowe obliczenia zapotrzebowania na energię dla napędu, elektroniki pokładowej oraz systemów zadaniowych.",
-        "imageSrc": "/szczerbatek/timeline/elektronika-schemat.png"
+        "imageSrc": "/szczerbatek/timeline/elektronika-schemat.png",
+        "additionalMedia": [
+          {
+            "name": "Cyfrowy system statku powietrznego - Jak to działa?",
+            "path": "/szczerbatek/timeline/DigitalSystemPL.pdf"
+          }
+        ]
       },
       {
         "date": "Grudzień 2024",
         "title": "Projektowanie, wykonanie i testy systemu zrzutu oraz mechanizmu zabezpieczającego",
         "description": "Rozpoczyna się projektowanie systemu zrzutu ładunku oraz mechanizmu ochrony zrzutu – z naciskiem na precyzję, masę i niezawodność. Następnie budowane są elementy mechaniczne systemu, które poddawane są testom i ulepszeniom.",
         "imageSrc": "/szczerbatek/timeline/zrzut.png",
-        "additionalMedia": {
-          "name": "Dokumentacja mechanizmu zrzutu",
-          "path": "/szczerbatek/timeline/MechanizmZrzutu.pdf"
-        }
+        "additionalMedia": [
+          {
+            "name": "Dokumentacja mechanizmu zrzutu",
+            "path": "/szczerbatek/timeline/MechanizmZrzutu.pdf"
+          }
+        ]
       },
       {
         "date": "Styczeń 2025",
@@ -98,8 +116,8 @@
       {
         "date": "Luty – Kwiecień 2025",
         "title": "Implementacja oprogramowania",
-        "description": "Wgrywane i testowane są autorskie rozwiązania programistyczne, w tym algorytmy do mapowania terenu oraz systemy autonomicznego zrzutu.",
-        "imageSrc": "/szczerbatek/timeline/soft-tymczasowe.jpg"
+        "description": "Implementowane i testowane są autorskie rozwiązania programistyczne, w tym algorytmy do mapowania terenu oraz systemy autonomicznego zrzutu.",
+        "imageSrc": "/szczerbatek/timeline/soft-implementation.png"
       },
       {
         "date": "Marzec 2025",
@@ -117,7 +135,7 @@
         "date": "Maj 2025",
         "title": "Poprawki oprogramowania",
         "description": "Wprowadzane są poprawki błędów, optymalizacja kodu oraz końcowe aktualizacje oprogramowania na podstawie danych z testów.",
-        "imageSrc": "/szczerbatek/timeline/soft-tymczasowe.jpg"
+        "imageSrc": "/szczerbatek/timeline/soft-correction.jpg"
       },
       {
         "date": "Maj – Czerwiec 2025",

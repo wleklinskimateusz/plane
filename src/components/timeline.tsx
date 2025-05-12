@@ -15,7 +15,7 @@ interface TimelineItemProps {
   additionalMedia?: {
     name: string;
     path: string;
-  };
+  }[];
   isLeft?: boolean;
 }
 
@@ -36,15 +36,15 @@ const TimelineItem = ({
       className={cn(
         "flex w-full items-center justify-center gap-4",
         "flex-col md:flex-row",
-        isLeft ? "md:flex-row" : "md:flex-row-reverse"
+        isLeft ? "md:flex-row" : "md:flex-row-reverse",
       )}
     >
       {/* Content */}
       <motion.div
         className={cn(
-          "w-full md:w-1/2 p-4 md:p-8",
+          "w-full p-4 md:w-1/2 md:p-8",
           "text-center md:text-left",
-          isLeft ? "md:text-right" : "md:text-left"
+          isLeft ? "md:text-right" : "md:text-left",
         )}
         initial={{ opacity: 0, y: 50, x: 0 }}
         animate={{
@@ -56,30 +56,33 @@ const TimelineItem = ({
       >
         <div className="space-y-4">
           <time className="text-lg font-bold text-blue-600">{date}</time>
-          <h3 className="text-xl md:text-2xl font-bold text-gray-900">
+          <h3 className="text-xl font-bold text-gray-900 md:text-2xl">
             {title}
           </h3>
-          <p className="text-sm md:text-base text-gray-600">{description}</p>
-          {additionalMedia && (
-            <div className="mt-4">
-              <Link
-                href={additionalMedia.path}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                {additionalMedia.name}
-              </Link>
+          <p className="text-sm text-gray-600 md:text-base">{description}</p>
+          {additionalMedia?.length && (
+            <div className="mt-4 flex flex-col gap-2">
+              {additionalMedia.map((media) => (
+                <Link
+                  key={media.name}
+                  href={media.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  {media.name}
+                </Link>
+              ))}
             </div>
           )}
         </div>
       </motion.div>
 
       {/* Timeline center - hidden on mobile */}
-      <div className="relative hidden md:flex h-full w-16 items-center justify-center">
-        <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 border-l-2 border-dashed border-blue-200" />
+      <div className="relative hidden h-full w-16 items-center justify-center md:flex">
+        <div className="absolute left-1/2 h-full w-0.5 -translate-x-1/2 border-l-2 border-dashed border-blue-200" />
         <motion.div
-          className="absolute left-1/2 top-[calc(50%-0.5rem)] -translate-x-1/2 h-4 w-4 rounded-full bg-blue-600 ring-4 ring-blue-100 z-10"
+          className="absolute top-[calc(50%-0.5rem)] left-1/2 z-10 h-4 w-4 -translate-x-1/2 rounded-full bg-blue-600 ring-4 ring-blue-100"
           initial={{ scale: 0 }}
           animate={{ scale: isInView ? 1 : 0 }}
           transition={{ duration: 0.4 }}
@@ -117,9 +120,9 @@ interface TimelineProps {
 
 export const Timeline = ({ items }: TimelineProps) => {
   return (
-    <div className="relative space-y-8 md:space-y-12 py-8 md:py-12">
+    <div className="relative space-y-8 py-8 md:space-y-12 md:py-12">
       {/* Continuous vertical line - hidden on mobile */}
-      <div className="absolute left-1/2 top-0 -translate-x-1/2 h-full w-0 border-l-2 border-dashed border-blue-200 hidden md:block" />
+      <div className="absolute top-0 left-1/2 hidden h-full w-0 -translate-x-1/2 border-l-2 border-dashed border-blue-200 md:block" />
 
       {/* Timeline items */}
       {items.map((item, index) => (

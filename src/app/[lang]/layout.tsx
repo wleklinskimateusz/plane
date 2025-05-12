@@ -39,13 +39,13 @@ export default async function RootLayout({
   const { footer, links } = await getTranslations(lang);
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <div className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm">
-        <div className="flex w-full justify-center relative h-full">
+    <div className="flex min-h-screen flex-col">
+      <div className="fixed top-0 right-0 left-0 z-50 bg-black/80 backdrop-blur-sm">
+        <div className="relative flex h-full w-full justify-center">
           <Navigation linksTranslations={links} lang={lang} />
         </div>
       </div>
-      <main className="flex-1 flex flex-col max-w-screen-3xl mx-auto w-full">
+      <main className="max-w-screen-3xl mx-auto flex w-full flex-1 flex-col">
         {children}
       </main>
       <Footer translations={footer} />

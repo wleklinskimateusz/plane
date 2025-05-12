@@ -35,7 +35,7 @@ export default async function Szczerbatek({
   const { lang } = await params;
   const szczerbatekTranslations = await getSzczerbatekTranslations(lang);
   return (
-    <div className="flex flex-col w-full  mx-auto">
+    <div className="mx-auto flex w-full flex-col">
       <section className="relative h-[100vh] w-full">
         <Image
           src="/szczerbatek/hero.jpg"
@@ -45,18 +45,18 @@ export default async function Szczerbatek({
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 flex flex-col items-end text-center py-40 px-20">
-          <div className="max-w-3xl bg-black/60 px-6 py-12 rounded-lg">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+        <div className="absolute inset-0 flex flex-col items-center px-4 py-40 text-center md:items-end md:px-20">
+          <div className="max-w-3xl rounded-lg bg-black/60 px-4 py-8 backdrop-blur-sm md:px-6 md:py-12">
+            <h1 className="mb-4 font-serif text-3xl font-bold text-white md:mb-6 md:text-6xl">
               {szczerbatekTranslations.hero.title}
             </h1>
-            <p className="text-white/90 text-xs md:text-2xl">
+            <p className="text-sm text-white/90 md:text-2xl">
               {szczerbatekTranslations.hero.description}
             </p>
             <Link
               scroll
               href="#solutions"
-              className="inline-flex items-center gap-2 text-sm md:text-lg bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-lg transition-colors backdrop-blur-sm mt-8"
+              className="mt-6 inline-flex items-center gap-2 rounded-lg bg-white/20 px-6 py-3 text-sm text-white backdrop-blur-sm transition-colors hover:bg-white/30 md:mt-8 md:px-8 md:py-4 md:text-lg"
             >
               {szczerbatekTranslations.hero.cta}
             </Link>
@@ -68,13 +68,13 @@ export default async function Szczerbatek({
 
       <VideoSection translations={szczerbatekTranslations.video} />
       {/* Timeline Section */}
-      <section className=" bg-gray-50 py-16">
-        <div className=" max-w-[1680px] mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+      <section className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-[1680px]">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 font-serif text-4xl font-bold text-gray-900">
               {szczerbatekTranslations.timeline.title}
             </h2>
-            <p className="text-gray-600 text-xl">
+            <p className="text-xl text-gray-600">
               {szczerbatekTranslations.timeline.description}
             </p>
           </div>
@@ -85,22 +85,22 @@ export default async function Szczerbatek({
       </section>
       <Team translations={szczerbatekTranslations.team} />
       {/* Organization Section */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+      <section className="bg-gray-50 py-24">
+        <div className="mx-auto max-w-[1680px] px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="mb-6 font-serif text-4xl font-bold text-gray-900">
               {szczerbatekTranslations.organization.title}
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="mb-8 text-xl text-gray-600">
               {szczerbatekTranslations.organization.description}
             </p>
             <Link
               href={`/${lang}`}
-              className="inline-flex items-center gap-2 bg-gray-900/10 hover:bg-gray-900/20 text-gray-900 px-8 py-4 rounded-lg transition-colors backdrop-blur-sm"
+              className="inline-flex items-center gap-2 rounded-lg bg-gray-900/10 px-8 py-4 text-gray-900 backdrop-blur-sm transition-colors hover:bg-gray-900/20"
             >
               {szczerbatekTranslations.organization.cta}
               <svg
-                className="w-5 h-5"
+                className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
