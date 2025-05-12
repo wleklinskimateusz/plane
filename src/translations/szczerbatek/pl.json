@@ -2,7 +2,7 @@
   "hero": {
     "title": "Szczerbatek",
     "description": "Nasz flagowy samolot solarny, zaprojektowany do autonomicznych lotów, zbierania danych i może nawet do straszenia dentystów.",
-    "cta": "Odkryj co stworzyliśmy!"
+    "cta": "Odkryj nasze rozwiązania!"
   },
   "ourSolutions": {
     "title": "Nasze Rozwiązania",
@@ -98,7 +98,7 @@
       {
         "date": "Luty – Kwiecień 2025",
         "title": "Implementacja oprogramowania",
-        "description": "Wgrywane i testowane są autorskie rozwiązania programistyczne, w tym algorytmy do mapowania terenu oraz systemy autonomicznego zrzutu.",
+        "description": "Implementowane i testowane są autorskie rozwiązania programistyczne, w tym algorytmy do mapowania terenu oraz systemy autonomicznego zrzutu.",
         "imageSrc": "/szczerbatek/timeline/soft-implementation.png"
       },
       {

@@ -24,8 +24,8 @@ export default async function Home({
           className="object-cover"
         />
         <div className="absolute inset-0 flex flex-col items-center md:items-end text-center py-40 px-4 md:px-20">
-          <div className="max-w-3xl bg-black/60 px-4 md:px-6 py-8 md:py-12 rounded-lg">
-            <h1 className="text-3xl md:text-6xl font-bold text-white mb-4 md:mb-6">
+          <div className="max-w-3xl bg-black/60 backdrop-blur-sm px-4 md:px-6 py-8 md:py-12 rounded-lg">
+            <h1 className="text-3xl md:text-6xl font-serif font-bold text-white mb-4 md:mb-6">
               {hero.title}
             </h1>
             <p className="text-white/90 text-sm md:text-2xl">{hero.subtitle}</p>
@@ -45,7 +45,7 @@ export default async function Home({
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-4xl font-bold text-white mb-8">
+            <h2 className="text-4xl font-serif font-bold text-white mb-8">
               {about.title}
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-16">
@@ -75,7 +75,7 @@ export default async function Home({
       <section className="py-24 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl font-serif font-bold text-white mb-4">
               {sections.title}
             </h2>
             <p className="text-xl text-gray-300">{sections.description}</p>
@@ -101,7 +101,9 @@ export default async function Home({
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">{join.title}</h2>
+            <h2 className="text-4xl font-serif font-bold text-white mb-4">
+              {join.title}
+            </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               {join.description}
             </p>
@@ -156,7 +158,7 @@ export default async function Home({
       <section className="py-24 bg-gradient-to-b from-gray-950 to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl font-serif font-bold text-white mb-4">
               {sponsor.title}
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">

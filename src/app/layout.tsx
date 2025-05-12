@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Domine } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -8,6 +8,12 @@ import { Html } from "@/components/Html";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const domine = Domine({
+  variable: "--font-domine",
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 const geistMono = Geist_Mono({
@@ -37,7 +43,7 @@ export default async function RootLayout({
   return (
     <Html>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark w-full h-full`}
+        className={`${domine.variable} ${geistSans.variable} ${geistMono.variable} antialiased dark w-full h-full`}
       >
         <Analytics />
         {children}

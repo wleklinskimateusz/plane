@@ -26,7 +26,7 @@ export const OurSolutions = ({
     <section className="py-32 px-16" id="solutions">
       <div className="max-w-[1680px] mx-auto gap-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-4xl font-serif font-bold text-white mb-4">
             {translations.title}
           </h2>
           <p className="text-white/80 text-xl">{translations.description}</p>

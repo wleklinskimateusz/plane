@@ -2,7 +2,7 @@
   "hero": {
     "title": "Szczerbatek",
     "description": "Our flagship plane is named 'Szczerbatek' (pronounced 'Sh-cher-ba-tek', meaning 'Toothless' in Polish - yes, we know it's a tongue twister!). A versatile aircraft designed for autonomous flight, data collection, and maybe even making dentists nervous.",
-    "cta": "Discover what we made!"
+    "cta": "Discover our solutions!"
   },
   "ourSolutions": {
     "title": "Our Solutions",
@@ -99,7 +99,7 @@
       {
         "date": "February – April 2025",
         "title": "Software Implementation",
-        "description": "Uploading and testing custom software solutions, including algorithms for terrain mapping and autonomous release systems.",
+        "description": "Developing and testing custom software solutions, including algorithms for terrain mapping and autonomous release systems.",
         "imageSrc": "/szczerbatek/timeline/soft-implementation.png"
       },
       {
@@ -111,7 +111,7 @@
       {
         "date": "April 2025",
         "title": "Outdoor Flight Testing",
-        "description": "Field tests are conducted to validate aircraft performance, test drop mechanisms, and collect telemetry data in real conditions.",
+        "description": "Field tests are conducted to validate aircraft performance, test drop mechanisms, and collect telemetry data in the real world.",
         "imageSrc": "/szczerbatek/timeline/testy-plenerowe.jpg"
       },
       {

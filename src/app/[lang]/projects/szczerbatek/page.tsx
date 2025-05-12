@@ -46,8 +46,8 @@ export default async function Szczerbatek({
           className="object-cover"
         />
         <div className="absolute inset-0 flex flex-col items-center md:items-end text-center py-40 px-4 md:px-20">
-          <div className="max-w-3xl bg-black/60 px-4 md:px-6 py-8 md:py-12 rounded-lg">
-            <h1 className="text-3xl md:text-6xl font-bold text-white mb-4 md:mb-6">
+          <div className="max-w-3xl bg-black/60 backdrop-blur-sm px-4 md:px-6 py-8 md:py-12 rounded-lg">
+            <h1 className="text-3xl md:text-6xl font-serif font-bold text-white mb-4 md:mb-6">
               {szczerbatekTranslations.hero.title}
             </h1>
             <p className="text-white/90 text-sm md:text-2xl">
@@ -71,7 +71,7 @@ export default async function Szczerbatek({
       <section className=" bg-gray-50 py-16">
         <div className=" max-w-[1680px] mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-serif font-bold text-gray-900 mb-4">
               {szczerbatekTranslations.timeline.title}
             </h2>
             <p className="text-gray-600 text-xl">

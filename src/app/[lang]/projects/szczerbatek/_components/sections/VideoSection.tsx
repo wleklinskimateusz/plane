@@ -10,7 +10,7 @@ export const VideoSection = ({
     <section className="py-16 px-16">
       <div className="max-w-[1680px] mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-4xl font-serif font-bold text-white mb-4">
             {translations.title}
           </h2>
           <p className="text-white/80 text-xl">{translations.description}</p>
