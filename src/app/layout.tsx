@@ -43,7 +43,7 @@ export default async function RootLayout({
   return (
     <Html>
       <body
-        className={`${domine.variable} ${geistSans.variable} ${geistMono.variable} antialiased dark w-full h-full`}
+        className={`${domine.variable} ${geistSans.variable} ${geistMono.variable} dark h-full w-full antialiased`}
       >
         <Analytics />
         {children}

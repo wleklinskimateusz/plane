@@ -29,7 +29,7 @@ export const ImageCard = ({
       className="pt-2"
     >
       {title && (
-        <h3 className="text-lg font-semibold mb-8 text-center text-white">
+        <h3 className="mb-8 text-center text-lg font-semibold text-white">
           {title}
         </h3>
       )}
@@ -41,7 +41,7 @@ export const ImageCard = ({
         whileHover={{ scale: 1.02 }}
       >
         <motion.div
-          className="relative h-full w-full overflow-hidden rounded-lg group"
+          className="group relative h-full w-full overflow-hidden rounded-lg"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
         >
@@ -59,8 +59,8 @@ export const ImageCard = ({
               whileHover={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.2 }}
             >
-              <div className="bg-black/60 backdrop-blur-md rounded-lg p-4 max-w-[90%]">
-                <p className="text-white text-base font-medium text-center leading-relaxed">
+              <div className="max-w-[90%] rounded-lg bg-black/60 p-4 backdrop-blur-md">
+                <p className="text-center text-base leading-relaxed font-medium text-white">
                   {description}
                 </p>
               </div>

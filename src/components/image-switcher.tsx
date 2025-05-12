@@ -56,15 +56,15 @@ export const ImageSwitcher = ({
   const currentMember = members[currentIndex];
 
   return (
-    <div className="relative w-full h-full">
-      <div className="flex gap-8 justify-center items-stretch h-full w-full max-w-[70vw] mx-auto">
-        <div className="lg:block self-center hidden aspect-[3/2] shrink-1 grow-1">
+    <div className="relative h-full w-full">
+      <div className="mx-auto flex h-full w-full max-w-[70vw] items-stretch justify-center gap-8">
+        <div className="hidden aspect-[3/2] shrink-1 grow-1 self-center lg:block">
           <Image
             src={backgroundImage}
             alt={"AGH Solar Plane Team"}
             width={1200}
             height={800}
-            className="object-cover h-fit rounded-lg"
+            className="h-fit rounded-lg object-cover"
           />
         </div>
 
@@ -74,12 +74,12 @@ export const ImageSwitcher = ({
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={0.2}
           onDragEnd={handleDragEnd}
-          className="md:min-w-[400px] self-stretch md:max-w-[400px] flex flex-col gap-2 backdrop-blur-sm touch-pan-x"
+          className="flex touch-pan-x flex-col gap-2 self-stretch backdrop-blur-sm md:max-w-[400px] md:min-w-[400px]"
         >
-          <h3 className="text-2xl order-1 font-bold text-gray-900">
+          <h3 className="order-1 text-2xl font-bold text-gray-900">
             {currentMember.name}
           </h3>
-          <p className="text-blue-600 order-2 text-lg font-medium">
+          <p className="order-2 text-lg font-medium text-blue-600">
             {currentMember.role}
           </p>
 
@@ -95,10 +95,10 @@ export const ImageSwitcher = ({
               alt={currentMember.name}
               width={400}
               height={600}
-              className="rounded-sm order-3 lg:order-4 w-[90vw] lg:w-auto"
+              className="order-3 w-[90vw] rounded-sm lg:order-4 lg:w-auto"
             />
           </motion.div>
-          <p className="text-gray-700 grow-1 lg:order-3 order-4 leading-relaxed">
+          <p className="order-4 grow-1 leading-relaxed text-gray-700 lg:order-3">
             {currentMember.description}
           </p>
         </motion.div>
@@ -107,7 +107,7 @@ export const ImageSwitcher = ({
         <Button
           variant="outline"
           size="icon"
-          className="absolute left-8 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-white/90 hover:bg-white shadow-lg border-gray-200 z-10 hidden md:flex"
+          className="absolute top-1/2 left-8 z-10 hidden h-12 w-12 -translate-y-1/2 rounded-full border-gray-200 bg-white/90 shadow-lg hover:bg-white md:flex"
           onClick={() => {
             setWasArrowClicked(true);
             handlePrev();
@@ -118,7 +118,7 @@ export const ImageSwitcher = ({
         <Button
           variant="outline"
           size="icon"
-          className="absolute right-8 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-white/90 hover:bg-white shadow-lg border-gray-200 z-10 hidden md:flex"
+          className="absolute top-1/2 right-8 z-10 hidden h-12 w-12 -translate-y-1/2 rounded-full border-gray-200 bg-white/90 shadow-lg hover:bg-white md:flex"
           onClick={() => {
             setWasArrowClicked(true);
             handleNext();

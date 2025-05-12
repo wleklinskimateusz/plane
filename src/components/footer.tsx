@@ -19,13 +19,13 @@ export const Footer = ({
   const sponsors = organizationConfig.partners;
   return (
     <footer className="bg-gray-950 text-gray-300">
-      <div className="max-w-5xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
         {/* Sponsors Section */}
         <div className="mb-12">
-          <h3 className="text-white text-lg font-semibold text-center mb-6">
+          <h3 className="mb-6 text-center text-lg font-semibold text-white">
             {sponsorsTranslations.title}
           </h3>
-          <div className="flex flex-wrap justify-center gap-8 items-center">
+          <div className="flex flex-wrap items-center justify-center gap-8">
             {sponsors.map((sponsor, index) => (
               <Link
                 href={sponsor.href}
@@ -36,7 +36,7 @@ export const Footer = ({
               >
                 <motion.div
                   whileHover={{ scale: 1.05 }}
-                  className="relative w-32 h-24 bg-white rounded-lg p-2 flex flex-col items-center justify-center gap-2"
+                  className="relative flex h-24 w-32 flex-col items-center justify-center gap-2 rounded-lg bg-white p-2"
                 >
                   <Image
                     src={sponsor.image}
@@ -54,13 +54,13 @@ export const Footer = ({
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+        <div className="grid grid-cols-1 gap-12 text-center md:grid-cols-3">
           {/* Organization Info */}
-          <div className="space-y-4 flex flex-col items-center">
-            <h3 className="text-white text-lg font-semibold">
+          <div className="flex flex-col items-center space-y-4">
+            <h3 className="text-lg font-semibold text-white">
               AGH Solar Plane
             </h3>
-            <p className="text-sm max-w-sm">{organization.description}</p>
+            <p className="max-w-sm text-sm">{organization.description}</p>
             <div className="flex space-x-4">
               <motion.a
                 href={organizationConfig.socials.instagram}
@@ -102,8 +102,8 @@ export const Footer = ({
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-4 flex flex-col items-center">
-            <h3 className="text-white text-lg font-semibold">
+          <div className="flex flex-col items-center space-y-4">
+            <h3 className="text-lg font-semibold text-white">
               {contact.title}
             </h3>
             <ul className="space-y-2 text-sm">
@@ -125,13 +125,13 @@ export const Footer = ({
           </div>
 
           {/* Personnel */}
-          <div className="space-y-4 flex flex-col items-center">
-            <h3 className="text-white text-lg font-semibold">
+          <div className="flex flex-col items-center space-y-4">
+            <h3 className="text-lg font-semibold text-white">
               {contact.personnel.title}
             </h3>
             <div className="space-y-4 text-sm">
               <div>
-                <h4 className="text-white font-semibold">
+                <h4 className="font-semibold text-white">
                   {contact.personnel.president}
                 </h4>
                 <p>{organizationConfig.personel.president.name}</p>
@@ -142,7 +142,7 @@ export const Footer = ({
                 </Link>
               </div>
               <div>
-                <h4 className="text-white font-semibold">
+                <h4 className="font-semibold text-white">
                   {contact.personnel.vicePresident}
                 </h4>
                 <p>{organizationConfig.personel.vicePresident.name}</p>
@@ -153,7 +153,7 @@ export const Footer = ({
                 </Link>
               </div>
               <div>
-                <h4 className="text-white font-semibold">
+                <h4 className="font-semibold text-white">
                   {contact.personnel.advisor}
                 </h4>
                 <p>{organizationConfig.personel.advisor.name}</p>
@@ -167,7 +167,7 @@ export const Footer = ({
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-800 text-sm text-center">
+        <div className="mt-12 border-t border-gray-800 pt-8 text-center text-sm">
           <p>
             © {new Date().getFullYear()} AGH Solar Plane. {copyright}
           </p>

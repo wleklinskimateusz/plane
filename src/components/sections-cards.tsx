@@ -20,14 +20,14 @@ export function SectionCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: delay * 0.2 }}
-      className="bg-black/30 backdrop-blur-sm rounded-lg p-8 hover:bg-black/40 transition-colors"
+      className="rounded-lg bg-black/30 p-8 backdrop-blur-sm transition-colors hover:bg-black/40"
     >
       <div className="flex items-start gap-4">
-        <div className="bg-white/10 rounded-lg p-3">
+        <div className="rounded-lg bg-white/10 p-3">
           <SectionIcon section={icon} />
         </div>
         <div>
-          <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
+          <h3 className="mb-2 text-xl font-semibold text-white">{title}</h3>
           <p className="text-gray-300">{description}</p>
         </div>
       </div>

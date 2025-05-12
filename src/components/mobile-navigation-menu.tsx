@@ -28,7 +28,7 @@ export function MobileNav({
     (open: boolean) => {
       setOpen(open);
     },
-    [setOpen]
+    [setOpen],
   );
 
   return (

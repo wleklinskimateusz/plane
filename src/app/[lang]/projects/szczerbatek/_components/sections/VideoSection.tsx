@@ -7,13 +7,13 @@ export const VideoSection = ({
   translations: SzczerbatekTranslations["video"];
 }) => {
   return (
-    <section className="py-16 px-16">
-      <div className="max-w-[1680px] mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-serif font-bold text-white mb-4">
+    <section className="px-16 py-16">
+      <div className="mx-auto max-w-[1680px]">
+        <div className="mb-12 text-center">
+          <h2 className="mb-4 font-serif text-4xl font-bold text-white">
             {translations.title}
           </h2>
-          <p className="text-white/80 text-xl">{translations.description}</p>
+          <p className="text-xl text-white/80">{translations.description}</p>
         </div>
         <VideoPlayer
           thumbnailSrc="/szczerbatek/thumbnail.jpg"

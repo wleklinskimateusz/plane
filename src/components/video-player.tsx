@@ -18,18 +18,18 @@ export const VideoPlayer = ({
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <div className="relative aspect-video w-full max-w-5xl mx-auto rounded-lg overflow-hidden">
+    <div className="relative mx-auto aspect-video w-full max-w-5xl overflow-hidden rounded-lg">
       {!isPlaying ? (
         // Thumbnail with play button
         <div
-          className="relative w-full h-full group cursor-pointer"
+          className="group relative h-full w-full cursor-pointer"
           onClick={() => setIsPlaying(true)}
         >
           <Image src={thumbnailSrc} alt={title} fill className="object-cover" />
-          <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors duration-300" />
+          <div className="absolute inset-0 bg-black/30 transition-colors duration-300 group-hover:bg-black/40" />
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="h-20 w-20 rounded-full bg-white/90 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <Play className="h-10 w-10 text-gray-900 ml-1" />
+            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white/90 transition-transform duration-300 group-hover:scale-110">
+              <Play className="ml-1 h-10 w-10 text-gray-900" />
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@ export const VideoPlayer = ({
         <video
           autoPlay
           controls
-          className="w-full h-full"
+          className="h-full w-full"
           onEnded={() => setIsPlaying(false)}
         >
           <source src={videoSrc} type="video/mp4" />
