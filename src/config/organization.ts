@@ -4,8 +4,8 @@ export const organizationConfig = {
   members: 60,
   activeProjects: 5,
   contact: {
-    sponsorMail: "wspolpraca@aghsolarplane.pl",
-    generalMail: "kontakt@aghsolarplane.pl",
+    sponsorMail: "wspolpraca@solarplane.agh.edu.pl",
+    generalMail: "kontakt@solarplane.agh.edu.pl",
     location: "AGH UST, Kraków",
     building: "D-9, 117",
   },
