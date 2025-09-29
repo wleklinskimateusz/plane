@@ -164,6 +164,24 @@
         "title": "Prezentacja misji na zawodach SUAS",
         "description": "Zespół bierze udział w konkursie SUAS, prezentując swoje rozwiązanie i realizując zaplanowaną misję.",
         "imageSrc": "/szczerbatek/timeline/suas.png"
+      },
+      {
+        "date": "8-12 września 2025",
+        "title": "Prezentacja misji na zawodach TEKNOFEST 2025",
+        "description": "Zespół prezentuje swoją misję i samolot podczas zawodów TEKNOFEST 2025.",
+        "imageSrc": "/szczerbatek/timeline/teknofest.png"
+      },
+      {
+        "date": "Wrzesień 2025",
+        "title": "Raport z analizy oprogramowania i sprzętu",
+        "description": "Podsumowane zostają wyniki testów i wnioski z testowanego oprogramowania i sprzętu.",
+        "imageSrc": "/szczerbatek/timeline/final_map.png",
+        "additionalMedia": [
+          {
+            "name": "Raport",
+            "path": "/szczerbatek/timeline/raport_PL.pdf"
+          }
+        ]
       }
     ]
   },
