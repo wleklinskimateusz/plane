@@ -165,6 +165,24 @@
         "title": "SUAS Mission Demonstration",
         "description": "Participation in the SUAS competition.",
         "imageSrc": "/szczerbatek/timeline/suas.png"
+      },
+      {
+        "date": "8-12 September 2025",
+        "title": "TEKNOFEST 2025 Competition",
+        "description": "Participation in the TEKNOFEST 2025 competition.",
+        "imageSrc": "/szczerbatek/timeline/teknofest.png"
+      },
+      {
+        "date": "Sepotember 2025",
+        "title": "Raport from analysis of the software and hardware",
+        "description": "A comprehensive report analyzing tested software and hardware has been prepared.",
+        "imageSrc": "/szczerbatek/timeline/final_map.png",
+        "additionalMedia": [
+          {
+            "name": "Final Report Documentation",
+            "path": "/szczerbatek/timeline/raport_ENG.pdf"
+          }
+        ]
       }
     ]
   },
