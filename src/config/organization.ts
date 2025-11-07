@@ -22,8 +22,9 @@ export const organizationConfig = {
       phone: "+48 790 697 577",
     },
     vicePresident: {
-      name: "inż. Róża Łopusiewicz",
-      email: "roza.lopusiewicz@solarplane.agh.edu.pl",
+      name: "Marta Łopusiewicz",
+      email: "marta.lopusiewicz@solarplane.agh.edu.pl",
+      phone: "+48 728 931 428",
     },
     advisor: {
       name: "dr hab. inż. Krzysztof Sornek",
