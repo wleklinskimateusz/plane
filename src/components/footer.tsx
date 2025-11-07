@@ -119,6 +119,13 @@ export const Footer = ({
                   {organizationConfig.personel.president.phone}
                 </Link>
               </li>
+              <li>
+                <Link
+                  href={`tel:${organizationConfig.personel.vicePresident.phone}`}
+                >
+                  {organizationConfig.personel.vicePresident.phone}
+                </Link>
+              </li>
               <li>{organizationConfig.contact.location}</li>
               <li>{organizationConfig.contact.building}</li>
             </ul>
@@ -134,14 +141,24 @@ export const Footer = ({
                 <h4 className="font-semibold text-white">
                   {contact.personnel.president}
                 </h4>
+                <div className="pt-2">
                 <p>{organizationConfig.personel.president.name}</p>
                 <Link
                   href={`mailto:${organizationConfig.personel.president.email}`}
-                >
+                  >
                   {organizationConfig.personel.president.email}
                 </Link>
+                  </div>
+                  <div className="pt-2">
+                 <p>{organizationConfig.personel.vicePresident.name}</p>
+                <Link
+                  href={`mailto:${organizationConfig.personel.vicePresident.email}`}
+                  >
+                  {organizationConfig.personel.vicePresident.email}
+                </Link>
+                  </div>
               </div>
-              <div>
+              {/* <div>
                 <h4 className="font-semibold text-white">
                   {contact.personnel.vicePresident}
                 </h4>
@@ -151,7 +168,7 @@ export const Footer = ({
                 >
                   {organizationConfig.personel.vicePresident.email}
                 </Link>
-              </div>
+              </div> */}
               <div>
                 <h4 className="font-semibold text-white">
                   {contact.personnel.advisor}
