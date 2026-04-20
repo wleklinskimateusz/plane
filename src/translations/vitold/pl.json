@@ -7,9 +7,7 @@
     },
     "video": {
       "title": "Zobacz VITOLDa w akcji!",
-      "description": "Obejrzyj nasz film prezentujący proces rozwoju VITOLDa",
-        "thumbnailSrc": "/vitold/thumbnail.png",
-        "videoSrc": "/vitold/video.mov"
+      "description": "Obejrzyj nasz film prezentujący proces rozwoju VITOLDa"
     },
     "timeline": {
         "title": "Oś Czasu Projektu",
@@ -121,7 +119,7 @@
         "totalCostLabel": "Całkowity koszt projektu",
         "totalCost": "69 000 PLN",
         "financingPeriodLabel": "Okres finansowania",
-        "financingPeriod": "Kwiecień 2025 - Kwiecień 2026",
+        "financingPeriod": "04.2025 - 04.2026",
         "logo": "/vitold/timeline/ministerstwo_pl.png",
         "altLogo": "Logo Ministerstwa Nauki i Szkolnictwa Wyższego"
     }
