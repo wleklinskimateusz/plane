@@ -36,7 +36,7 @@ export default async function Szczerbatek({
   const szczerbatekTranslations = await getSzczerbatekTranslations(lang);
   return (
     <div className="mx-auto flex w-full flex-col">
-      <section className="relative h-[100vh] w-full">
+      <section className="relative h-screen w-full">
         <Image
           src="/szczerbatek/hero.png"
           alt="Plane in the sky, and a person in the foreground"
