@@ -66,7 +66,7 @@ export default async function Szczerbatek({
       <OurSolutions translations={szczerbatekTranslations.ourSolutions} />
       {/* Video Section */}
 
-      <VideoSection translations={szczerbatekTranslations.video} />
+      <VideoSection translations={szczerbatekTranslations.video}/>
       {/* Timeline Section */}
       <section className="bg-gray-50 py-16">
         <div className="mx-auto max-w-[1680px]">

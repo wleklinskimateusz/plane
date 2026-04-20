@@ -16,6 +16,7 @@ export function middleware(request: NextRequest) {
     [
       ".jpeg",
       ".jpg",
+      ".JPG",
       ".png",
       ".gif",
       ".svg",

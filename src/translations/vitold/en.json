@@ -1,0 +1,118 @@
+{
+    "hero": {
+      "title": "VITOLD",
+      "subtitle": "UAV for mountain rescue missions",
+      "description": "VITOLD is an unmanned aerial vehicle (UAV) designed to support mountain rescue missions. Our goal is to provide a reliable and efficient tool that can be used by rescue services for rapid response in challenging terrain conditions.",
+      "cta": "Learn more about VITOLD!"
+    },
+    "video": {
+      "title": "See VITOLD in action!",
+      "description": "Watch our video showcasing the development process of VITOLD",
+      "thumbnailSrc": "/vitold/thumbnail.png",
+      "videoSrc": "/vitold/video.mov"
+    },
+    "timeline": {
+        "title": "Project Timeline",
+        "description": "Join us on a journey through the key milestones in the development of VITOLD, from concept to field testing.",
+        "items": [
+            {
+                "date": "October 2024 - March 2025",
+                "title": "Concept Phase, Funding Acquisition",
+                "description": "Development of the VITOLD concept, as well as obtaining funding from state budget funds, granted by the Minister of Science and Higher Education under the Program 'Student Scientific Circles Create Innovations'.",
+                "imageSrc": "/vitold/timeline/ministerstwo_eng.png"
+            },
+            {
+                "date": "May - June 2025",
+                "title": "Structural Design, Component Selection",
+                "description": "Preparation of a 3D model and selection of appropriate components for building the VITOLD prototype. The decision to use 3D printing technology for the production of key structural elements, allowing for rapid iterations and project optimization.",
+                "imageSrc": "/vitold/timeline/VTOL_aksonometrycznie.png"
+            },
+            {
+                "date": "May - June 2025",
+                "title": "Aerodynamic Analysis",
+                "description": "In parallel with the structural design, CFD simulations were conducted to optimize the shape of the fuselage and propulsion system of VITOLD. This analysis allowed us to identify areas with the greatest air resistance and make appropriate modifications to the design.",
+                "imageSrc": "/vitold/timeline/Analiza_areodynamiczna.png"
+            },
+            {
+                "date": "July - December 2025",
+                "title": "3D Printing, UAV Fuselage Assembly",
+                "description": "Production of key structural elements of VITOLD using 3D printing technology, allowing for rapid prototyping and project adjustments. Then, the assembly of the UAV fuselage was carried out, integrating the propulsion system and electronic systems.",
+                "imageSrc": "/vitold/timeline/Montaz.JPG"
+            },
+            {
+                "date": "August - December 2025",
+                "title": "Creation of a Custom Telemetry System",
+                "description": "The system implements one-way transmission of full telemetry in the LTM protocol and a binding mechanism that guarantees unambiguous pairing of devices and eliminates data reception by unauthorized modules operating in the same radio environment.",
+                "imageSrc": "/vitold/timeline/telemetria.jpeg"
+            },
+            {
+                "date": "September 2025",
+                "title": "Analysis of Methods for Joining Elements Printed with ASA Filament",
+                "description": "Comparison of the possibilities of joining elements printed with ASA filament using a two-component epoxy adhesive and mixtures of acetone with dissolved ASA filament.",
+                "imageSrc": "/vitold/timeline/testy_spajania.jpg",
+                "additionalMedia": [
+                    {
+                        "name": "Analysis of Methods for Joining Elements Printed with ASA Filament",
+                        "path": "/vitold/timeline/testy_spajania.pdf"
+                    }
+                ]
+            },
+            {
+                "date": "September 2025 - November 2025",
+                "title": "Design and Construction of the Engine Rotation System",
+                "description": "Development of the engine rotation system, which allows VITOLD to perform vertical takeoff and landing (VTOL). This project encompassed both mechanical and electronic aspects, including the selection of servomechanisms and appropriate filaments for 3D printing that ensure adequate strength and thermal resistance.",
+                "imageSrc": "/vitold/timeline/Mechanizm_Obrotu_Silnikow.png"
+            },
+            {
+                "date": "November 2025 - January 2026",
+                "title": "Design and Installation of the Camera Rotation System",
+                "description": "Development of the camera rotation system, which allows the operator to remotely control the viewing angle of the camera mounted on VITOLD. This project included both a thermal imaging camera and a digital camera, enabling effective conduct of rescue missions in various lighting conditions.",
+                "imageSrc": "/vitold/timeline/kamera.jpeg"
+            },
+            {
+                "date": "December 2025",
+                "title": "Presentation of the Current Project Status at a Scientific Conference",
+                "description": "Presentation of the current achievements of the VITOLD project at the 66th Barbórk Scientific Conference of Student Scientific Circles AGH, which was held on December 3, 2025. During the conference, attention was focused on discussing the engine rotation system.",
+                "imageSrc": "/vitold/timeline/barborkowa.webp",
+                "additionalMedia": [
+                    {
+                        "name": "Autorski mechanizm zmiany położenia silników w samolocie typu VTOL wykonanym w technologii druku przestrzennego.",
+                        "path": "/vitold/timeline/prezentacja_barborkowa.pdf"
+                    }
+                ]
+            },
+            {
+                "date": "December 2025 - February 2026",
+                "title": "Implementation of Visual Systems and Data Transmission System",
+                "description": "Implementation of visual systems and a data transmission system that enable efficient transmission of information from VITOLD to the control center.",
+                "imageSrc": "/vitold/timeline/Montaz_owiewki.JPG"
+            },
+            {
+                "date": "March 3-5, 2026",
+                "title": "Project Promotion at Drone World Expo 2026",
+                "description": "Presentation of the VITOLD project during Drone World Expo 2026 near Warsaw",
+                "imageSrc": "/vitold/timeline/drone_world_expo.jpg"
+            },
+            {
+                "date": "April 2026",
+                "title": "Field Testing of the VITOLD Prototype",
+                "description": "Conducting field tests of the VITOLD prototype in conditions similar to real rescue missions, which will allow for the assessment of its performance and reliability.",
+                "imageSrc": "/vitold/timeline/testy_polowe.jpg"
+                },
+            {
+                "date": "May - June 2026",
+                "title": "Continuation of project promotions after the end of the financing period",
+                "description": "Continuation of project promotions after the end of the financing period, including participation in events such as the 80th anniversary of NOT in Krakow and other industry and scientific events.",
+                "imageSrc": "/vitold/timeline/NOT.jpg"
+            }
+        ]    
+    },
+    "financing": {
+        "title": "Financing",
+        "description": "The project is financed from state budget funds, granted by the Minister of Science and Higher Education under the Program 'Student Scientific Circles Create Innovations'.",
+        "funding_amount": "69,000 PLN",
+        "total_cost": "69,000 PLN",
+        "financing_period": "April 2025 - April 2026",
+        "logo": "/vitold/timeline/ministerstwo_en.png"
+    }
+}
