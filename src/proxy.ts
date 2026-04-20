@@ -10,7 +10,7 @@ function getLocale(request: NextRequest) {
   return match(new Negotiator({ headers }).languages(), locales, defaultLocale);
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   // skip all static files
   if (
     [
