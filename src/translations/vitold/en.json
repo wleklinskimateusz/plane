@@ -61,7 +61,13 @@
                 "date": "September 2025 - November 2025",
                 "title": "Design and Construction of the Engine Rotation System",
                 "description": "Development of the engine rotation system, which allows VITOLD to perform vertical takeoff and landing (VTOL). This project encompassed both mechanical and electronic aspects, including the selection of servomechanisms and appropriate filaments for 3D printing that ensure adequate strength and thermal resistance.",
-                "imageSrc": "/vitold/timeline/Mechanizm_Obrotu_Silnikow.png"
+                "imageSrc": "/vitold/timeline/Mechanizm_Obrotu_Silnikow.png",
+                "additionalMedia": [
+                    {
+                        "name": "Prototype of the VTOL mechanism using 3D printing methods. Engineering Thesis by Krzysztof Piekarski.",
+                        "path": "/vitold/timeline/Praca_inżynierska_Krzysztof_Piekarski.pdf"
+                    }
+                ]
             },
             {
                 "date": "November 2025 - January 2026",
@@ -95,8 +101,8 @@
             },
             {
                 "date": "April 2026",
-                "title": "Field Testing of the VITOLD Prototype",
-                "description": "Conducting field tests of the VITOLD prototype in conditions similar to real rescue missions, which will allow for the assessment of its performance and reliability.",
+                "title": "Field Testing of the VITOLD",
+                "description": "Conducting field tests of the VITOLD in conditions similar to real rescue missions, which will allow for the assessment of its performance and reliability.",
                 "imageSrc": "/vitold/timeline/testy_polowe.jpg"
                 },
             {

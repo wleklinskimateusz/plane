@@ -2,7 +2,7 @@
     "hero": {
       "title": "VITOLD",
       "subtitle": "BSP do górskich misji ratunkowych",
-      "description": "VITOLD to bezzałogowy statek powietrzny (BSP) zaprojektowany do wspierania górskich misji ratunkowych. Naszym celem jest dostarczenie niezawodnego i efektywnego narzędzia, które może być używane przez służby ratunkowe do szybkiego reagowania w trudnych warunkach terenowych.",
+      "description": "VITOLD to bezzałogowy statek powietrzny zaprojektowany do wspierania górskich misji ratunkowych. Naszym celem jest dostarczenie niezawodnego i efektywnego narzędzia, które może być używane przez służby ratunkowe do szybkiego reagowania w trudnych warunkach terenowych.",
       "cta": "Dowiedz się więcej o VITOLDzie!"
     },
     "video": {
@@ -61,7 +61,13 @@
                 "date": "Wrzesień 2025 - Listopad 2025",
                 "title": "Projekt i konstrukcja systemu obrotu silników",
                 "description": "Opracowanie systemu obrotu silników, który umożliwia VITOLDowi pionowy start i lądowanie (VTOL). Projekt ten obejmował zarówno aspekty mechaniczne, jak i elektroniczne, w tym dobór serwomechanizmów oraz odpowiednich filamentów do druku 3D, które zapewniają odpowiednią wytrzymałość i odporność temperaturową.",
-                "imageSrc": "/vitold/timeline/Mechanizm_Obrotu_Silnikow.png"
+                "imageSrc": "/vitold/timeline/Mechanizm_Obrotu_Silnikow.png",
+                "additionalMedia": [
+                    {
+                        "name": "Wykonanie prototypu mechanizmu VTOL z wykorzystaniem metod druku przestrzennego. Praca inżynierska Krzysztofa Piekarskiego.",
+                        "path": "/vitold/timeline/Praca_inżynierska_Krzysztof_Piekarski.pdf"
+                    }
+                ]
             },
             {
                 "date": "Listopad 2025 - Styczeń 2026",
@@ -95,8 +101,8 @@
             },
             {
                 "date": "Kwiecień 2026",
-                "title": "Testy polowe prototypu VITOLDa",
-                "description": "Przeprowadzenie testów polowych prototypu VITOLDa w warunkach zbliżonych do rzeczywistych misji ratunkowych, co pozwoli na ocenę jego wydajności i niezawodności.",
+                "title": "Testy polowe VITOLDa",
+                "description": "Przeprowadzenie testów polowych VITOLDa w warunkach zbliżonych do rzeczywistych misji ratunkowych, co pozwoli na ocenę jego wydajności i niezawodności.",
                 "imageSrc": "/vitold/timeline/testy_polowe.jpg"
             },
             {
