@@ -3,14 +3,16 @@ import { VideoPlayer } from "@/components/video-player";
 export type VideoSectionTranslations = {
   title: string;
   description: string;
-  thumbnailSrc: string;
-  videoSrc: string;
 };
 
 export const VideoSection = ({
   translations,
+  youtubeVideoId,
+  thumbnailSrc,
 }: {
   translations: VideoSectionTranslations;
+  youtubeVideoId: string;
+  thumbnailSrc: string;
 }) => {
   return (
     <section className="px-16 py-16">
@@ -22,9 +24,9 @@ export const VideoSection = ({
           <p className="text-xl text-white/80">{translations.description}</p>
         </div>
         <VideoPlayer
-          thumbnailSrc={translations.thumbnailSrc}
-          videoSrc={translations.videoSrc}
+          videoId={youtubeVideoId}
           title={translations.title}
+          thumbnailSrc={thumbnailSrc}
         />
       </div>
     </section>

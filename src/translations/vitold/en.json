@@ -7,9 +7,7 @@
     },
     "video": {
       "title": "See VITOLD in action!",
-      "description": "Watch our video showcasing the development process of VITOLD",
-      "thumbnailSrc": "/vitold/thumbnail.png",
-      "videoSrc": "/vitold/video.mov"
+      "description": "Watch our video showcasing the development process of VITOLD"
     },
     "timeline": {
         "title": "Project Timeline",

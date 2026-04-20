@@ -61,7 +61,11 @@ export default async function Vitold({
           </div>
         </div>
       </section>
-      <VideoSection translations={vitoldTranslations.video} />
+      <VideoSection
+        translations={vitoldTranslations.video}
+        youtubeVideoId="l-wD8ITpg0c"
+        thumbnailSrc="/vitold/thumbnail.png"
+      />
       {/* Timeline Section */}
       <section className="bg-gray-50 py-16">
         <div className="mx-auto max-w-[1680px]">
