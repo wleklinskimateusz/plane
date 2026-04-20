@@ -113,12 +113,16 @@
             }
         ]    
     },
-    "finansowanie": {
+    "financing": {
         "title": "Finansowanie",
         "description": "Projekt finansowany ze środków budżetu państwa, przyznanych przez Ministra Nauki i Szkolnictwa Wyższego w ramach Programu 'Studenckie koła naukowe tworzą innowacje'.",
-        "kwota_finansowania": "69 000 PLN",
-        "całkowity_koszt": "69 000 PLN",
-        "okres_finansowania": "Kwiecień 2025 - Kwiecień 2026",
-        "logo": "/vitold/timeline/ministerstwo_pl.png"
+        "fundingAmountLabel": "Kwota dofinansowania",
+        "fundingAmount": "69 000 PLN",
+        "totalCostLabel": "Całkowity koszt projektu",
+        "totalCost": "69 000 PLN",
+        "financingPeriodLabel": "Okres finansowania",
+        "financingPeriod": "Kwiecień 2025 - Kwiecień 2026",
+        "logo": "/vitold/timeline/ministerstwo_pl.png",
+        "altLogo": "Logo Ministerstwa Nauki i Szkolnictwa Wyższego"
     }
 }

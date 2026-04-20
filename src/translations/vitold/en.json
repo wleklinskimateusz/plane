@@ -19,7 +19,7 @@
                 "date": "October 2024 - March 2025",
                 "title": "Concept Phase, Funding Acquisition",
                 "description": "Development of the VITOLD concept, as well as obtaining funding from state budget funds, granted by the Minister of Science and Higher Education under the Program 'Student Scientific Circles Create Innovations'.",
-                "imageSrc": "/vitold/timeline/ministerstwo_eng.png"
+                "imageSrc": "/vitold/timeline/ministerstwo_en.png"
             },
             {
                 "date": "May - June 2025",
@@ -116,9 +116,13 @@
     "financing": {
         "title": "Financing",
         "description": "The project is financed from state budget funds, granted by the Minister of Science and Higher Education under the Program 'Student Scientific Circles Create Innovations'.",
-        "funding_amount": "69,000 PLN",
-        "total_cost": "69,000 PLN",
-        "financing_period": "April 2025 - April 2026",
-        "logo": "/vitold/timeline/ministerstwo_en.png"
+        "fundingAmountLabel": "Grant amount",
+        "fundingAmount": "69,000 PLN",
+        "totalCostLabel": "Total project cost",
+        "totalCost": "69,000 PLN",
+        "financingPeriodLabel": "Financing period",
+        "financingPeriod": "April 2025 - April 2026",
+        "logo": "/vitold/timeline/ministerstwo_en.png",
+        "altLogo": "Logo of the Ministry of Science and Higher Education"
     }
 }
