@@ -9,6 +9,10 @@
         "szczerbatek": {
           "title": "Szczerbatek",
           "description": "Nasz flagowy samolot"
+        },
+        "vitold": {
+          "title": "VITOLD",
+          "description": "BSP do górskich misji ratunkowych"
         }
       }
     }

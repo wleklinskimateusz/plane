@@ -9,7 +9,11 @@
         "szczerbatek": {
           "title": "Szczerbatek",
           "description": "Our flagship plane - 'Szczerbatek'"
-        }
+        },
+        "vitold": {
+          "title": "VITOLD",
+          "description": "UAV for mountain rescue missions"
+         }
       }
     }
   },

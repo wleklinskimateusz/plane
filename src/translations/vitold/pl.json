@@ -1,0 +1,128 @@
+{
+    "hero": {
+      "title": "VITOLD",
+      "subtitle": "BSP do górskich misji ratunkowych",
+      "description": "VITOLD to bezzałogowy statek powietrzny zaprojektowany do wspierania górskich misji ratunkowych. Naszym celem jest dostarczenie niezawodnego i efektywnego narzędzia, które może być używane przez służby ratunkowe do szybkiego reagowania w trudnych warunkach terenowych.",
+      "cta": "Dowiedz się więcej o VITOLDzie!"
+    },
+    "video": {
+      "title": "Zobacz VITOLDa w akcji!",
+      "description": "Obejrzyj nasz film prezentujący proces rozwoju VITOLDa",
+        "thumbnailSrc": "/vitold/thumbnail.png",
+        "videoSrc": "/vitold/video.mov"
+    },
+    "timeline": {
+        "title": "Oś Czasu Projektu",
+        "description": "Wyrusz z nami w podróż przez kluczowe etapy rozwoju VITOLDa, od koncepcji po testy terenowe.",
+        "items": [
+            {
+                "date": "Październik 2024 - Marzec 2025",
+                "title": "Faza Koncepcyjna, Pozyskiwanie Finansowania",
+                "description": "Opracowanie koncepcji VITOLDa, a także uzyskanie dofinansowania ze środków budżetu państwa, przyznanych przez Ministra Nauki i Szkolnictwa Wyższego w ramach Programu „Studenckie koła naukowe tworzą innowacje”.",
+                "imageSrc": "/vitold/timeline/logo_ministerstwo.png"
+            },
+            {
+                "date": "Maj - Czerwiec 2025",
+                "title": "Projekt konstrukcji, dobór komponentów",
+                "description": "Przygotowanie modelu 3D oraz dobór odpowiednich komponentów do budowy prototypu VITOLDa. Decyzja o zastosowaniu technologii druku 3D do produkcji kluczowych elementów konstrukcyjnych, co pozwoli na szybkie iteracje i optymalizację projektu.",
+                "imageSrc": "/vitold/timeline/VTOL_aksonometrycznie.png"
+            },
+            {
+                "date": "Maj - Czerwiec 2025",
+                "title": "Analiza aerodynamiczna",
+                "description": "Równolegle z projektem konstrukcji przeprowadzone zostały symulacje CFD w celu optymalizacji kształtu kadłuba i układu napędowego VITOLDa. Analiza ta pozwoliła na zidentyfikowanie obszarów o największym oporze powietrza i wprowadzenie odpowiednich modyfikacji do projektu.",
+                "imageSrc": "/vitold/timeline/Analiza_areodynamiczna.png"
+            },
+            {
+                "date": "Lipiec - Grudzień 2025",
+                "title": "Wydruki 3D, montaż kadłuba BSP",
+                "description": "Wykonanie kluczowych elementów konstrukcyjnych VITOLDa za pomocą technologii druku 3D, co pozwoliło na szybkie prototypowanie i wprowadzanie poprawek do projektu. Następnie przeprowadzony został montaż kadłuba BSP, integracja układu napędowego oraz systemów elektronicznych.",
+                "imageSrc": "/vitold/timeline/Montaz.JPG"
+            },
+            {
+                "date": "Sierpień - Grudzień 2025",
+                "title": "Stworzenie autorskiego systemu telemetrii",
+                "description": "System implementuje jednokierunkową transmisję pełnej telemetrii w protokole LTM oraz mechanizm bindowania, gwarantujący jednoznaczne parowanie urządzeń i eliminację odbioru danych przez nieautoryzowane moduły pracujące w tym samym otoczeniu radiowym.",
+                "imageSrc": "/vitold/timeline/telemetria.jpeg"
+            },
+            {
+                "date": "Wrzesień 2025",
+                "title": "Analiza metod spajania elementów wydrukowanych z filamentu ASA",
+                "description": "Porównano możliwości spajania elementów wydrukowanych z filamentu ASA przez epoksydowy klej dwuskładnikowy oraz mieszanki acetonu z rozpuszczonym filamentem ASA.",
+                "imageSrc": "/vitold/timeline/testy_spajania.jpg",
+                "additionalMedia": [
+                    {
+                        "name": "Analiza metod spajania elementów wydrukowanych z filamentu ASA",
+                        "path": "/vitold/timeline/testy_spajania.pdf"
+                    }
+                ]
+            },
+            {
+                "date": "Wrzesień 2025 - Listopad 2025",
+                "title": "Projekt i konstrukcja systemu obrotu silników",
+                "description": "Opracowanie systemu obrotu silników, który umożliwia VITOLDowi pionowy start i lądowanie (VTOL). Projekt ten obejmował zarówno aspekty mechaniczne, jak i elektroniczne, w tym dobór serwomechanizmów oraz odpowiednich filamentów do druku 3D, które zapewniają odpowiednią wytrzymałość i odporność temperaturową.",
+                "imageSrc": "/vitold/timeline/Mechanizm_Obrotu_Silnikow.png",
+                "additionalMedia": [
+                    {
+                        "name": "Wykonanie prototypu mechanizmu VTOL z wykorzystaniem metod druku przestrzennego. Praca inżynierska Krzysztofa Piekarskiego.",
+                        "path": "/vitold/timeline/Praca_inżynierska_Krzysztof_Piekarski.pdf"
+                    }
+                ]
+            },
+            {
+                "date": "Listopad 2025 - Styczeń 2026",
+                "title": "Projekt i montaż systemu obrotu kamery",
+                "description": "Opracowanie systemu obrotu kamery, który umożliwia operatorowi zdalne sterowanie kątem widzenia kamery zamontowanej na VITOLDzie. Projekt ten obejmował zarówno kamerę termowizyjną, jak i cyfrową, co pozwala na skuteczne prowadzenie misji ratunkowych w różnych warunkach oświetleniowych.",
+                "imageSrc": "/vitold/timeline/kamera.jpeg"
+            },
+            {
+                "date": "Grudzień 2025",
+                "title": "Prezentacja bieżącego stanu projektu na konferencji naukowej",
+                "description": "Prezentacja dotychczasowych osiągnięć projektu VITOLD podczas 66. Barbórkowej Konferencji Kół Naukowych AGH, która odbyła się 3 grudnia 2025 roku. Podczas konferencji skupiono się na omówieniu systemu obrotu silników.",
+                "imageSrc": "/vitold/timeline/barborkowa.webp",
+                "additionalMedia": [
+                    {
+                        "name": "Autorski mechanizm zmiany położenia silników w samolocie typu VTOL wykonanym w technologii druku przestrzennego.",
+                        "path": "/vitold/timeline/prezentacja_barborkowa.pdf"
+                    }
+                ]
+            },
+            {
+                "date": "Grudzień 2025 - Luty 2026",
+                "title": "Implementacja systemów wizyjnych oraz systemu przesyłu danych",
+                "description": "Implementacja systemów wizyjnych oraz systemu przesyłu danych, które umożliwiają efektywne przesyłanie informacji z VITOLDa do centrum sterowania.",
+                "imageSrc": "/vitold/timeline/Montaz_owiewki.JPG"
+            },
+            {
+                "date": "3-5 Marca 2025",
+                "title": "Promocja projektu podczas Drone World Expo 2025",
+                "description": "Prezentacja projektu VITOLD podczas Drone World Expo 2025 pod Warszawą",
+                "imageSrc": "/vitold/timeline/drone_world_expo.jpg"
+            },
+            {
+                "date": "Kwiecień 2026",
+                "title": "Testy polowe VITOLDa",
+                "description": "Przeprowadzenie testów polowych VITOLDa w warunkach zbliżonych do rzeczywistych misji ratunkowych, co pozwoli na ocenę jego wydajności i niezawodności.",
+                "imageSrc": "/vitold/timeline/testy_polowe.jpg"
+            },
+            {
+                "date": "Maj - Czerwiec 2025",
+                "title": "Kontynuacja promocji projektu po zamknięciu finansowania",
+                "description": "Kontynuacja promocji projektu VITOLDa poprzez prezentację posteru dotyczącego projektu podczas 80-lecia NOT w Krakowie, a także udział w wydarzeniach branżowych i naukowych.",
+                "imageSrc": "/vitold/timeline/NOT.jpg"
+            }
+        ]    
+    },
+    "financing": {
+        "title": "Finansowanie",
+        "description": "Projekt finansowany ze środków budżetu państwa, przyznanych przez Ministra Nauki i Szkolnictwa Wyższego w ramach Programu 'Studenckie koła naukowe tworzą innowacje'.",
+        "fundingAmountLabel": "Kwota dofinansowania",
+        "fundingAmount": "69 000 PLN",
+        "totalCostLabel": "Całkowity koszt projektu",
+        "totalCost": "69 000 PLN",
+        "financingPeriodLabel": "Okres finansowania",
+        "financingPeriod": "Kwiecień 2025 - Kwiecień 2026",
+        "logo": "/vitold/timeline/ministerstwo_pl.png",
+        "altLogo": "Logo Ministerstwa Nauki i Szkolnictwa Wyższego"
+    }
+}

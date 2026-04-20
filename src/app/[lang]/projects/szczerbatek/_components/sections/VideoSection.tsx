@@ -1,10 +1,16 @@
 import { VideoPlayer } from "@/components/video-player";
-import { SzczerbatekTranslations } from "@/translations/szczerbatek/dictionary";
+
+export type VideoSectionTranslations = {
+  title: string;
+  description: string;
+  thumbnailSrc: string;
+  videoSrc: string;
+};
 
 export const VideoSection = ({
   translations,
 }: {
-  translations: SzczerbatekTranslations["video"];
+  translations: VideoSectionTranslations;
 }) => {
   return (
     <section className="px-16 py-16">
@@ -16,8 +22,8 @@ export const VideoSection = ({
           <p className="text-xl text-white/80">{translations.description}</p>
         </div>
         <VideoPlayer
-          thumbnailSrc="/szczerbatek/thumbnail.jpg"
-          videoSrc="/szczerbatek/video.mp4"
+          thumbnailSrc={translations.thumbnailSrc}
+          videoSrc={translations.videoSrc}
           title={translations.title}
         />
       </div>
