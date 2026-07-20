@@ -1,0 +1,11 @@
+{
+  "hero": {
+    "title": "Rico",
+    "description": "Samolot inspirowany jednym z Pingwinów z Madagaskaru, zaprojektowany do specjalnych misji ;)",
+    "cta": "Chcesz się dowiedzieć więcej?"
+  },
+  "video": {
+    "title": "Zobacz Rico w Akcji",
+    "description": "Obejrzyj nasz najnowszy lot testowy i postęp prac"
+  }
+}

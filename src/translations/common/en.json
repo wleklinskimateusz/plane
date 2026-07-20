@@ -13,7 +13,11 @@
         "vitold": {
           "title": "VITOLD",
           "description": "UAV for mountain rescue missions"
-         }
+        },
+        "rico": {
+          "title": "Rico",
+          "description": "Plane for Suas 2026 competition"
+        }
       }
     }
   },

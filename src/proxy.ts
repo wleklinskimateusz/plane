@@ -7,11 +7,27 @@ const defaultLocale = "en-US";
 
 function getLocale(request: NextRequest) {
   const headers = Object.fromEntries(request.headers.entries());
-  return match(new Negotiator({ headers }).languages(), locales, defaultLocale);
+  const languages = new Negotiator({ headers }).languages();
+
+  if (!Array.isArray(languages) || languages.length === 0) {
+    return defaultLocale;
+  }
+
+  const normalizedLanguages = languages.filter(
+    (language): language is string => typeof language === "string" && language.trim().length > 0,
+  );
+
+  if (normalizedLanguages.length === 0) {
+    return defaultLocale;
+  }
+
+  return match(normalizedLanguages, locales, defaultLocale);
 }
 
 export function proxy(request: NextRequest) {
-  // skip all static files
+  const pathname = request.nextUrl.pathname.toLowerCase();
+
+  // skip all static files and binary assets
   if (
     [
       ".jpeg",
@@ -26,21 +42,34 @@ export function proxy(request: NextRequest) {
       ".webm",
       ".mov",
       ".pdf",
-    ].some((ext) => request.nextUrl.pathname.endsWith(ext))
+      ".glb",
+      ".bin",
+      ".json",
+      ".wasm",
+      ".js",
+      ".css",
+      ".map",
+      ".txt",
+      ".ttf",
+      ".otf",
+      ".woff",
+      ".woff2",
+      ".eot",
+    ].some((ext) => pathname.endsWith(ext))
   )
     return;
 
   // Check if there is any supported locale in the pathname
-  const { pathname } = request.nextUrl;
+  const { pathname: rawPathname } = request.nextUrl;
   const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
+    (locale) => rawPathname.startsWith(`/${locale}/`) || rawPathname === `/${locale}`,
   );
 
   if (pathnameHasLocale) return;
 
   // Redirect if there is no locale
   const locale = getLocale(request);
-  request.nextUrl.pathname = `/${locale}${pathname}`;
+  request.nextUrl.pathname = `/${locale}${rawPathname}`;
   // e.g. incoming request is /products
   // The new URL is now /en-US/products
   return NextResponse.redirect(request.nextUrl);

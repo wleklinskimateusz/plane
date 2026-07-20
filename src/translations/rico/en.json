@@ -1,0 +1,11 @@
+{
+  "hero": {
+    "title": "Rico",
+    "description": "The plane inspired by one of the Penguins of the Madagascar, designed for special missions ;)",
+    "cta": "Want to Know More?"
+  },
+  "video": {
+    "title": "See Rico in Action",
+    "description": "Watch our latest test flight and development progress"
+  }
+}
