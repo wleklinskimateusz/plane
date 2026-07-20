@@ -3,8 +3,8 @@ import { getSzczerbatekTranslations } from "@/translations/szczerbatek/dictionar
 
 import { Timeline } from "@/components/timeline";
 import Link from "next/link";
-import { OurSolutions } from "./_components/sections/OurSolutions";
-import { Team } from "./_components/sections/Team";
+import { OurSolutions } from "../../../../components/OurSolutions";
+import { Team } from "../../../../components/Team";
 import { VideoSection } from "../../../../components/VideoSection";
 
 export const generateMetadata = async ({

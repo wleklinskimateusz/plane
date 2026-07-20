@@ -17,6 +17,10 @@
         "swierszcz": {
           "title": "Świerszcz",
           "description": "Dron do misji ratowniczych po katastrofach naturalnych"
+        },
+        "rico": {
+          "title": "Rico",
+          "description": "Samolot na zawody Suas 2026"
         }
       }
     }
@@ -34,7 +38,6 @@
         "advisor": "Opiekun Koła"
       }
     },
-
     "sponsors": {
       "title": "Sponsorzy i Partnerzy",
       "partners": {
