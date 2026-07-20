@@ -1,0 +1,12 @@
+{
+    "hero": {
+      "title": "Świerszcz",
+      "subtitle": "Dron do misji ratowniczych po katastrofach naturalnych",
+      "description": "Świerszcz to dron zaprojektowany w celu lokalizowania i wspomagania ofiar katrof naturalnych takich jak tornada.",
+      "cta": "Dowiedz się więcej o Świerszczu!"
+    },
+    "video": {
+        "title": "Zobacz Świerszcza w akcji",
+        "description": "Obejrzyj nasz najnowszy lot testowy i postępy w rozwoju"
+    }
+}

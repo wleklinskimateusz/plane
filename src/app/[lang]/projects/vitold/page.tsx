@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getVitoldTranslations } from "@/translations/vitold/dictionary";
 import Link from "next/link";
-import { VideoSection } from "../szczerbatek/_components/sections/VideoSection";
+import { VideoSection } from "../../../../components/VideoSection";
 import { Timeline } from "@/components/timeline";
 import { Financing } from "@/components/Financing";
 

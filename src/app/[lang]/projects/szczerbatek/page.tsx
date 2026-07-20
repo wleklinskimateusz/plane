@@ -5,7 +5,7 @@ import { Timeline } from "@/components/timeline";
 import Link from "next/link";
 import { OurSolutions } from "./_components/sections/OurSolutions";
 import { Team } from "./_components/sections/Team";
-import { VideoSection } from "./_components/sections/VideoSection";
+import { VideoSection } from "../../../../components/VideoSection";
 
 export const generateMetadata = async ({
   params,

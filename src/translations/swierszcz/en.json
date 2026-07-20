@@ -1,0 +1,12 @@
+{
+    "hero": {
+        "title": "Świerszcz (Cricket)",
+        "subtitle": "Drone for rescue missions after natural disasters",
+        "description": "Świerszcz is a drone designed to locate and assist victims of natural disasters such as tornadoes.",
+        "cta": "Learn more about Świerszcz!"
+    },
+    "video": {
+        "title": "See Świerszcz in Action",
+        "description": "Watch our latest test flight and development progress"
+    }
+}
