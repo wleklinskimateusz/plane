@@ -173,7 +173,7 @@ export default function RicoModelViewer() {
   return (
     <div
       ref={containerRef}
-      className="relative h-[600px] w-full overflow-hidden rounded-xl border border-gray-300 shadow-lg [&>canvas]:!block [&>canvas]:!h-full [&>canvas]:!w-full [&>canvas]:outline-none"
+      className="relative h-250 w-7/8 overflow-hidden rounded-xl border border-gray-300 shadow-lg [&>canvas]:block! [&>canvas]:h-full! [&>canvas]:w-full! [&>canvas]:outline-none"
     >
       <button
         type="button"
