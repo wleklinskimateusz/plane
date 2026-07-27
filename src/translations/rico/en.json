@@ -11,6 +11,8 @@
   "timeline": {
     "title": "Our Journey",
     "description": "The evolution of the Szczerbatek project through time",
+    "lineItemSrc": "/rico/plane.svg",
+    "lineItemRotate": true,
     "items": [
       {
         "date": "October 2024 - June 2025",

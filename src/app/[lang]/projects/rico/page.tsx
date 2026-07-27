@@ -74,7 +74,7 @@ export default async function Rico({
             <RicoThreeDModelSection />
             {/* Timeline Section */}
             <section className="bg-gray-50 py-16">
-                <div className="mx-auto max-w-[1680px]">
+                <div className="mx-auto max-w-420">
                     <div className="mb-12 text-center">
                         <h2 className="mb-4 font-serif text-4xl font-bold text-gray-900">
                             {RicoTranslations.timeline.title}
@@ -84,7 +84,7 @@ export default async function Rico({
                         </p>
                     </div>
                     <div className="px-16">
-                        <Timeline items={RicoTranslations.timeline.items} />
+                        <Timeline items={RicoTranslations.timeline.items} lineItemSrc="/rico/plane.svg" lineItemRotate={true} />
                     </div>
                 </div>
             </section>

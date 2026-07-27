@@ -8,6 +8,7 @@ import {
   useScroll,
   useTransform,
   useSpring,
+  useMotionValueEvent,
 } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
@@ -132,9 +133,10 @@ const TimelineItem = ({
 interface TimelineProps {
   items: Array<Omit<TimelineItemProps, "isLeft">>;
   lineItemSrc?: string;
+  lineItemRotate?: boolean;
 }
 
-export const Timeline = ({ items, lineItemSrc }: TimelineProps) => {
+export const Timeline = ({ items, lineItemSrc, lineItemRotate }: TimelineProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [containerHeight, setContainerHeight] = useState(0);
 
@@ -178,6 +180,28 @@ export const Timeline = ({ items, lineItemSrc }: TimelineProps) => {
     mass: 0.2,
   });
 
+  // Rotate marker only when scroll direction flips
+  const rotate = useSpring(0, {
+    stiffness: 200,
+    damping: 22,
+    mass: 0.35,
+  });
+
+  const lastDirectionRef = useRef<"down" | "up">("down");
+
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    if (!lineItemRotate) return;
+
+    const prev = scrollYProgress.getPrevious();
+    if (prev == null || latest === prev) return;
+
+    const nextDirection: "down" | "up" = latest > prev ? "down" : "up";
+    if (nextDirection === lastDirectionRef.current) return;
+
+    lastDirectionRef.current = nextDirection;
+    rotate.set(nextDirection === "down" ? 0 : 180);
+  });
+
   return (
     <div
       ref={containerRef}
@@ -190,7 +214,7 @@ export const Timeline = ({ items, lineItemSrc }: TimelineProps) => {
       {lineItemSrc && containerHeight > 0 && (
         <motion.div
           className="absolute top-0 left-1/2 z-20 hidden w-10 -translate-x-1/2 md:block"
-          style={{ y }}
+          style={{ y, rotate: lineItemRotate ? rotate : 0 }}
         >
           <img
             src={lineItemSrc}

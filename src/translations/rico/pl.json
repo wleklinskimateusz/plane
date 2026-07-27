@@ -11,6 +11,8 @@
   "timeline": {
     "title": "Nasza Podróż",
     "description": "Ewolucja projektu Rico w czasie",
+    "lineItemSrc": "/rico/plane.svg",
+    "lineItemRotate": true,
     "items": [
       {
         "date": "Październik 2024 - czerwiec 2025",
