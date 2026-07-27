@@ -49,7 +49,12 @@
         "WIMIR": "Wydział Inżynierii Mechanicznej i Robotyki",
         "WEiP": "Wydział Energetyki i Paliw",
         "WEAIiB": "Wydział Elektrotechniki, Automatyki, Informatyki i Inzynierii Biomedycznej",
-        "Elektrobot": "Elektrobot"
+        "Elektrobot": "Elektrobot",
+        "Promienie": "Promienie Słońca",
+        "BMC": "Bodo Möller Chemie",
+        "Drony": "Drony.net",
+        "DS": "Dassault Systèmes",
+        "Orlen": "Fundacja ORLEN"
       }
     },
     "copyright": "Wszelkie prawa zastrzeżone."

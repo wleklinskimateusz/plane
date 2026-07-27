@@ -43,19 +43,9 @@ export const organizationConfig = {
       href: "https://european-union.europa.eu/index_en",
     },
     {
-      translationKey: "IDUB",
-      image: "/partners/idub.jpg",
-      href: "https://www.idub.agh.edu.pl/",
-    },
-    {
       translationKey: "MNiSW",
       image: "/partners/mnisw.png",
       href: "https://www.gov.pl/web/nauka/wsparcie-studentow-w-zakresie-podniesienia-ich-kompetencji-i-umiejetnosci",
-    },
-    {
-      translationKey: "aeroklub",
-      image: "/partners/aeroklub.png",
-      href: "http://www.aeroklubpodhalanski.pl/Lotnisko",
     },
     {
       translationKey: "WIMIR",
@@ -77,5 +67,30 @@ export const organizationConfig = {
       image: "/partners/elektrobot.png",
       href: "https://elektrobot.pl/",
     },
+    {
+      translationKey: "Promienie",
+      image: "/partners/promienie.png",
+      href: "https://www.promienieslonca.pl/",
+    },
+    {
+      translationKey: "BMC",
+      image: "/partners/bmc.png",
+      href: "https://www.bm-chemie.com/",
+    },
+    {
+      translationKey: "Drony",
+      image: "/partners/drony.png",
+      href: "https://drony.net/",
+    },
+    {
+      translationKey: "DS",
+      image: "/partners/ds.svg",
+      href: "https://www.3ds.com/",
+    },
+    {
+      translationKey: "Orlen",
+      image: "/partners/orlen.png",
+      href: "https://fundacja.orlen.pl/pl",
+    }
   ],
 } as const;
