@@ -3,39 +3,40 @@ import { getSwierszczTranslations } from "@/translations/swierszcz/dictionary";
 import Link from "next/link";
 import { VideoSection } from "../../../../components/VideoSection";
 import OverviewSection from "@/components/OverviewSection";
+import { Timeline } from "@/components/timeline";
 
 export const generateMetadata = async ({
-  params,
+    params,
 }: {
-  params: Promise<{ lang: string }>;
+    params: Promise<{ lang: string }>;
 }) => {
-  const { lang } = await params;
-  if (lang === "pl") {
+    const { lang } = await params;
+    if (lang === "pl") {
+        return {
+            title: "AGH Solar Plane - Świerszcz",
+            description:
+                "Świerszcz to projekt podzespołu Koła Naukowego AGH Solar Plane, który zajmuje się projektowaniem i budową autonomicznych dronów wielowirnikowych.",
+        };
+    }
     return {
-      title: "AGH Solar Plane - Świerszcz",
+        title: "AGH Solar Plane - Świerszcz",
         description:
-        "Świerszcz to projekt podzespołu Koła Naukowego AGH Solar Plane, który zajmuje się projektowaniem i budową autonomicznych dronów wielowirnikowych.",
+            "Świerszcz (Cricket) is a project of the AGH Solar Plane team, which is dedicated to designing and building autonomous multirotor drones.",
     };
-  }
-  return {
-    title: "AGH Solar Plane - Świerszcz",
-    description:
-      "Świerszcz (Cricket) is a project of the AGH Solar Plane team, which is dedicated to designing and building autonomous multirotor drones.",
-  };
 }
 
 export default async function Swierszcz({
     params,
-    }: {
+}: {
     params: Promise<{ lang: string }>;
-    }) {
+}) {
     const { lang } = await params;
     const swierszczTranslations = await getSwierszczTranslations(lang);
     return (
         <div className="mx-auto flex w-full flex-col">
             <section className="relative h-screen w-full">
                 <Image
-                    src="/swierszcz/hero.jpg"
+                    src="/swierszcz/caly_dron.jpg"
                     alt="Drone in the sky, and a person in the foreground"
                     priority
                     fill
@@ -57,17 +58,33 @@ export default async function Swierszcz({
                         >
                             {swierszczTranslations.hero.cta}
                         </Link>
-                        </div>
                     </div>
-                </section>
-                {/* Video Section */}
+                </div>
+            </section>
+            {/* Video Section */}
 
-        <VideoSection
-            translations={swierszczTranslations.video}
-            youtubeVideoId="lTvj2o56lqw"
-            thumbnailSrc="/swierszcz/thumbnail.jpg"
-        />
-        <OverviewSection />
-      </div>
+            <VideoSection
+                translations={swierszczTranslations.video}
+                youtubeVideoId="lTvj2o56lqw"
+                thumbnailSrc="/swierszcz/thumbnail.jpg"
+            />
+            <OverviewSection />
+            {/* Timeline Section */}
+            <section className="bg-gray-50 py-16">
+                <div className="mx-auto max-w-[1680px]">
+                    <div className="mb-12 text-center">
+                        <h2 className="mb-4 font-serif text-4xl font-bold text-gray-900">
+                            {swierszczTranslations.timeline.title}
+                        </h2>
+                        <p className="text-xl text-gray-600">
+                            {swierszczTranslations.timeline.description}
+                        </p>
+                    </div>
+                    <div className="px-16">
+                        <Timeline items={swierszczTranslations.timeline.items} lineItemSrc={swierszczTranslations.timeline.lineItemSrc} />
+                    </div>
+                </div>
+            </section>
+        </div>
     );
 }
