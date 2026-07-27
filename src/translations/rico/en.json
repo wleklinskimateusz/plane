@@ -7,5 +7,113 @@
   "video": {
     "title": "See Rico in Action",
     "description": "Watch our latest test flight and development progress"
+  },
+  "timeline": {
+    "title": "Our Journey",
+    "description": "The evolution of the Szczerbatek project through time",
+    "items": [
+      {
+        "date": "October 2024 - June 2025",
+        "title": "The birth of Szczerbatek - the blueprint for Rico",
+        "description": "Szczerbatek, an unmanned aircraft, takes shape and becomes the design reference for Rico. The experience gained through its design, construction, and flights forms the foundation on which the new, improved aircraft is built.",
+        "imageSrc": ""
+      },
+      {
+        "date": "September 2025",
+        "title": "The decision to build Rico",
+        "description": "The team decides to build an improved successor to Szczerbatek - Rico - with the 2026 SUAS competition and Droniada in mind. It sets out the goals for the search-and-rescue and mapping missions, along with the design direction: a light, fast, and agile aircraft capable of sustained autonomous flight.",
+        "imageSrc": ""
+      },
+      {
+        "date": "October - December 2025",
+        "title": "Aerodynamic refinements",
+        "description": "Drawing on experience and test data from the previous aircraft, the team refines the aerodynamic design.",
+        "imageSrc": "",
+        "additionalMedia": [
+          {
+            "name": "Aerodynamic Design Documentation",
+            "path": ""
+          }
+        ]
+      },
+      {
+        "date": "December 2025 - January 2026",
+        "title": "CNC mould milling",
+        "description": "Precise moulds for the structural components are milled in-house - first the fuselage, then the wings and tail. Depending on the part, the moulds are made from polyurethane board or MDF.",
+        "imageSrc": ""
+      },
+      {
+        "date": "January - February 2026",
+        "title": "Wing and spar lamination",
+        "description": "The wings are vacuum-laminated from carbon fibre and bonded to a spar reinforced at its mounting point. The process keeps the structure light while maintaining high strength.",
+        "imageSrc": "",
+        "additionalMedia": [
+          {
+            "name": "Lamination Process Documentation",
+            "path": ""
+          }
+        ]
+      },
+      {
+        "date": "January - March 2026",
+        "title": "Electronics and avionics",
+        "description": "The team integrates the avionics around the flight controller. Separate control and telemetry links are established, and the key components are mounted in modular, 3D-printed brackets that allow rapid field replacement.",
+        "imageSrc": "",
+        "additionalMedia": [
+          {
+            "name": "Battery Documentation",
+            "path": ""
+          },
+          {
+            "name": "Electronics Documentation",
+            "path": ""
+          }
+        ]
+      },
+      {
+        "date": "March 2026",
+        "title": "First prototype testing",
+        "description": "The first complete prototype, with full onboard electronics, comes together. The team runs initial trials to verify subsystem integration and the aircraft's readiness for its first flights.",
+        "imageSrc": ""
+      },
+      {
+        "date": "March - April 2026",
+        "title": "Airframe testing and autonomy tuning",
+        "description": "Test flights are combined with autopilot and autonomous-mode configuration. In parallel, the safety systems are set up and verified.",
+        "imageSrc": ""
+      },
+      {
+        "date": "April - August 2026",
+        "title": "Building the second aircraft",
+        "description": "Alongside testing, a second copy of the aircraft is built. The spare improves the team's operational reliability and keeps trials running without downtime if the first aircraft is damaged.",
+        "imageSrc": ""
+      },
+      {
+        "date": "May - September 2026",
+        "title": "Continuous testing and integration",
+        "description": "Regular test flights and onboard-system integration continue. Using flight logs and telemetry, the team makes iterative improvements that steadily raise the aircraft's reliability and performance.",
+        "imageSrc": ""
+      },
+      {
+        "date": "February - September 2026",
+        "title": "Software development and data collection",
+        "description": "The team builds its dataset and trains and tests object-detection models. Mapping and detection algorithms are developed, along with the communication between the aircraft and the ground station.",
+        "imageSrc": "",
+        "additionalMedia": [
+          {
+            "name": "Software Documentation",
+            "path": ""
+          }
+        ]
+      },
+      {
+        "date": "September 2026",
+        "title": "SUAS 2026, USA",
+        "description": "The team will present Rico and fly its planned mission at the international Student Unmanned Aerial Systems competition in the United States - the central goal of the entire project.",
+        "imageSrc": ""
+      }
+    ]
   }
+
+  
 }

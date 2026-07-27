@@ -7,5 +7,111 @@
   "video": {
     "title": "Zobacz Rico w Akcji",
     "description": "Obejrzyj nasz najnowszy lot testowy i postęp prac"
+  },
+  "timeline": {
+    "title": "Nasza Podróż",
+    "description": "Ewolucja projektu Rico w czasie",
+    "items": [
+      {
+        "date": "Październik 2024 - czerwiec 2025",
+        "title": "Narodziny Szczerbatka - pierwowzoru Rico",
+        "description": "Powstaje Szczerbatek - bezzałogowy płatowiec, który staje się konstrukcyjnym punktem odniesienia dla Rico. Doświadczenie zdobyte przy jego projektowaniu, budowie i lotach tworzy fundament, na którym opiera się nowa, ulepszona wersja samolotu.",
+        "imageSrc": ""
+      },
+      {
+        "date": "Wrzesień 2025",
+        "title": "Decyzja o budowie Rico",
+        "description": "Zapada decyzja o zbudowaniu ulepszonego następcy Szczerbatka - Rico - z myślą o zawodach SUAS 2026 oraz Droniadzie. Zespół ustala założenia misji poszukiwawczo-ratunkowych i mapujących oraz kierunek rozwoju: lekki, szybki i zwrotny płatowiec zdolny do długotrwałego lotu autonomicznego.",
+        "imageSrc": ""
+      },
+      {
+        "date": "Październik - grudzień 2025",
+        "title": "Udoskonalenia aerodynamiczne",
+        "description": "Na podstawie doświadczeń i danych z testów poprzedniej konstrukcji zespół dopracowuje aerodynamikę samolotu.",
+        "imageSrc": "",
+        "additionalMedia": [
+          {
+            "name": "Dokumentacja projektu aerodynamicznego",
+            "path": ""
+          }
+        ]
+      },
+      {
+        "date": "Grudzień 2025 - styczeń 2026",
+        "title": "Frezowanie form CNC",
+        "description": "Na własnym sprzęcie powstają precyzyjne formy do elementów konstrukcji - najpierw kadłuba, potem skrzydeł i usterzenia. Formy wykonywane są z płyt poliuretanowych oraz MDF, zależnie od elementu.",
+        "imageSrc": ""
+      },
+      {
+        "date": "Styczeń - luty 2026",
+        "title": "Laminacja skrzydeł i dźwigara",
+        "description": "Skrzydła laminowane są próżniowo z włókna węglowego i sklejane z dźwigarem wzmocnionym w miejscu mocowania. Zastosowana technologia zapewnia niską masę przy zachowaniu wysokiej wytrzymałości.",
+        "imageSrc": "",
+        "additionalMedia": [
+          {
+            "name": "Dokumentacja procesu laminowania",
+            "path": ""
+          }
+        ]
+      },
+      {
+        "date": "Styczeń - marzec 2026",
+        "title": "Elektronika i awionika",
+        "description": "Zespół integruje systemy awioniki wraz z kontrolerem lotu. Powstają rozdzielone łącza sterowania i telemetrii, a kluczowe komponenty montowane są w modułowych, drukowanych 3D uchwytach, które umożliwiają szybką wymianę podzespołów w terenie.",
+        "imageSrc": "",
+        "additionalMedia": [
+          {
+            "name": "Dokumentacja baterii",
+            "path": ""
+          },
+          {
+            "name": "Dokumentacja elektroniki",
+            "path": ""
+          }
+        ]
+      },
+      {
+        "date": "Marzec 2026",
+        "title": "Pierwsze testy prototypu",
+        "description": "Powstaje pierwszy kompletny prototyp z pełną elektroniką pokładową. Zespół przeprowadza wstępne próby, weryfikując integrację podzespołów i gotowość samolotu do pierwszych lotów.",
+        "imageSrc": ""
+      },
+      {
+        "date": "Marzec - kwiecień 2026",
+        "title": "Testy konstrukcji i strojenie autonomii",
+        "description": "Loty testowe łączą się z konfiguracją autopilota i trybów autonomicznych. Równolegle konfigurowane i sprawdzane są systemy bezpieczeństwa.",
+        "imageSrc": ""
+      },
+      {
+        "date": "Kwiecień - sierpień 2026",
+        "title": "Budowa drugiego egzemplarza",
+        "description": "Równolegle z testami powstaje druga kopia samolotu. Zapasowa maszyna zwiększa niezawodność operacyjną zespołu i pozwala prowadzić próby bez przestojów w razie uszkodzenia pierwszego egzemplarza.",
+        "imageSrc": ""
+      },
+      {
+        "date": "Maj - wrzesień 2026",
+        "title": "Ciągłe testy i integracja",
+        "description": "Trwają regularne loty testowe i integracja systemów pokładowych. Na podstawie logów i danych telemetrycznych zespół wprowadza iteracyjne poprawki, stopniowo podnosząc niezawodność i osiągi konstrukcji.",
+        "imageSrc": ""
+      },
+      {
+        "date": "Luty - wrzesień 2026",
+        "title": "Rozwój oprogramowania i zbieranie danych",
+        "description": "Zespół buduje zbiór danych oraz trenuje i testuje modele wykrywania obiektów. Rozwijane są algorytmy mapowania i detekcji oraz komunikacja między samolotem a stacją naziemną.",
+        "imageSrc": "",
+        "additionalMedia": [
+          {
+            "name": "Dokumentacja oprogramowania",
+            "path": ""
+          }
+        ]
+      },
+      {
+        "date": "Wrzesień 2026",
+        "title": "SUAS 2026, USA",
+        "description": "Zespół zaprezentuje Rico i zrealizuje zaplanowaną misję podczas międzynarodowych zawodów Student Unmanned Aerial Systems w Stanach Zjednoczonych - głównego celu całego projektu.",
+        "imageSrc": ""
+      }
+    ]
   }
 }
