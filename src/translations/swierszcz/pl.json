@@ -1,0 +1,92 @@
+{
+    "hero": {
+        "title": "Świerszcz",
+        "subtitle": "Dron do misji ratowniczych po katastrofach naturalnych",
+        "description": "Świerszcz to dron zaprojektowany w celu lokalizowania i wspomagania ofiar katrof naturalnych takich jak tornada.",
+        "cta": "Dowiedz się więcej o Świerszczu!"
+    },
+    "video": {
+        "title": "Zobacz Świerszcza w akcji",
+        "description": "Zobacz kulisy rozwoju Świerszcza i zespół, który stoi za jego rozwojem."
+    },
+    "timeline": {
+        "title": "Kamienie milowe",
+        "description": "Śledź naszą podróż od koncepcji do gotowego produktu",
+        "lineItemSrc": "/swierszcz/drone.svg",
+        "items": [
+            {
+                "date": "listopad-styczeń 2025",
+                "title": "Rozpoczęcie projektu - pierwsza koncepcja i prototyp",
+                "description": "Zespół rozpoczął pracę nad koncepcją Świerszcza. Początkowo planowano stworzenie 4-silnikowego drona z dużym korpusem, który miał być w stanie zmieścić dużą ilość elektroniki na pokładzie. Testy pierwszego prototypu wykazały jednak, że dron jest zbyt ciężki i nieefektywny energetycznie. W związku z tym zdecydowano się na znaczne zmniejszenie korpusu oraz zmianę projektu na dron 8-silnikowy, który przy okazji pozwala na wykonywanie misji udźwigowych potrzebnych do innych misji realizowanych przez zespół.",
+                "imageSrc": "/swierszcz/timeline/first_drone.jpeg"
+            },
+            {
+                "date": "luty 2026",
+                "title": "Projekt drugi - koncepcja 8-wirnikowca",
+                "description": "Dzięki dołączeniu do zespołu członka Koła Naukowego AGH Drone Engineering oraz jego wsparciu merytorycznemu w zakresie dronów 8-silnikowych, zespół w krótkim czasie opracował nowy projekt drona. Zrezygnowano w nim z rozwiązań, które nie sprawdziły się w poprzednim prototypie, co pozwoliło uniknąć powielania błędów. Dobrane zostały kluczowe komponenty takie jak silniki, śmigła oraz kontroler lotu",
+                "imageSrc": "/swierszcz/timeline/silniki_smigla.jpg"
+            },
+            {
+                "date": "luty-marzec 2026",
+                "title": "Budowa prototypu, dobór filamentów.",
+                "description": "Po opracowaniu nowego projektu, zespół przystąpił do budowy prototypu. W tym celu wykorzystano druk 3D, który pozwolił na szybkie i tanie wykonanie elementów mechanicznych drona. Zespół przeprowadził również testy różnych filamentów, aby wybrać te, które najlepiej sprawdzą się w warunkach pracy drona. Finalną analizę zastosowanych filamentów uwzględniającą również późniejsze poprawki można znaleźć poniżej.",
+                "imageSrc": "/swierszcz/timeline/ramie_czesci_kolko.jpg",
+                "additionalMedia": [
+                    {
+                        "name": "3D Materials Documentation",
+                        "path": "/swierszcz/timeline/3D_materials.pdf"
+                    }
+                ]
+            },
+            {
+                "date": "marzec-kwiecień 2026",
+                "title": "Opracowanie kolejnych iteracji koszyka na baterię.",
+                "description": "W tym czasie zespół opracował kolejne iteracje koszyka na baterię, na którym montowany jest system zrzutu ładunków. Pierwsze iteracje zakładały montaż systemu zrzutów przy pomocy śrub, jednakże to rozwiązanie okazało się zbyt czasochłonne i niepraktyczne w warunkach pracy drona. W związku z tym opracowano system szyn umożliwiających łatwy montaż i demontaż systemu zrzutów.",
+                "imageSrc": "/swierszcz/timeline/koszyk.png"
+            },
+            {
+                "date": "kwiecień 2026",
+                "title": "Oblot drona. Finalizacja koncepcji projektu.",
+                "description": "Po złożeniu wszystkich elementów drona, zespół przeprowadził pierwsze testy w locie. Testy te pozwoliły na ocenę stabilności lotu oraz wydajności energetycznej drona. Stworzone zostało 'Proof of Flight Video', które zostało wysłane do organizatorów zawodów SUAS 2026.",
+                "imageSrc": "/swierszcz/timeline/oblot.png"
+            },
+            {
+                "date": "maj 2026",
+                "title": "Opracowanie sposobu wytwarzania kopuły drona.",
+                "description": "Pierwszy oblot drona został wykonany na pożyczonej kopule, która nosiła na sobie ślady zniszczenia. W związku z tym zespół opracował sposób wytwarzania kopuły drona, który pozwala na szybkie i tanie wykonanie kopuły niemal identycznej do tej, która była używana podczas pierwszego oblotu. W tym celu wykorzystano druk 3D do wykonania formy, w której następnie laminowano kopułę z włókna szklanego. W ten sposób powstała kopuła, która jest lekka, wytrzymała i odporna na uszkodzenia mechaniczne.",
+                "imageSrc": "/swierszcz/timeline/kopulka_laminowanie.jpg",
+                "additionalMedia": [
+                    {
+                        "name": "The process of canopy development.",
+                        "path": "/swierszcz/timeline/The_canopy_design.pdf"
+                    }
+                ]
+            },
+            {
+                "date": "maj-czerwiec 2026",
+                "title": "Drobne poprawki konstrukcyjne.",
+                "description": "Po sfinalizowaniu projektu oraz wysłaniu 'Proof of Flight Video' zespół wprowadził drobne, mieszczące się w ramach regulaminu poprawki w konstrukcji drona, takie jak dodanie nakrętek do projektu ramienia, które zapewniały dodatkową ochronę przed potencjalnym wysunięciem się ramienia.",
+                "imageSrc": "/swierszcz/timeline/ramie_2.jpg",
+                "videoSrc": "/swierszcz/ramie_2.gif"
+            },
+            {
+                "date": "lipiec-sierpnień 2026",
+                "title": "Prace nad algorytmami trajektorii lotu ładunku i systemów wizyjnych.",
+                "description": "W celu określenia możliwie najdokładniejszej trajektorii lotu ładunku zrzucanego przez drona, zespół opracował algorytmy, które pozwalają na określenie optymalnej trajektorii lotu ładunku w zależności od warunków atmosferycznych oraz prędkości i wysokości lotu drona. W tym celu wykorzystano symulacje komputerowe oraz testy w locie. W ty samym czasie rozwijano systemy wizyjne, które pozwalają na lokalizację ofiar katastrof naturalnych oraz określenie ich położenia w terenie.",
+                "imageSrc": "/swierszcz/timeline/trajectory.jpeg",
+                "additionalMedia": [
+                    {
+                        "name": "Trajectory algorithms documentation.",
+                        "path": "/swierszcz/timeline/Optimal_drop_position_algorithm.pdf"
+                    }
+                ]
+            },
+            {
+                "date": "wrzesień 2026",
+                "title": "Zawody SUAS 2026",
+                "description": "Zespół weźmie udział w zawodach SUAS 2026, które odbędą się w Tulsie w stanie Oklahoma w USA.",
+                "imageSrc": "/swierszcz/timeline/suas.png"
+            }
+        ]
+    }
+}

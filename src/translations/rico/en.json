@@ -11,6 +11,8 @@
   "timeline": {
     "title": "Rico's journey",
     "description": "The evolution of the Rico fixed-wing UAV through time",
+    "lineItemSrc": "/rico/plane.svg",
+    "lineItemRotate": true,
     "items": [
       {
         "date": "October 2024 - June 2025",
@@ -108,7 +110,7 @@
         "additionalMedia": [
           {
             "name": "Software Documentation",
-            "path": ""
+            "path": "/projects/szczerbatek"
           }
         ]
       },
@@ -120,6 +122,4 @@
       }
     ]
   }
-
-  
 }

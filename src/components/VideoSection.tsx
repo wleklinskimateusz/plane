@@ -15,8 +15,8 @@ export const VideoSection = ({
   thumbnailSrc: string;
 }) => {
   return (
-    <section className="px-16 py-16">
-      <div className="mx-auto max-w-[1680px]">
+    <section className="px-16 py-16" id="video">
+      <div className="mx-auto max-w-420">
         <div className="mb-12 text-center">
           <h2 className="mb-4 font-serif text-4xl font-bold text-white">
             {translations.title}

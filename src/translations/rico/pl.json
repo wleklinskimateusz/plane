@@ -11,6 +11,8 @@
   "timeline": {
     "title": "Podróż Rico",
     "description": "Ewolucja bezzałogowego płatowca Rico w czasie",
+    "lineItemSrc": "/rico/plane.svg",
+    "lineItemRotate": true,
     "items": [
       {
         "date": "Październik 2024 - czerwiec 2025",
