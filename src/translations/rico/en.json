@@ -102,7 +102,7 @@
         "additionalMedia": [
           {
             "name": "Software Documentation",
-            "path": ""
+            "path": "/projects/szczerbatek"
           }
         ]
       },
@@ -114,6 +114,4 @@
       }
     ]
   }
-
-  
 }

@@ -5,6 +5,7 @@ import { getRicoTranslations } from "@/translations/rico/dictionary";
 import Link from "next/link";
 import { VideoSection } from "../../../../components/VideoSection";
 import { RicoThreeDModelSection } from "@/app/[lang]/projects/rico/_components/Rico3DModelSection";
+import { Timeline } from "@/components/timeline";
 
 export const generateMetadata = async ({
     params,
@@ -71,6 +72,22 @@ export default async function Rico({
             />
             {/* 3D Model Section */}
             <RicoThreeDModelSection />
+            {/* Timeline Section */}
+            <section className="bg-gray-50 py-16">
+                <div className="mx-auto max-w-[1680px]">
+                    <div className="mb-12 text-center">
+                        <h2 className="mb-4 font-serif text-4xl font-bold text-gray-900">
+                            {RicoTranslations.timeline.title}
+                        </h2>
+                        <p className="text-xl text-gray-600">
+                            {RicoTranslations.timeline.description}
+                        </p>
+                    </div>
+                    <div className="px-16">
+                        <Timeline items={RicoTranslations.timeline.items} />
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }
