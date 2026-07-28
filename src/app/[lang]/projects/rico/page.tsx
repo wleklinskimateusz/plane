@@ -6,6 +6,7 @@ import Link from "next/link";
 import { VideoSection } from "../../../../components/VideoSection";
 import { RicoThreeDModelSection } from "@/app/[lang]/projects/rico/_components/Rico3DModelSection";
 import { Timeline } from "@/components/timeline";
+import { OverviewSection, UAVParameter, UAVParametersTable } from "@/components/OverviewSection";
 
 export const generateMetadata = async ({
     params,
@@ -34,6 +35,66 @@ export default async function Rico({
 }) {
     const { lang } = await params;
     const RicoTranslations = await getRicoTranslations(lang);
+    const uavParametersTable: UAVParametersTable = {
+        sections: [
+            {
+                title: 'Airframe & Weight',
+                parameters: [
+                    { label: 'Wingspan', value: '3020 mm (118.9 in)' },
+                    { label: 'Length', value: '1480 mm (57.27 in)' },
+                    { label: 'Empty Weight', value: '2.5 kg (without airdrops and battery)' },
+                    { label: 'Take-off Weight', value: '4.1 kg (with airdrops and battery)' },
+                    { label: 'MTOW', value: '4.5 kg (Maximum Take-Off Weight)' },
+                ],
+            },
+            {
+                title: 'Flight Performance',
+                parameters: [
+                    { label: 'Cruise Speed', value: '25 m/s (60 mph)' },
+                    { label: 'Never Exceed Speed', value: '90 m/s (201 mph)' },
+                    { label: 'Stall Speed', value: '16 m/s (35.8 mph)' },
+                    { label: 'Stall Speed (with flaps)', value: '9 m/s (20.1 mph)' },
+                ],
+            },
+            {
+                title: 'Power & Endurance',
+                parameters: [
+                    { label: 'Max Flight Time', value: '~50 minutes at cruise speed' },
+                    { label: 'Theoretical Range', value: '75 km (46 miles)' },
+                    { label: 'Power Unit', value: 'Two 3S2P Custom Li-Ion batteries, 17.6 Ah total capacity' },
+                ],
+            },
+            {
+                title: 'Propulsion System',
+                parameters: [
+                    { label: 'Motor', value: 'Leomotion L3025-4550-V2 Brushless DC' },
+                    { label: 'Motor Power', value: '1000 W' },
+                    { label: 'Motor KV', value: '4550 U/V' },
+                    { label: 'Motor Gear', value: '6.7:1 multiplanetary gear' },
+                    { label: 'Propeller', value: '16x10" or 18x10" Folding Prop' },
+                    { label: 'ESC', value: 'Dualsky Summit 60A' },
+                ],
+            },
+            {
+                title: 'Avionics & Comm',
+                parameters: [
+                    { label: 'Flight Controller', value: 'Mateksys H743-Wing' },
+                    { label: 'Telemetry', value: 'Mateksys MAVLink mR900-30 (915 MHz)' },
+                    { label: 'Radio Control', value: 'Radiomaster RP1 2.4GHz ELRS' },
+                    { label: 'Navigation', value: 'Foxeer M10Q 250 (L1 band, multi-constellation)' },
+                    { label: 'Airspeed Sensor', value: 'Matek Digital Airspeed Sensor ASPD-4525' },
+                    { label: 'Range Sensor', value: 'Lidar TF Luna (for autonomous landing)' },
+                ],
+            },
+            {
+                title: 'Compute & Perception',
+                parameters: [
+                    { label: 'Companion Computer', value: 'NVIDIA Jetson Orin Nano' },
+                    { label: 'Primary Vision', value: 'AR0234 Global Shutter Color Camera' },
+                ],
+            },
+        ],
+    };
     return (
         <div className="mx-auto flex w-full flex-col">
             <section className="relative h-screen w-full">
@@ -72,6 +133,7 @@ export default async function Rico({
             />
             {/* 3D Model Section */}
             <RicoThreeDModelSection />
+            <OverviewSection uavParametersTable={uavParametersTable} />
             {/* Timeline Section */}
             <section className="bg-gray-50 py-16">
                 <div className="mx-auto max-w-420">

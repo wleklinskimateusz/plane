@@ -2,7 +2,7 @@ import Image from "next/image";
 import { getSwierszczTranslations } from "@/translations/swierszcz/dictionary";
 import Link from "next/link";
 import { VideoSection } from "../../../../components/VideoSection";
-import OverviewSection from "@/components/OverviewSection";
+import { OverviewSection, UAVParameter, UAVParametersTable } from "@/components/OverviewSection";
 import { Timeline } from "@/components/timeline";
 import { Team } from "./_components/TeamGrouped";
 
@@ -33,6 +33,57 @@ export default async function Swierszcz({
 }) {
     const { lang } = await params;
     const swierszczTranslations = await getSwierszczTranslations(lang);
+    const uavParametersTable: UAVParametersTable = {
+        sections: [
+            {
+                title: 'Airframe & Weight',
+                parameters: [
+                    { label: 'Arm layout', value: 'X' },
+                    { label: 'Frame material', value: 'Carbon fiber' },
+                    { label: 'Weight', value: '10.6 lbs' },
+                ],
+            },
+            {
+                title: 'Flight Performance',
+                parameters: [
+                    { label: 'Max Speed', value: '40 mph' },
+                    { label: 'Flight Time', value: '30 minutes' },
+                    { label: 'Max Range', value: '6 miles' },
+                    { label: 'Battery', value: '6S LiPo 12000mAh (3x 2S SLS XTRON 12000mAh)' },
+                ],
+            },
+            {
+                title: 'Motors & Propulsion',
+                parameters: [
+                    { label: 'Motors', value: '8x T-Motor MN4006 KV380' },
+                    { label: 'Propellers', value: '8x T-Motor MF1503' },
+                ]
+            },
+            {
+                title: 'Communication & Navigation',
+                parameters: [
+                    { label: 'Communication', value: '2.4 GHz and 900 MHz' },
+                    { label: 'Navigation System', value: 'Here 3+ GNSS' },
+                    { label: 'Flight Controller', value: 'Pixhawk Orange Cube' },
+                ],
+            },
+            {
+                title: 'Compute & Perception',
+                parameters: [
+                    { label: 'Camera', value: 'ArduCam 2,3 MPx AR0234' },
+                    { label: 'Supporting Camera', value: 'GoPro 11' },
+                    { label: 'Compute', value: 'NVIDIA Jetson Orin 8GB' },
+                ],
+            },
+            {
+                title: 'Payload & Delivery',
+                parameters: [
+                    { label: 'Payload Protection', value: '3D printed case & parachute' },
+                    { label: 'Delivery Mechanism', value: 'Custom servo-based release system' },
+                ],
+            }
+        ],
+    };
     return (
         <div className="mx-auto flex w-full flex-col">
             <section className="relative h-screen w-full">
@@ -69,7 +120,7 @@ export default async function Swierszcz({
                 youtubeVideoId="lTvj2o56lqw"
                 thumbnailSrc="/swierszcz/thumbnail.jpg"
             />
-            <OverviewSection />
+            <OverviewSection uavParametersTable={uavParametersTable} />
             {/* Timeline Section */}
             <section className="bg-gray-50 py-16">
                 <div className="mx-auto max-w-[1680px]">
