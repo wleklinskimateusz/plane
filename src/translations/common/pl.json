@@ -7,12 +7,16 @@
       "label": "Projekty",
       "items": {
         "szczerbatek": {
-          "title": "Szczerbatek",
-          "description": "Nasz flagowy samolot"
+          "title": "Szczerbatek"
         },
         "vitold": {
-          "title": "VITOLD",
-          "description": "BSP do górskich misji ratunkowych"
+          "title": "VITOLD"
+        },
+        "swierszcz": {
+          "title": "Świerszcz"
+        },
+        "rico": {
+          "title": "Rico"
         }
       }
     }
@@ -30,7 +34,6 @@
         "advisor": "Opiekun Koła"
       }
     },
-
     "sponsors": {
       "title": "Sponsorzy i Partnerzy",
       "partners": {
@@ -42,7 +45,12 @@
         "WIMIR": "Wydział Inżynierii Mechanicznej i Robotyki",
         "WEiP": "Wydział Energetyki i Paliw",
         "WEAIiB": "Wydział Elektrotechniki, Automatyki, Informatyki i Inzynierii Biomedycznej",
-        "Elektrobot": "Elektrobot"
+        "Elektrobot": "Elektrobot",
+        "Promienie": "Promienie Słońca",
+        "BMC": "Bodo Möller Chemie",
+        "Drony": "Drony.net",
+        "DS": "Dassault Systèmes",
+        "Orlen": "Fundacja ORLEN"
       }
     },
     "copyright": "Wszelkie prawa zastrzeżone."

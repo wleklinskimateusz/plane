@@ -1,0 +1,144 @@
+import Image from "next/image";
+import { getSwierszczTranslations } from "@/translations/swierszcz/dictionary";
+import Link from "next/link";
+import { VideoSection } from "../../../../components/VideoSection";
+import { OverviewSection, UAVParameter, UAVParametersTable } from "@/components/OverviewSection";
+import { Timeline } from "@/components/timeline";
+import { Team } from "./_components/TeamGrouped";
+
+export const generateMetadata = async ({
+    params,
+}: {
+    params: Promise<{ lang: string }>;
+}) => {
+    const { lang } = await params;
+    if (lang === "pl") {
+        return {
+            title: "AGH Solar Plane - Świerszcz",
+            description:
+                "Świerszcz to projekt podzespołu Koła Naukowego AGH Solar Plane, który zajmuje się projektowaniem i budową autonomicznych dronów wielowirnikowych.",
+        };
+    }
+    return {
+        title: "AGH Solar Plane - Świerszcz",
+        description:
+            "Świerszcz (Cricket) is a project of the AGH Solar Plane team, which is dedicated to designing and building autonomous multirotor drones.",
+    };
+}
+
+export default async function Swierszcz({
+    params,
+}: {
+    params: Promise<{ lang: string }>;
+}) {
+    const { lang } = await params;
+    const swierszczTranslations = await getSwierszczTranslations(lang);
+    const uavParametersTable: UAVParametersTable = {
+        sections: [
+            {
+                title: 'Airframe & Weight',
+                parameters: [
+                    { label: 'Arm layout', value: 'X' },
+                    { label: 'Frame material', value: 'Carbon fiber' },
+                    { label: 'Weight', value: '10.6 lbs' },
+                ],
+            },
+            {
+                title: 'Flight Performance',
+                parameters: [
+                    { label: 'Max Speed', value: '40 mph' },
+                    { label: 'Flight Time', value: '30 minutes' },
+                    { label: 'Max Range', value: '6 miles' },
+                    { label: 'Battery', value: '6S LiPo 12000mAh (3x 2S SLS XTRON 12000mAh)' },
+                ],
+            },
+            {
+                title: 'Motors & Propulsion',
+                parameters: [
+                    { label: 'Motors', value: '8x T-Motor MN4006 KV380' },
+                    { label: 'Propellers', value: '8x T-Motor MF1503' },
+                ]
+            },
+            {
+                title: 'Communication & Navigation',
+                parameters: [
+                    { label: 'Communication', value: '2.4 GHz and 900 MHz' },
+                    { label: 'Navigation System', value: 'Here 3+ GNSS' },
+                    { label: 'Flight Controller', value: 'Pixhawk Orange Cube' },
+                ],
+            },
+            {
+                title: 'Compute & Perception',
+                parameters: [
+                    { label: 'Camera', value: 'ArduCam 2,3 MPx AR0234' },
+                    { label: 'Supporting Camera', value: 'GoPro 11' },
+                    { label: 'Compute', value: 'NVIDIA Jetson Orin 8GB' },
+                ],
+            },
+            {
+                title: 'Payload & Delivery',
+                parameters: [
+                    { label: 'Payload Protection', value: '3D printed case & parachute' },
+                    { label: 'Delivery Mechanism', value: 'Custom servo-based release system' },
+                ],
+            }
+        ],
+    };
+    return (
+        <div className="mx-auto flex w-full flex-col">
+            <section className="relative h-screen w-full">
+                <Image
+                    src="/swierszcz/caly_dron.jpg"
+                    alt="Drone in the sky, and a person in the foreground"
+                    priority
+                    fill
+                    sizes="100vw"
+                    className="object-cover"
+                />
+                <div className="absolute inset-0 flex flex-col items-center px-4 py-40 text-center md:items-end md:px-20">
+                    <div className="max-w-3xl rounded-lg bg-black/60 px-4 py-8 backdrop-blur-sm md:px-6 md:py-12">
+                        <h1 className="mb-4 font-serif text-3xl font-bold text-white md:mb-6 md:text-6xl">
+                            {swierszczTranslations.hero.title}
+                        </h1>
+                        <p className="text-sm text-white/90 md:text-2xl">
+                            {swierszczTranslations.hero.description}
+                        </p>
+                        <Link
+                            scroll
+                            href="#video"
+                            className="mt-6 inline-flex items-center gap-2 rounded-lg bg-white/20 px-6 py-3 text-sm text-white backdrop-blur-sm transition-colors hover:bg-white/30 md:mt-8 md:px-8 md:py-4 md:text-lg"
+                        >
+                            {swierszczTranslations.hero.cta}
+                        </Link>
+                    </div>
+                </div>
+            </section>
+            {/* Video Section */}
+
+            <VideoSection
+                translations={swierszczTranslations.video}
+                youtubeVideoId="lTvj2o56lqw"
+                thumbnailSrc="/swierszcz/thumbnail.jpg"
+            />
+            <OverviewSection uavParametersTable={uavParametersTable} />
+            {/* Timeline Section */}
+            <section className="bg-gray-50 py-16">
+                <div className="mx-auto max-w-[1680px]">
+                    <div className="mb-12 text-center">
+                        <h2 className="mb-4 font-serif text-4xl font-bold text-gray-900">
+                            {swierszczTranslations.timeline.title}
+                        </h2>
+                        <p className="text-xl text-gray-600">
+                            {swierszczTranslations.timeline.description}
+                        </p>
+                    </div>
+                    <div className="px-16">
+                        <Timeline items={swierszczTranslations.timeline.items} lineItemSrc={swierszczTranslations.timeline.lineItemSrc} />
+                    </div>
+                </div>
+            </section>
+            {/* Team Section */}
+            <Team translations={swierszczTranslations.team} />
+        </div>
+    );
+}

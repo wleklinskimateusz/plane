@@ -1,0 +1,169 @@
+{
+    "hero": {
+        "title": "Świerszcz (Cricket)",
+        "subtitle": "Drone for rescue missions after natural disasters",
+        "description": "Świerszcz is a drone designed to locate and assist victims of natural disasters such as tornadoes.",
+        "cta": "Learn more about Świerszcz!"
+    },
+    "video": {
+        "title": "See Świerszcz in Action",
+        "description": "Watch behind the scenes of Świerszcz's development and the team behind its creation."
+    },
+    "timeline": {
+        "title": "Milestones",
+        "description": "Follow our journey from concept to competition",
+        "lineItemSrc": "/swierszcz/drone.svg",
+        "items": [
+            {
+                "date": "November-January 2025",
+                "title": "Project Kickoff - Initial Concept and Prototype",
+                "description": "The team began work on the Świerszcz concept. Initially, the plan was to create a 4-motor drone with a large body that could accommodate a significant amount of electronics on board. However, tests of the first prototype revealed that the drone was too heavy and energy-inefficient. As a result, the team decided to significantly reduce the body size and change the design to an 8-motor drone, which also allows for carrying payloads necessary for other missions undertaken by the team.",
+                "imageSrc": "/swierszcz/timeline/first_drone.jpeg"
+            },
+            {
+                "date": "February 2026",
+                "title": "Second Project - 8-Rotor Concept",
+                "description": "With the addition of a member from the AGH Drone Engineering Scientific Circle and their expertise in 8-motor drones, the team quickly developed a new drone design. They eliminated solutions that had failed in the previous prototype, avoiding repeated mistakes. Key components such as motors, propellers, and flight controllers were carefully selected.",
+                "imageSrc": "/swierszcz/timeline/silniki_smigla.jpg"
+            },
+            {
+                "date": "February-March 2026",
+                "title": "Prototype Construction and Filament Selection",
+                "description": "After developing the new design, the team proceeded to build the prototype. They utilized 3D printing for rapid and cost-effective production of the drone's mechanical components. The team also conducted tests on various filaments to determine which would perform best under the drone's operating conditions. A comprehensive analysis of the selected filaments, including subsequent improvements, can be found below.",
+                "imageSrc": "/swierszcz/timeline/ramie_czesci_kolko.jpg",
+                "additionalMedia": [
+                    {
+                        "name": "3D Materials Documentation",
+                        "path": "/swierszcz/timeline/3D_materials.pdf",
+                        "description": "Detailed documentation on the 3D materials used in the drone's construction."
+                    }
+                ]
+            },
+            {
+                "date": "March 2026",
+                "title": "Design and Integration of Power Distribution System",
+                "description": "The team developed and integrated a proprietary power distribution system, ensuring efficient energy delivery to all key components of the drone.",
+                "imageSrc": "/swierszcz/timeline/power_distribution.png",
+                "additionalMedia": [
+                    {
+                        "name": "Onboard Electronics Documentation",
+                        "path": "/swierszcz/timeline/Power_Distribution_System.pdf"
+                    }
+                ]
+            },
+            {
+                "date": "March-April 2026",
+                "title": "Development of Battery Bay Iterations",
+                "description": "During this period, the team developed several iterations of the battery bay, which houses the payload release system. Initial iterations involved mounting the release system with screws, but this proved to be too time-consuming and impractical for drone operations. Consequently, a rail system was developed to allow for easy installation and removal of the payload release system.",
+                "imageSrc": "/swierszcz/timeline/koszyk.png"
+            },
+            {
+                "date": "April 2026",
+                "title": "Drone Maiden Flight and Project Concept Finalization",
+                "description": "After assembling all drone components, the team conducted initial flight tests. These tests allowed for the assessment of flight stability and energy efficiency. A 'Proof of Flight Video' was created and submitted to the organizers of the SUAS 2026 competition.",
+                "imageSrc": "/swierszcz/timeline/oblot.png"
+            },
+            {
+                "date": "May 2026",
+                "title": "Development of Drone Canopy Manufacturing Process",
+                "description": "The first drone flight was conducted using a borrowed canopy that showed signs of damage. Consequently, the team developed a manufacturing process for the drone canopy that allows for quick and cost-effective production of a canopy nearly identical to the one used during the maiden flight. This involved 3D printing a mold, which was then used to laminate the canopy from fiberglass, resulting in a lightweight, durable, and mechanically resistant canopy.",
+                "imageSrc": "/swierszcz/timeline/kopulka_laminowanie.jpg",
+                "additionalMedia": [
+                    {
+                        "name": "The Process of Canopy Development",
+                        "path": "/swierszcz/timeline/The_canopy_design.pdf",
+                        "description": "A detailed guide on the development and manufacturing process of the drone's canopy."
+                    }
+                ]
+            },
+            {
+                "date": "May-June 2026",
+                "title": "Final Adjustments and Testing",
+                "description": "After finalizing the design and submitting the 'Proof of Flight Video,' the team made minor adjustments to the drone's construction, such as adding nuts to the arm design for additional protection against potential arm displacement. The final arm design has been documented below.",
+                "imageSrc": "/swierszcz/timeline/ramie_2.gif",
+                "videoSrc": "/swierszcz/ramie_2.gif"
+            },
+            {
+                "date": "July-August 2026",
+                "title": "Development of Flight Trajectory Algorithms and Vision Systems",
+                "description": "To determine the most accurate flight trajectory for payload drops, the team developed algorithms that calculate optimal drop trajectories based on atmospheric conditions, drone speed, and altitude. This involved computer simulations and flight tests. Simultaneously, vision systems were developed to locate disaster victims and determine their positions in the field.",
+                "imageSrc": "/swierszcz/timeline/trajectory.jpeg",
+                "additionalMedia": [
+                    {
+                        "name": "Trajectory Algorithms Documentation",
+                        "path": "/swierszcz/timeline/Optimal_drop_position_algorithm.pdf",
+                        "description": "Documentation detailing the algorithms used for calculating optimal payload drop positions."
+                    }
+                ]
+            },
+            {
+                "date": "September 2026",
+                "title": "SUAS 2026 Competition",
+                "description": "The team will participate in the SUAS 2026 competition, which will take place in Tulsa, Oklahoma, USA.",
+                "imageSrc": "/swierszcz/timeline/suas.png"
+            }
+        ]
+    },
+    "team": {
+        "title": "Meet Our Team",
+        "description": "The drone-crazy crew from AGH Kraków who built Cricket.",
+        "divisions": {
+            "organization": {
+                "title": "Project Management Division",
+                "description": "Responsible for coordinating the project, managing timelines, preparing documentation, and ensuring effective communication among team members.",
+                "videoSrc": "/swierszcz/team/organization.mp4",
+                "thumbnailSrc": "/swierszcz/team/organization.tiff",
+                "members": [
+                    "Izabella Rosikoń",
+                    "Amelia Tomczyk"
+                ]
+            },
+            "operators": {
+                "title": "Operators Division",
+                "description": "Responsible for piloting and controlling the drone from the ground during test flights and competitions, ensuring safe and efficient operation.",
+                "videoSrc": "/swierszcz/team/operators.mp4",
+                "thumbnailSrc": "/swierszcz/team/operators.tiff",
+                "members": [
+                    "Kajetan Bilski",
+                    "Michał Świętoń"
+                ]
+            },
+            "construction": {
+                "title": "Mechanical Division",
+                "description": "Responsible for the design and construction of the drone's mechanical components, including the frame, arms, and payload release system.",
+                "videoSrc": "/swierszcz/team/construction.mp4",
+                "thumbnailSrc": "/swierszcz/team/construction.tiff",
+                "members": [
+                    "Tomasz Paleczny",
+                    "Kacper Kupczyk",
+                    "Michał Pietrzykowski"
+                ]
+            },
+            "electronics": {
+                "title": "Electronics Division",
+                "description": "Handles the integration of avionics, flight controllers, and telemetry systems to ensure stable flight and data collection.",
+                "videoSrc": "/swierszcz/team/electronics.mp4",
+                "thumbnailSrc": "/swierszcz/team/electronics.tiff",
+                "members": [
+                    "Filip Kulka",
+                    "Łukasz Bogacz",
+                    "Wojciech Wiszniewski",
+                    "Wiktor Onik",
+                    "Adam Bosacki"
+                ]
+            },
+            "software": {
+                "title": "Software Division",
+                "description": "Develops algorithms for flight trajectory optimization, vision systems for victim of natural disaster detection, and overall software architecture for drone operation.",
+                "videoSrc": "/swierszcz/team/software.mp4",
+                "thumbnailSrc": "/swierszcz/team/software.tiff",
+                "members": [
+                    "Szymon Bawor",
+                    "Kamil Kopyra",
+                    "Radosław Benedykciński",
+                    "Bartosz Królik"
+                ]
+            }
+        }
+    }
+}

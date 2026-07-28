@@ -7,13 +7,17 @@
       "label": "Projects",
       "items": {
         "szczerbatek": {
-          "title": "Szczerbatek",
-          "description": "Our flagship plane - 'Szczerbatek'"
+          "title": "Szczerbatek"
         },
         "vitold": {
-          "title": "VITOLD",
-          "description": "UAV for mountain rescue missions"
-         }
+          "title": "VITOLD"
+        },
+        "swierszcz": {
+          "title": "Świerszcz"
+        },
+        "rico": {
+          "title": "Rico"
+        }
       }
     }
   },
@@ -41,7 +45,12 @@
         "WIMIR": "Faculty of Mechanical Engineering and Robotics",
         "WEiP": "Faculty of Energy and Fuels",
         "WEAIiB": "Faculty of Electrical Engineering, Automation, Computer Science and Biomedical Engineering",
-        "Elektrobot": "Elektrobot"
+        "Elektrobot": "Elektrobot",
+        "Promienie": "Promienie Słońca",
+        "BMC": "Bodo Möller Chemie",
+        "Drony": "Drony.net",
+        "DS": "Dassault Systèmes",
+        "Orlen": "Fundacja ORLEN"
       }
     },
     "copyright": "All rights reserved."

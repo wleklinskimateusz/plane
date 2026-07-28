@@ -2,9 +2,15 @@
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
+import {
+  motion,
+  useInView,
+  useScroll,
+  useTransform,
+  useSpring,
+  useMotionValueEvent,
+} from "framer-motion";
+import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 
 interface TimelineItemProps {
@@ -12,6 +18,7 @@ interface TimelineItemProps {
   title: string;
   description: string;
   imageSrc: string;
+  videoSrc?: string;
   additionalMedia?: {
     name: string;
     path: string;
@@ -24,6 +31,7 @@ const TimelineItem = ({
   title,
   description,
   imageSrc,
+  videoSrc,
   additionalMedia,
   isLeft,
 }: TimelineItemProps) => {
@@ -101,13 +109,21 @@ const TimelineItem = ({
         transition={{ duration: 0.8, delay: 0.4 }}
       >
         <div className="relative aspect-video w-full overflow-hidden rounded-lg">
-          <Image
-            src={imageSrc}
-            alt={title}
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
+          {videoSrc ? (
+            <img
+              src={videoSrc}
+              alt={title}
+              className="h-full w-full object-cover"
+            />
+          ) : (
+            <Image
+              src={imageSrc}
+              alt={title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          )}
         </div>
       </motion.div>
     </div>
@@ -116,13 +132,97 @@ const TimelineItem = ({
 
 interface TimelineProps {
   items: Array<Omit<TimelineItemProps, "isLeft">>;
+  lineItemSrc?: string;
+  lineItemRotate?: boolean;
 }
 
-export const Timeline = ({ items }: TimelineProps) => {
+export const Timeline = ({ items, lineItemSrc, lineItemRotate }: TimelineProps) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [containerHeight, setContainerHeight] = useState(0);
+
+  // Measure the container's real rendered height, and keep it updated
+  // if content reflows (images loading, responsive changes, etc.)
+  useEffect(() => {
+    if (!containerRef.current) return;
+
+    const el = containerRef.current;
+    const updateHeight = () => setContainerHeight(el.offsetHeight);
+
+    updateHeight();
+
+    const resizeObserver = new ResizeObserver(updateHeight);
+    resizeObserver.observe(el);
+
+    return () => resizeObserver.disconnect();
+  }, []);
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"],
+  });
+
+  // Raw pixel value driven directly by scroll progress, using the
+  // real measured height instead of a guessed/hardcoded range.
+  const rawY = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [0, Math.max(containerHeight - 32, 0)],
+  );
+
+  // Smooth + slow down the motion: the marker eases toward the scroll
+  // position instead of snapping to it 1:1.
+  // - lower stiffness => slower/lazier to catch up
+  // - higher damping => less bounce/overshoot, glidier stop
+  // - higher mass => more "weight", slower reaction to sudden scroll changes
+  const y = useSpring(rawY, {
+    stiffness: 60,
+    damping: 25,
+    mass: 0.2,
+  });
+
+  // Rotate marker only when scroll direction flips
+  const rotate = useSpring(0, {
+    stiffness: 200,
+    damping: 22,
+    mass: 0.35,
+  });
+
+  const lastDirectionRef = useRef<"down" | "up">("down");
+
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    if (!lineItemRotate) return;
+
+    const prev = scrollYProgress.getPrevious();
+    if (prev == null || latest === prev) return;
+
+    const nextDirection: "down" | "up" = latest > prev ? "down" : "up";
+    if (nextDirection === lastDirectionRef.current) return;
+
+    lastDirectionRef.current = nextDirection;
+    rotate.set(nextDirection === "down" ? 0 : 180);
+  });
+
   return (
-    <div className="relative space-y-8 py-8 md:space-y-12 md:py-12">
+    <div
+      ref={containerRef}
+      className="relative space-y-8 py-8 md:space-y-12 md:py-12"
+    >
       {/* Continuous vertical line - hidden on mobile */}
       <div className="absolute top-0 left-1/2 hidden h-full w-0 -translate-x-1/2 border-l-2 border-dashed border-blue-200 md:block" />
+
+      {/* Moving SVG on scroll */}
+      {lineItemSrc && containerHeight > 0 && (
+        <motion.div
+          className="absolute top-0 left-1/2 z-20 hidden w-10 -translate-x-1/2 md:block"
+          style={{ y, rotate: lineItemRotate ? rotate : 0 }}
+        >
+          <img
+            src={lineItemSrc}
+            alt="timeline marker"
+            className="h-10 w-10 object-contain"
+          />
+        </motion.div>
+      )}
 
       {/* Timeline items */}
       {items.map((item, index) => (

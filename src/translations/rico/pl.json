@@ -1,0 +1,184 @@
+{
+  "hero": {
+    "title": "Rico",
+    "description": "Samolot inspirowany jednym z Pingwinów z Madagaskaru, zaprojektowany do specjalnych misji ;)",
+    "cta": "Chcesz się dowiedzieć więcej?"
+  },
+  "video": {
+    "title": "Zobacz Rico w Akcji",
+    "description": "Obejrzyj nasz najnowszy lot testowy i postęp prac"
+  },
+  "timeline": {
+    "title": "Podróż Rico",
+    "description": "Ewolucja bezzałogowego płatowca Rico w czasie",
+    "lineItemSrc": "/rico/plane.svg",
+    "lineItemRotate": true,
+    "items": [
+      {
+        "date": "Październik 2024 - czerwiec 2025",
+        "title": "Narodziny Szczerbatka - pierwowzoru Rico",
+        "description": "Szczerbatek, bezzałogowy płatowiec, nabiera kształtu i staje się konstrukcyjnym punktem odniesienia dla Rico. Doświadczenie zdobyte przy jego projektowaniu, budowie i lotach tworzy fundament, na którym opiera się nowa, ulepszona wersja samolotu.",
+        "imageSrc": "/rico/timeline/szczerbatek.png",
+        "additionalMedia": [
+          {
+            "name": "Szczerbatek project page",
+            "path": "/project/szczerbatek"
+          }
+        ]
+      },
+      {
+        "date": "Wrzesień 2025",
+        "title": "Decyzja o budowie Rico",
+        "description": "Zespół podejmuje decyzję o zbudowaniu ulepszonego następcy Szczerbatka - Rico - z myślą o zawodach SUAS 2026. Ustala założenia misji poszukiwawczo-ratunkowych i mapujących oraz kierunek rozwoju: lekki, szybki i zwrotny płatowiec zdolny do długotrwałego lotu autonomicznego.",
+        "imageSrc": "/rico/timeline/decision.jpeg"
+      },
+      {
+        "date": "Październik - grudzień 2025",
+        "title": "Dopracowanie i optymalizacja projektu",
+        "description": "Zespół analizuje doświadczenia i dane z lotów poprzedniej konstrukcji, aby ustalić, co sprawdziło się w praktyce, a co wymagało poprawy. Sprawdzona aerodynamika Szczerbatka zostaje w dużej mierze zachowana jako punkt odniesienia, a prace skupiają się na dopracowaniu szczegółów i wyeliminowaniu słabych punktów wykrytych podczas testów. Najważniejszą zmianą jest przeprojektowany statecznik, którego nowa geometria zmniejsza luzy i zużycie zawiasów oraz poprawia precyzję sterowania, a także nowy system zrzutu ładunku.",
+        "imageSrc": "/rico/timeline/tail-redesign.jpg",
+        "additionalMedia": [
+          {
+            "name": "Payload release system",
+            "path": "/rico/timeline/PayloadReleaseSystem.pdf"
+          }
+        ]
+      },
+      {
+        "date": "Grudzień 2025 - styczeń 2026",
+        "title": "Przygotowanie form CNC",
+        "description": "Precyzyjne formy do elementów konstrukcji zostają przygotowane do użycia - najpierw kadłuba, potem skrzydeł i usterzenia. Formy wykonywane są z płyt poliuretanowych lub MDF, zależnie od elementu. Formy są czyszczone, szlifowane i pokrywane środkiem antyadhezyjnym, aby elementy z włókna węglowego można było wyjąć bez uszkodzeń.",
+        "imageSrc": "/rico/timeline/mould-prep.png"
+      },
+      {
+        "date": "Styczeń - luty 2026",
+        "title": "Laminacja skrzydeł i dźwigara",
+        "description": "Skrzydła laminowane są próżniowo z włókna węglowego i sklejane z dźwigarem wzmocnionym w miejscu mocowania. Zastosowana technologia zapewnia niską masę przy zachowaniu wysokiej wytrzymałości.",
+        "imageSrc": "/rico/timeline/wing-lamination.jpg",
+        "additionalMedia": [
+          {
+            "name": "Lamination Process Documentation",
+            "path": "/rico/timeline/WingConstruction.pdf"
+          }
+        ]
+      },
+      {
+        "date": "Styczeń - marzec 2026",
+        "title": "Elektronika i awionika",
+        "description": "Zespół integruje systemy awioniki wraz z kontrolerem lotu. Powstają rozdzielone łącza sterowania i telemetrii, a kluczowe komponenty montowane są w modułowych, drukowanych 3D uchwytach, które umożliwiają szybką wymianę podzespołów w terenie.",
+        "imageSrc": "/rico/timeline/electronics.jpeg",
+        "additionalMedia": [
+          {
+            "name": "Battery Documentation",
+            "path": "/rico/timeline/BatteryDocumentation.pdf"
+          },
+          {
+            "name": "Electronics Documentation",
+            "path": "/rico/timeline/ElectronicsDocumentation.pdf"
+          }
+        ]
+      },
+      {
+        "date": "Marzec 2026",
+        "title": "Pierwsze testy prototypu",
+        "description": "Powstaje pierwszy kompletny prototyp z pełną elektroniką pokładową. Zespół przeprowadza wstępne próby, weryfikując integrację podzespołów i gotowość samolotu do pierwszych lotów.",
+        "imageSrc": "/rico/timeline/testy.png"
+      },
+      {
+        "date": "Marzec - kwiecień 2026",
+        "title": "Testy konstrukcji i strojenie autonomii",
+        "description": "Loty testowe łączą się z konfiguracją autopilota i trybów autonomicznych. Równolegle konfigurowane i sprawdzane są systemy bezpieczeństwa.",
+        "imageSrc": "/rico/timeline/mission-planner.png"
+      },
+      {
+        "date": "Kwiecień - sierpień 2026",
+        "title": "Budowa drugiego egzemplarza",
+        "description": "Równolegle z testami powstaje druga kopia samolotu. Zapasowa maszyna zwiększa niezawodność operacyjną zespołu i pozwala prowadzić próby bez przestojów w razie uszkodzenia pierwszego egzemplarza.",
+        "imageSrc": "/rico/timeline/second-aircraft.jpg"
+      },
+      {
+        "date": "Maj - wrzesień 2026",
+        "title": "Ciągłe testy i integracja",
+        "description": "Trwają regularne loty testowe i integracja systemów pokładowych. Na podstawie logów i danych telemetrycznych zespół wprowadza iteracyjne poprawki, stopniowo podnosząc niezawodność i osiągi konstrukcji.",
+        "imageSrc": "/rico/timeline/continuous-testing.jpg"
+      },
+      {
+        "date": "Luty - wrzesień 2026",
+        "title": "Rozwój oprogramowania i zbieranie danych",
+        "description": "Zespół buduje zbiór danych oraz trenuje i testuje modele wykrywania obiektów. Rozwijane są algorytmy mapowania i detekcji oraz komunikacja między samolotem a stacją naziemną.",
+        "imageSrc": "/rico/timeline/software.png",
+        "additionalMedia": [
+          {
+            "name": "Software Documentation",
+            "path": "/rico/timeline/soft_timeline.pdf"
+          }
+        ]
+      },
+      {
+        "date": "Wrzesień 2026",
+        "title": "SUAS 2026, USA",
+        "description": "Zespół zaprezentuje Rico i zrealizuje zaplanowaną misję podczas międzynarodowych zawodów Student Unmanned Aerial Systems w Stanach Zjednoczonych - głównego celu całego projektu.",
+        "imageSrc": "/rico/timeline/suas.png"
+      }
+    ]
+  },
+  "team": {
+    "title": "Poznaj nasz zespół",
+    "description": "Grupa studentów z AGH w Krakowie, którzy stworzyli Rico - bezzałogowy samolot na zawody SUAS 2026, od pierwszego szkicu po pierwszy lot",
+    "divisions": {
+      "organization": {
+        "title": "Sekcja Zarządzania Projektem",
+        "description": "Odpowiedzialna za budżet i wnioskowanie grantowe, logistykę zawodów, dokumentację oraz koordynację między skecjami technicznymi.",
+        "videoSrc": "/rico/team/organization.mp4",
+        "thumbnailSrc": "/rico/team/organization.tiff",
+        "members": [
+          "Marta Łopusiewicz",
+          "Klaudia Janik"
+        ]
+      },
+      "operators": {
+        "title": "Sekcja Operatorów",
+        "description": "Odpowiedzialna za operacje na linii startowej, obejmujące pilotowanie, kontrolę naziemną oraz ogólne bezpieczeństwo lotów podczas misji.",
+        "videoSrc": "/rico/team/operators.mp4",
+        "thumbnailSrc": "/rico/team/operators.tiff",
+        "members": [
+          "Kacper Krempa",
+          "Filip Gajda"
+        ]
+      },
+      "construction": {
+        "title": "Sekcja Konstrukcji",
+        "description": "Odpowiedzialna za projektowanie i wytwarzanie kompozytowej konstrukcji, w tym aerodynamikę, strukturę nośną, elementy z druku 3D oraz mechanizm zrzutu ładunków.",
+        "videoSrc": "/rico/team/construction.mp4",
+        "thumbnailSrc": "/rico/team/construction.tiff",
+        "members": [
+          "Krzysztof Piekarski",
+          "Filip Materowski",
+          "Sebastian Mederski",
+          "Michał Pietrzykowski"
+        ]
+      },
+      "electronics": {
+        "title": "Sekcja Elektroniki",
+        "description": "Odpowiedzialna za systemy awioniki i zasilania, w tym integrację kontrolera lotu i sensorów, łącza radiowe oraz okablowanie.",
+        "videoSrc": "/rico/team/electronics.mp4",
+        "thumbnailSrc": "/rico/team/electronics.tiff",
+        "members": [
+          "Jakub Konior",
+          "Ignacy Kępa",
+          "Piotr Kur"
+        ]
+      },
+      "software": {
+        "title": "Sekcja Oprogramowania",
+        "description": "Odpowiedzialna za oprogramowanie pokładowe i stojący za nim pipeline percepcyjny, które w locie wykrywają cele i mapują teren.",
+        "videoSrc": "/rico/team/software.mp4",
+        "thumbnailSrc": "/rico/team/software.tiff",
+        "members": [
+          "Bartłomiej Barszczak",
+          "Antoni Trzebuniak"
+        ]
+      }
+    }
+  }
+}
