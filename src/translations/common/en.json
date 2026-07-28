@@ -7,20 +7,16 @@
       "label": "Projects",
       "items": {
         "szczerbatek": {
-          "title": "Szczerbatek",
-          "description": "Our flagship plane - 'Szczerbatek'"
+          "title": "Szczerbatek"
         },
         "vitold": {
-          "title": "VITOLD",
-          "description": "UAV for mountain rescue missions"
+          "title": "VITOLD"
         },
         "swierszcz": {
-          "title": "Świerszcz",
-          "description": "Drone for rescue missions after natural disasters"
+          "title": "Świerszcz"
         },
         "rico": {
-          "title": "Rico",
-          "description": "Plane for Suas 2026 competition"
+          "title": "Rico"
         }
       }
     }

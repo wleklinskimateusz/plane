@@ -68,7 +68,7 @@ export default async function Rico({
             <VideoSection
                 translations={RicoTranslations.video}
                 youtubeVideoId="2WTfM2sjp9M"
-                thumbnailSrc="/rico/thumbnail.jpg"
+                thumbnailSrc="/rico/video_thumbnail.jpg"
             />
             {/* 3D Model Section */}
             <RicoThreeDModelSection />
