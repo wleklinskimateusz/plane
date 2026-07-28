@@ -7,6 +7,7 @@ import { VideoSection } from "../../../../components/VideoSection";
 import { RicoThreeDModelSection } from "@/app/[lang]/projects/rico/_components/Rico3DModelSection";
 import { Timeline } from "@/components/timeline";
 import { OverviewSection, UAVParameter, UAVParametersTable } from "@/components/OverviewSection";
+import { Team } from "../swierszcz/_components/TeamGrouped";
 
 export const generateMetadata = async ({
     params,
@@ -150,6 +151,8 @@ export default async function Rico({
                     </div>
                 </div>
             </section>
+            {/* Team Section */}
+            <Team translations={RicoTranslations.team} />
         </div>
     );
 }
