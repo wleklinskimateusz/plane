@@ -7,20 +7,16 @@
       "label": "Projekty",
       "items": {
         "szczerbatek": {
-          "title": "Szczerbatek",
-          "description": "Nasz flagowy samolot"
+          "title": "Szczerbatek"
         },
         "vitold": {
-          "title": "VITOLD",
-          "description": "BSP do górskich misji ratunkowych"
+          "title": "VITOLD"
         },
         "swierszcz": {
-          "title": "Świerszcz",
-          "description": "Dron do misji ratowniczych po katastrofach naturalnych"
+          "title": "Świerszcz"
         },
         "rico": {
-          "title": "Rico",
-          "description": "Samolot na zawody Suas 2026"
+          "title": "Rico"
         }
       }
     }

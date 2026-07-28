@@ -38,7 +38,7 @@ export default async function Rico({
         <div className="mx-auto flex w-full flex-col">
             <section className="relative h-screen w-full">
                 <Image
-                    src="/rico/hero.png"
+                    src="/rico/prototype-test.jpg"
                     alt="Plane in the sky, and a person in the foreground"
                     priority
                     fill
@@ -67,8 +67,8 @@ export default async function Rico({
 
             <VideoSection
                 translations={RicoTranslations.video}
-                youtubeVideoId="MXFX66lDg1o"
-                thumbnailSrc="/rico/thumbnail.jpg"
+                youtubeVideoId="2WTfM2sjp9M"
+                thumbnailSrc="/rico/video_thumbnail.jpg"
             />
             {/* 3D Model Section */}
             <RicoThreeDModelSection />
