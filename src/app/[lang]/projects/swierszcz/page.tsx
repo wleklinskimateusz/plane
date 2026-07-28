@@ -4,6 +4,7 @@ import Link from "next/link";
 import { VideoSection } from "../../../../components/VideoSection";
 import OverviewSection from "@/components/OverviewSection";
 import { Timeline } from "@/components/timeline";
+import { Team } from "./_components/TeamGrouped";
 
 export const generateMetadata = async ({
     params,
@@ -85,6 +86,8 @@ export default async function Swierszcz({
                     </div>
                 </div>
             </section>
+            {/* Team Section */}
+            <Team translations={swierszczTranslations.team} />
         </div>
     );
 }

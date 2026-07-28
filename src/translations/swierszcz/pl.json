@@ -88,5 +88,63 @@
                 "imageSrc": "/swierszcz/timeline/suas.png"
             }
         ]
+    },
+    "team": {
+        "title": "Poznaj Nasz Zespół",
+        "description": "Pasja i zaangażowanie osób stojących za projektem Świerszcz, które łączą różnorodne umiejętności i doświadczenie, aby rozwiązywać trudne problemy i dostarczać innowacyjne rozwiązania.",
+        "divisions": {
+            "organization": {
+                "title": "Sekcja Zarządzania Projektem",
+                "description": "Odpowiada za koordynację projektu, zarządzanie harmonogramem, przygotowywanie dokumentacji oraz zapewnienie skutecznej komunikacji wśród członków zespołu.",
+                "members": [
+                    "Izabella Rosikoń",
+                    "Amelia Tomczyk"
+                ]
+            },
+            "operators": {
+                "title": "Sekcja Operatorów",
+                "description": "Odpowiada za pilotowanie i kontrolowanie drona z ziemi podczas testów i zawodów, zapewniając bezpieczną i efektywną obsługę.",
+                "members": [
+                    "Kajetan Bilski",
+                    "Michał Świętoń"
+                ]
+            },
+            "construction": {
+                "title": "Sekcja Konstrukcji",
+                "description": "Odpowiada za projektowanie i budowę mechanicznych komponentów drona, w tym ramy, ramion i systemu zrzutu ładunku.",
+                "members": [
+                    "Tomasz Paleczny",
+                    "Kacper Kupczyk",
+                    "Michał Pietrzykowski"
+                ]
+            },
+            "power": {
+                "title": "Sekcja Zasilania",
+                "description": "Odpowiada za projektowanie i wdrażanie systemów zasilania drona, w tym dobór baterii, dystrybucję energii i optymalizację efektywności energetycznej.",
+                "members": [
+                    "Adam Bosacki",
+                    "Wiktor Onik"
+                ]
+            },
+            "electronics": {
+                "title": "Sekcja Elektroniki",
+                "description": "Zajmuje się integracją awioniki, kontrolerów lotu i systemów telemetrycznych, aby zapewnić stabilny lot i zbieranie danych.",
+                "members": [
+                    "Filip Kulka",
+                    "Łukasz Bogacz",
+                    "Wojciech Wiszniewski"
+                ]
+            },
+            "software": {
+                "title": "Sekcja Oprogramowania",
+                "description": "Opracowuje algorytmy optymalizacji trajektorii lotu, systemy wizyjne do wykrywania ofiar oraz ogólną architekturę oprogramowania do obsługi drona.",
+                "members": [
+                    "Szymon Bawor",
+                    "Kamil Kopyra",
+                    "Radosław Benedykciński",
+                    "Bartosz Królik"
+                ]
+            }
+        }
     }
 }

@@ -91,5 +91,63 @@
                 "imageSrc": "/swierszcz/timeline/suas.png"
             }
         ]
+    },
+    "team": {
+        "title": "Meet Our Team",
+        "description": "The passionate individuals behind the Swierszcz project, bringing together diverse skills and experience to solve challenging problems and deliver innovative solutions.",
+        "divisions": {
+            "organization": {
+                "title": "Project Management Division",
+                "description": "Responsible for coordinating the project, managing timelines, preparing documentation, and ensuring effective communication among team members.",
+                "members": [
+                    "Izabella Rosikoń",
+                    "Amelia Tomczyk"
+                ]
+            },
+            "operators": {
+                "title": "Operators Division",
+                "description": "Responsible for piloting and controlling the drone from the ground during test flights and competitions, ensuring safe and efficient operation.",
+                "members": [
+                    "Kajetan Bilski",
+                    "Michał Świętoń"
+                ]
+            },
+            "construction": {
+                "title": "Mechanical Division",
+                "description": "Responsible for the design and construction of the drone's mechanical components, including the frame, arms, and payload release system.",
+                "members": [
+                    "Tomasz Paleczny",
+                    "Kacper Kupczyk",
+                    "Michał Pietrzykowski"
+                ]
+            },
+            "power": {
+                "title": "Power Division",
+                "description": "Responsible for the design and implementation of the drone's power systems, including battery selection, power distribution, and energy efficiency optimization.",
+                "members": [
+                    "Adam Bosacki",
+                    "Wiktor Onik"
+                ]
+            },
+            "electronics": {
+                "title": "Electronics Division",
+                "description": "Handles the integration of avionics, flight controllers, and telemetry systems to ensure stable flight and data collection.",
+                "members": [
+                    "Filip Kulka",
+                    "Łukasz Bogacz",
+                    "Wojciech Wiszniewski"
+                ]
+            },
+            "software": {
+                "title": "Software Division",
+                "description": "Develops algorithms for flight trajectory optimization, vision systems for victim detection, and overall software architecture for drone operation.",
+                "members": [
+                    "Szymon Bawor",
+                    "Kamil Kopyra",
+                    "Radosław Benedykciński",
+                    "Bartosz Królik"
+                ]
+            }
+        }
     }
 }
