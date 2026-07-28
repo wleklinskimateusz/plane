@@ -52,7 +52,7 @@ export function Navigation({
             <div className="absolute top-full left-0 hidden pt-2 group-hover:block">
               <div className="min-w-[200px] rounded-md bg-white p-4 shadow-lg">
                 {Object.entries(projects.items).map(
-                  ([key, { title, description }]) => (
+                  ([key, { title }]) => (
                     <Link
                       key={key}
                       href={`/${lang}/projects/${key}`}
@@ -61,9 +61,6 @@ export function Navigation({
                       <div className="text-sm font-medium text-gray-900">
                         {title}
                       </div>
-                      <p className="mt-1 text-sm text-gray-500">
-                        {description}
-                      </p>
                     </Link>
                   ),
                 )}
