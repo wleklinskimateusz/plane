@@ -16,12 +16,13 @@ export const Team = ({
       "software",
     ] satisfies (keyof SwierszczTranslations["team"]["divisions"])[]
   ).map((division) => {
-    const { title, description, members, videoSrc } = translations.divisions[division];
+    const { title, description, members, videoSrc, thumbnailSrc } = translations.divisions[division];
     return {
       title,
       description,
       members,
       videoSrc,
+      thumbnailSrc,
     };
   })
 

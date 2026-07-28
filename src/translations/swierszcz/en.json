@@ -40,6 +40,18 @@
                 ]
             },
             {
+                "date": "March 2026",
+                "title": "Design and Integration of Power Distribution System",
+                "description": "The team developed and integrated a proprietary power distribution system, ensuring efficient energy delivery to all key components of the drone.",
+                "imageSrc": "/swierszcz/timeline/power_distribution.png",
+                "additionalMedia": [
+                    {
+                        "name": "Onboard Electronics Documentation",
+                        "path": "/swierszcz/timeline/Power_Distribution_System.pdf"
+                    }
+                ]
+            },
+            {
                 "date": "March-April 2026",
                 "title": "Development of Battery Bay Iterations",
                 "description": "During this period, the team developed several iterations of the battery bay, which houses the payload release system. Initial iterations involved mounting the release system with screws, but this proved to be too time-consuming and impractical for drone operations. Consequently, a rail system was developed to allow for easy installation and removal of the payload release system.",
@@ -94,12 +106,13 @@
     },
     "team": {
         "title": "Meet Our Team",
-        "description": "The passionate individuals behind the Swierszcz project, bringing together diverse skills and experience to solve challenging problems and deliver innovative solutions.",
+        "description": "The drone-crazy crew from AGH Kraków who built Cricket.",
         "divisions": {
             "organization": {
                 "title": "Project Management Division",
                 "description": "Responsible for coordinating the project, managing timelines, preparing documentation, and ensuring effective communication among team members.",
                 "videoSrc": "/swierszcz/team/organization.mp4",
+                "thumbnailSrc": "/swierszcz/team/organization.tiff",
                 "members": [
                     "Izabella Rosikoń",
                     "Amelia Tomczyk"
@@ -109,6 +122,7 @@
                 "title": "Operators Division",
                 "description": "Responsible for piloting and controlling the drone from the ground during test flights and competitions, ensuring safe and efficient operation.",
                 "videoSrc": "/swierszcz/team/operators.mp4",
+                "thumbnailSrc": "/swierszcz/team/operators.tiff",
                 "members": [
                     "Kajetan Bilski",
                     "Michał Świętoń"
@@ -118,6 +132,7 @@
                 "title": "Mechanical Division",
                 "description": "Responsible for the design and construction of the drone's mechanical components, including the frame, arms, and payload release system.",
                 "videoSrc": "/swierszcz/team/construction.mp4",
+                "thumbnailSrc": "/swierszcz/team/construction.tiff",
                 "members": [
                     "Tomasz Paleczny",
                     "Kacper Kupczyk",
@@ -128,6 +143,7 @@
                 "title": "Electronics Division",
                 "description": "Handles the integration of avionics, flight controllers, and telemetry systems to ensure stable flight and data collection.",
                 "videoSrc": "/swierszcz/team/electronics.mp4",
+                "thumbnailSrc": "/swierszcz/team/electronics.tiff",
                 "members": [
                     "Filip Kulka",
                     "Łukasz Bogacz",
@@ -140,6 +156,7 @@
                 "title": "Software Division",
                 "description": "Develops algorithms for flight trajectory optimization, vision systems for victim of natural disaster detection, and overall software architecture for drone operation.",
                 "videoSrc": "/swierszcz/team/software.mp4",
+                "thumbnailSrc": "/swierszcz/team/software.tiff",
                 "members": [
                     "Szymon Bawor",
                     "Kamil Kopyra",

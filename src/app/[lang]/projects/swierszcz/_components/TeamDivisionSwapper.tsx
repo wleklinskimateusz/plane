@@ -10,6 +10,7 @@ interface Division {
     description: string;
     members: string[];
     videoSrc?: string;
+    thumbnailSrc?: string;
 }
 
 interface ImageSwitcherProps {
@@ -24,6 +25,7 @@ export const ImageSwitcher = ({
     const [currentIndex, setCurrentIndex] = useState(0);
     const [wasArrowClicked, setWasArrowClicked] = useState(false);
     const [direction, setDirection] = useState(0); // -1 for left, 1 for right
+    const [isVideoLoading, setIsVideoLoading] = useState(true);
 
     const handleNext = useCallback(() => {
         setDirection(1);
@@ -37,10 +39,8 @@ export const ImageSwitcher = ({
 
     // Auto-switch setup
     useEffect(() => {
+        setIsVideoLoading(true);
         const timer = setInterval(handleNext, autoSwitchInterval);
-        if (wasArrowClicked) {
-            clearInterval(timer);
-        }
         return () => clearInterval(timer);
     }, [autoSwitchInterval, handleNext, wasArrowClicked]);
 
@@ -86,15 +86,29 @@ export const ImageSwitcher = ({
                                 {currentDivision.description}
                             </p>
 
-                            <p>hh {currentDivision.videoSrc}</p>
-                            <video
-                                src={currentDivision.videoSrc}
-                                width={600}
-                                height={400}
-                                autoPlay
-                                loop
-                                className="order-3 w-full rounded-xl object-cover"
-                            />
+                            <div className="relative order-3 overflow-hidden rounded-xl bg-gray-100">
+                                {isVideoLoading && (
+                                    <div className="absolute inset-0 z-10 flex items-center justify-center bg-white/70 backdrop-blur-sm">
+                                        <div className="h-10 w-10 animate-spin rounded-full border-4 border-gray-300 border-t-blue-600" />
+                                    </div>
+                                )}
+                                {currentDivision.videoSrc ? (
+                                    <video
+                                        src={currentDivision.videoSrc}
+                                        poster={currentDivision.thumbnailSrc}
+                                        width={600}
+                                        height={400}
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                        onLoadStart={() => setIsVideoLoading(true)}
+                                        onLoadedData={() => setIsVideoLoading(false)}
+                                        onCanPlay={() => setIsVideoLoading(false)}
+                                        className="w-full object-cover"
+                                    />
+                                ) : null}
+                            </div>
                             <p className="order-4 leading-relaxed text-center text-gray-700">
                                 {currentDivision.members.join(", ")}
                             </p>

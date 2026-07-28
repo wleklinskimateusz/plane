@@ -39,6 +39,18 @@
                 ]
             },
             {
+                "date": "marzec 2026",
+                "title": "Projekt i integracja systemu dystrybucji zasilania.",
+                "description": "Zespół opracował i zintegrował autorski system dystrybucji zasilania, zapewniający efektywne rozprowadzanie energii do wszystkich kluczowych podzespołów drona.",
+                "imageSrc": "/swierszcz/timeline/power_distribution.png",
+                "additionalMedia": [
+                    {
+                        "name": "Onboard Electronics Documentation",
+                        "path": "/swierszcz/timeline/PowerDistributionSystem.pdf"
+                    }
+                ]
+            },
+            {
                 "date": "marzec-kwiecień 2026",
                 "title": "Opracowanie kolejnych iteracji koszyka na baterię.",
                 "description": "W tym czasie zespół opracował kolejne iteracje koszyka na baterię, na którym montowany jest system zrzutu ładunków. Pierwsze iteracje zakładały montaż systemu zrzutów przy pomocy śrub, jednakże to rozwiązanie okazało się zbyt czasochłonne i niepraktyczne w warunkach pracy drona. W związku z tym opracowano system szyn umożliwiających łatwy montaż i demontaż systemu zrzutów.",
@@ -91,12 +103,13 @@
     },
     "team": {
         "title": "Poznaj Nasz Zespół",
-        "description": "Pasja i zaangażowanie osób stojących za projektem Świerszcz, które łączą różnorodne umiejętności i doświadczenie, aby rozwiązywać trudne problemy i dostarczać innowacyjne rozwiązania.",
+        "description": "Zapaleni droniarze z AGH w Krakowie, którzy stworzyli Świerszcza.",
         "divisions": {
             "organization": {
                 "title": "Sekcja Zarządzania Projektem",
                 "description": "Odpowiada za koordynację projektu, zarządzanie harmonogramem, przygotowywanie dokumentacji oraz zapewnienie skutecznej komunikacji wśród członków zespołu.",
                 "videoSrc": "/swierszcz/team/organization.mp4",
+                "thumbnailSrc": "/swierszcz/team/organization.tiff",
                 "members": [
                     "Izabella Rosikoń",
                     "Amelia Tomczyk"
@@ -106,6 +119,7 @@
                 "title": "Sekcja Operatorów",
                 "description": "Odpowiada za pilotowanie i kontrolowanie drona z ziemi podczas testów i zawodów, zapewniając bezpieczną i efektywną obsługę.",
                 "videoSrc": "/swierszcz/team/operators.mp4",
+                "thumbnailSrc": "/swierszcz/team/operators.tiff",
                 "members": [
                     "Kajetan Bilski",
                     "Michał Świętoń"
@@ -115,6 +129,7 @@
                 "title": "Sekcja Konstrukcji",
                 "description": "Odpowiada za projektowanie i budowę mechanicznych komponentów drona, w tym ramy, ramion i systemu zrzutu ładunku.",
                 "videoSrc": "/swierszcz/team/construction.mp4",
+                "thumbnailSrc": "/swierszcz/team/construction.tiff",
                 "members": [
                     "Tomasz Paleczny",
                     "Kacper Kupczyk",
@@ -125,6 +140,7 @@
                 "title": "Sekcja Elektroniki",
                 "description": "Zajmuje się integracją awioniki, kontrolerów lotu i systemów telemetrycznych, aby zapewnić stabilny lot i zbieranie danych.",
                 "videoSrc": "/swierszcz/team/electronics.mp4",
+                "thumbnailSrc": "/swierszcz/team/electronics.tiff",
                 "members": [
                     "Filip Kulka",
                     "Łukasz Bogacz",
@@ -137,6 +153,7 @@
                 "title": "Sekcja Oprogramowania",
                 "description": "Opracowuje algorytmy optymalizacji trajektorii lotu, systemy wizyjne do wykrywania ofiar katastrof naturalnych oraz ogólną architekturę oprogramowania do obsługi drona.",
                 "videoSrc": "/swierszcz/team/software.mp4",
+                "thumbnailSrc": "/swierszcz/team/software.tiff",
                 "members": [
                     "Szymon Bawor",
                     "Kamil Kopyra",

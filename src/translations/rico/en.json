@@ -110,7 +110,7 @@
         "additionalMedia": [
           {
             "name": "Software Documentation",
-            "path": "/projects/szczerbatek"
+            "path": "/rico/timeline/soft_timeline.pdf"
           }
         ]
       },
@@ -123,57 +123,62 @@
     ]
   },
   "team": {
-        "title": "Meet Our Team",
-        "description": "A group of students at AGH University of Krakow who brought Rico to life - the fixed-wing aircraft for SUAS 2026, from a sketch to the flight line.",
-        "divisions": {
-            "organization": {
-                "title": "Project Management Division",
-                "description": "Responsible for the budget and grant gathering, competition logistics, documentation, and coordination between the technical divisions.",
-                "videoSrc": "/rico/team/organization.mp4",
-                "members": [
-                    "Marta Łopusiewicz",
-                    "Klaudia Janik"
-                ]
-            },
-            "operators": {
-                "title": "Operators Division",
-                "description": "Responsible for flight-line operations, covering piloting, ground control, and overall flight safety during missions.",
-                "videoSrc": "/rico/team/operators.mp4",
-                "members": [
-                    "Kacper Krempa",
-                    "Filip Gajda"
-                ]
-            },
-            "construction": {
-                "title": "Mechanical Division",
-                "description": "Responsible for the design and manufacture of the composite airframe, including aerodynamics, load-bearing structure, 3D printed elements, and the payload release mechanism.",
-                "videoSrc": "/rico/team/construction.mp4",
-                "members": [
-                    "Krzysztof Piekarski",
-                    "Filip Materowski",
-                    "Sebastian Mederski",
-                    "Michał Pietrzykowski"
-                ]
-            },
-            "electronics": {
-                "title": "Electronics Division",
-                "description": "Responsible for the avionics and power systems, including flight controller and sensor integration, radio links, wiring, and the hand-welded battery packs.",
-                "videoSrc": "/rico/team/electronics.mp4",
-                "members": [
-                    "Jakub Konior",
-                    "Ignacy Kępa",
-                    "Piotr Kur"
-                ]
-            },
-            "software": {
-                "title": "Software Division",
-                "description": "Responsible for the onboard mission software and the perception pipeline behind it, detecting targets and mapping the ground in flight.",
-                "videoSrc": "/rico/team/software.mp4",
-                "members": [
-                    "Bartłomiej Barszczak",
-                    "Antoni Trzebuniak"
-                ]
-            }
-        }
+    "title": "Meet Our Team",
+    "description": "A group of students at AGH University of Krakow who brought Rico to life - the fixed-wing aircraft for SUAS 2026, from a sketch to the flight line.",
+    "divisions": {
+      "organization": {
+        "title": "Project Management Division",
+        "description": "Responsible for the budget and grant gathering, competition logistics, documentation, and coordination between the technical divisions.",
+        "videoSrc": "/rico/team/organization.mp4",
+        "thumbnailSrc": "/rico/team/organization.tiff",
+        "members": [
+          "Marta Łopusiewicz",
+          "Klaudia Janik"
+        ]
+      },
+      "operators": {
+        "title": "Operators Division",
+        "description": "Responsible for flight-line operations, covering piloting, ground control, and overall flight safety during missions.",
+        "videoSrc": "/rico/team/operators.mp4",
+        "thumbnailSrc": "/rico/team/operators.tiff",
+        "members": [
+          "Kacper Krempa",
+          "Filip Gajda"
+        ]
+      },
+      "construction": {
+        "title": "Mechanical Division",
+        "description": "Responsible for the design and manufacture of the composite airframe, including aerodynamics, load-bearing structure, 3D printed elements, and the payload release mechanism.",
+        "videoSrc": "/rico/team/construction.mp4",
+        "thumbnailSrc": "/rico/team/construction.tiff",
+        "members": [
+          "Krzysztof Piekarski",
+          "Filip Materowski",
+          "Sebastian Mederski",
+          "Michał Pietrzykowski"
+        ]
+      },
+      "electronics": {
+        "title": "Electronics Division",
+        "description": "Responsible for the avionics and power systems, including flight controller and sensor integration, radio links, wiring, and the hand-welded battery packs.",
+        "videoSrc": "/rico/team/electronics.mp4",
+        "thumbnailSrc": "/rico/team/electronics.tiff",
+        "members": [
+          "Jakub Konior",
+          "Ignacy Kępa",
+          "Piotr Kur"
+        ]
+      },
+      "software": {
+        "title": "Software Division",
+        "description": "Responsible for the onboard mission software and the perception pipeline behind it, detecting targets and mapping the ground in flight.",
+        "videoSrc": "/rico/team/software.mp4",
+        "thumbnailSrc": "/rico/team/software.tiff",
+        "members": [
+          "Bartłomiej Barszczak",
+          "Antoni Trzebuniak"
+        ]
+      }
     }
+  }
 }

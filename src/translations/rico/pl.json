@@ -110,7 +110,7 @@
         "additionalMedia": [
           {
             "name": "Software Documentation",
-            "path": ""
+            "path": "/rico/timeline/soft_timeline.pdf"
           }
         ]
       },
@@ -122,58 +122,63 @@
       }
     ]
   },
-    "team": {
-        "title": "Poznaj nasz zespół",
-        "description": "Grupa studentów z AGH w Krakowie, którzy stworzyli Rico - bezzałogowy samolot na zawody SUAS 2026, od pierwszego szkicu po pierwszy lot",
-        "divisions": {
-            "organization": {
-                "title": "Sekcja Zarządzania Projektem",
-                "description": "Odpowiedzialna za budżet i wnioskowanie grantowe, logistykę zawodów, dokumentację oraz koordynację między skecjami technicznymi.",
-                "videoSrc": "/rico/team/organization.mp4",
-                "members": [
-                    "Marta Łopusiewicz",
-                    "Klaudia Janik"
-                ]
-            },
-            "operators": {
-                "title": "Sekcja Operatorów",
-                "description": "Odpowiedzialna za operacje na linii startowej, obejmujące pilotowanie, kontrolę naziemną oraz ogólne bezpieczeństwo lotów podczas misji.",
-                "videoSrc": "/rico/team/operators.mp4",
-                "members": [
-                    "Kacper Krempa",
-                    "Filip Gajda"
-                ]
-            },
-            "construction": {
-                "title": "Sekcja Konstrukcji",
-                "description": "Odpowiedzialna za projektowanie i wytwarzanie kompozytowej konstrukcji, w tym aerodynamikę, strukturę nośną, elementy z druku 3D oraz mechanizm zrzutu ładunków.",
-                "videoSrc": "/rico/team/construction.mp4",
-                "members": [
-                    "Krzysztof Piekarski",
-                    "Filip Materowski",
-                    "Sebastian Mederski",
-                    "Michał Pietrzykowski"
-                ]
-            },
-            "electronics": {
-                "title": "Sekcja Elektroniki",
-                "description": "Odpowiedzialna za systemy awioniki i zasilania, w tym integrację kontrolera lotu i sensorów, łącza radiowe oraz okablowanie.",
-                "videoSrc": "/rico/team/electronics.mp4",
-                "members": [
-                    "Jakub Konior",
-                    "Ignacy Kępa",
-                    "Piotr Kur"
-                ]
-            },
-            "software": {
-                "title": "Sekcja Oprogramowania",
-                "description": "Odpowiedzialna za oprogramowanie pokładowe i stojący za nim pipeline percepcyjny, które w locie wykrywają cele i mapują teren.",
-                "videoSrc": "/rico/team/software.mp4",
-                "members": [
-                    "Bartłomiej Barszczak",
-                    "Antoni Trzebuniak"
-                ]
-            }
-        }
+  "team": {
+    "title": "Poznaj nasz zespół",
+    "description": "Grupa studentów z AGH w Krakowie, którzy stworzyli Rico - bezzałogowy samolot na zawody SUAS 2026, od pierwszego szkicu po pierwszy lot",
+    "divisions": {
+      "organization": {
+        "title": "Sekcja Zarządzania Projektem",
+        "description": "Odpowiedzialna za budżet i wnioskowanie grantowe, logistykę zawodów, dokumentację oraz koordynację między skecjami technicznymi.",
+        "videoSrc": "/rico/team/organization.mp4",
+        "thumbnailSrc": "/rico/team/organization.tiff",
+        "members": [
+          "Marta Łopusiewicz",
+          "Klaudia Janik"
+        ]
+      },
+      "operators": {
+        "title": "Sekcja Operatorów",
+        "description": "Odpowiedzialna za operacje na linii startowej, obejmujące pilotowanie, kontrolę naziemną oraz ogólne bezpieczeństwo lotów podczas misji.",
+        "videoSrc": "/rico/team/operators.mp4",
+        "thumbnailSrc": "/rico/team/operators.tiff",
+        "members": [
+          "Kacper Krempa",
+          "Filip Gajda"
+        ]
+      },
+      "construction": {
+        "title": "Sekcja Konstrukcji",
+        "description": "Odpowiedzialna za projektowanie i wytwarzanie kompozytowej konstrukcji, w tym aerodynamikę, strukturę nośną, elementy z druku 3D oraz mechanizm zrzutu ładunków.",
+        "videoSrc": "/rico/team/construction.mp4",
+        "thumbnailSrc": "/rico/team/construction.tiff",
+        "members": [
+          "Krzysztof Piekarski",
+          "Filip Materowski",
+          "Sebastian Mederski",
+          "Michał Pietrzykowski"
+        ]
+      },
+      "electronics": {
+        "title": "Sekcja Elektroniki",
+        "description": "Odpowiedzialna za systemy awioniki i zasilania, w tym integrację kontrolera lotu i sensorów, łącza radiowe oraz okablowanie.",
+        "videoSrc": "/rico/team/electronics.mp4",
+        "thumbnailSrc": "/rico/team/electronics.tiff",
+        "members": [
+          "Jakub Konior",
+          "Ignacy Kępa",
+          "Piotr Kur"
+        ]
+      },
+      "software": {
+        "title": "Sekcja Oprogramowania",
+        "description": "Odpowiedzialna za oprogramowanie pokładowe i stojący za nim pipeline percepcyjny, które w locie wykrywają cele i mapują teren.",
+        "videoSrc": "/rico/team/software.mp4",
+        "thumbnailSrc": "/rico/team/software.tiff",
+        "members": [
+          "Bartłomiej Barszczak",
+          "Antoni Trzebuniak"
+        ]
+      }
     }
+  }
 }
