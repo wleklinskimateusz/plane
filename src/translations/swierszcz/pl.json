@@ -11,7 +11,7 @@
     },
     "timeline": {
         "title": "Kamienie milowe",
-        "description": "Śledź naszą podróż od koncepcji do gotowego produktu",
+        "description": "Śledź naszą podróż od koncepcji do zawodów",
         "lineItemSrc": "/swierszcz/drone.svg",
         "items": [
             {
@@ -96,6 +96,7 @@
             "organization": {
                 "title": "Sekcja Zarządzania Projektem",
                 "description": "Odpowiada za koordynację projektu, zarządzanie harmonogramem, przygotowywanie dokumentacji oraz zapewnienie skutecznej komunikacji wśród członków zespołu.",
+                "videoSrc": "/swierszcz/team/organization.mp4",
                 "members": [
                     "Izabella Rosikoń",
                     "Amelia Tomczyk"
@@ -104,6 +105,7 @@
             "operators": {
                 "title": "Sekcja Operatorów",
                 "description": "Odpowiada za pilotowanie i kontrolowanie drona z ziemi podczas testów i zawodów, zapewniając bezpieczną i efektywną obsługę.",
+                "videoSrc": "/swierszcz/team/operators.mp4",
                 "members": [
                     "Kajetan Bilski",
                     "Michał Świętoń"
@@ -112,32 +114,29 @@
             "construction": {
                 "title": "Sekcja Konstrukcji",
                 "description": "Odpowiada za projektowanie i budowę mechanicznych komponentów drona, w tym ramy, ramion i systemu zrzutu ładunku.",
+                "videoSrc": "/swierszcz/team/construction.mp4",
                 "members": [
                     "Tomasz Paleczny",
                     "Kacper Kupczyk",
                     "Michał Pietrzykowski"
                 ]
             },
-            "power": {
-                "title": "Sekcja Zasilania",
-                "description": "Odpowiada za projektowanie i wdrażanie systemów zasilania drona, w tym dobór baterii, dystrybucję energii i optymalizację efektywności energetycznej.",
-                "members": [
-                    "Adam Bosacki",
-                    "Wiktor Onik"
-                ]
-            },
             "electronics": {
                 "title": "Sekcja Elektroniki",
                 "description": "Zajmuje się integracją awioniki, kontrolerów lotu i systemów telemetrycznych, aby zapewnić stabilny lot i zbieranie danych.",
+                "videoSrc": "/swierszcz/team/electronics.mp4",
                 "members": [
                     "Filip Kulka",
                     "Łukasz Bogacz",
-                    "Wojciech Wiszniewski"
+                    "Wojciech Wiszniewski",
+                    "Wiktor Onik",
+                    "Adam Bosacki"
                 ]
             },
             "software": {
                 "title": "Sekcja Oprogramowania",
-                "description": "Opracowuje algorytmy optymalizacji trajektorii lotu, systemy wizyjne do wykrywania ofiar oraz ogólną architekturę oprogramowania do obsługi drona.",
+                "description": "Opracowuje algorytmy optymalizacji trajektorii lotu, systemy wizyjne do wykrywania ofiar katastrof naturalnych oraz ogólną architekturę oprogramowania do obsługi drona.",
+                "videoSrc": "/swierszcz/team/software.mp4",
                 "members": [
                     "Szymon Bawor",
                     "Kamil Kopyra",

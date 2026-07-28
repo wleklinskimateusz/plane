@@ -1,5 +1,6 @@
-import { ImageSwitcher } from "@/components/image-switcher";
+import { ImageSwitcher } from "@/app/[lang]/projects/swierszcz/_components/TeamDivisionSwapper";
 import { SwierszczTranslations } from "@/translations/swierszcz/dictionary";
+import { div } from "three/src/nodes/tsl/TSLBase.js";
 
 export const Team = ({
   translations,
@@ -11,16 +12,16 @@ export const Team = ({
       "organization",
       "operators",
       "construction",
-      "power",
       "electronics",
       "software",
     ] satisfies (keyof SwierszczTranslations["team"]["divisions"])[]
   ).map((division) => {
-    const { title, description, members } = translations.divisions[division];
+    const { title, description, members, videoSrc } = translations.divisions[division];
     return {
       title,
       description,
       members,
+      videoSrc,
     };
   })
 
@@ -33,8 +34,12 @@ export const Team = ({
             {translations.title}
           </h2>
           <p className="text-xl text-gray-600">{translations.description}</p>
+          <ImageSwitcher
+            divisions={orderedDivisions}
+            autoSwitchInterval={5000}
+          />
         </div>
       </div>
     </section>
   );
-};
+}
