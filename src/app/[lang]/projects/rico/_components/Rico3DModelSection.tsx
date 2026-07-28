@@ -6,7 +6,7 @@ import { useState } from "react";
 const ModelViewer = dynamic(() => import("./RicoModelViewer"), {
     ssr: false,
     loading: () => (
-        <div className="flex h-250 w-7/8 items-center justify-center rounded-xl border border-gray-300 bg-gray-200 text-gray-500">
+        <div className="flex h-250 w-7/8 items-center justify-center rounded-xl bg-gray-200 text-gray-500">
             Loading 3D model…
         </div>
     ),
@@ -18,13 +18,13 @@ export const RicoThreeDModelSection = () => {
     return (
         <section
             id="model-viewer"
-            className="relative flex h-7/8 w-full flex-col items-center justify-center p-8 pb-10"
+            className="relative flex h-7/8 w-full flex-col items-center justify-center p-8 pb-10 mb-10"
         >
             {showModelViewer ? (
                 <ModelViewer />
             ) : (
                 <div
-                    className="relative h-250 w-7/8 cursor-pointer rounded-2xl border shadow-lg transition hover:scale-[1.01]"
+                    className="relative h-250 w-7/8 cursor-pointer rounded-2xl shadow-lg transition hover:scale-[1.01]"
                     onClick={() => setShowModelViewer(true)}
                     role="button"
                     tabIndex={0}
@@ -40,7 +40,7 @@ export const RicoThreeDModelSection = () => {
                         onClick={(event) => {
                             event.stopPropagation();
                             setShowModelViewer(true);
-                        }} className="flex w-full items-center justify-center rounded-xl border shadow-inner cursor-pointer relative">
+                        }} className="flex w-full items-center justify-center rounded-xl shadow-inner cursor-pointer relative">
                         <Image
                             src="/rico/3d_rico.png"
                             alt="Rico 3D model thumbnail"
