@@ -264,5 +264,17 @@
     "title": "Część AGH Solar Plane",
     "description": "Szczerbatek jest rozwijany przez AGH Solar Plane - organizację studencką dedykowaną przesuwaniu granic lotnictwa solarnego. Dołącz do nas w misji rewolucjonizowania zrównoważonego lotnictwa.",
     "cta": "Poznaj Naszą Organizację"
+  },
+  "financing": {
+    "title": "Finansowanie",
+    "description": "Projekt finansowany ze środków budżetu państwa, dofinansowanych przez Unię Europejską, przez Ministra Nauki i Szkolnictwa Wyższego w ramach Projektu niekonkurencyjnego FERS pt.: 'Wsparcie studentów w zakresie podniesienia ich kompetencji i umiejętności'",
+    "fundingAmountLabel": "Kwota dofinansowania",
+    "fundingAmount": "163,976.00 PLN",
+    "financingPeriodLabel": "Okres finansowania",
+    "financingPeriod": "07.2024 - 12.2025",
+    "logo": "/vitold/timeline/ministerstwo_pl.png",
+    "altLogo": "Logo Ministerstwa Nauki i Szkolnictwa Wyższego",
+    "logo2": "/partners/eu.png",
+    "altLogo2": "Logo Unii Europejskiej"
   }
 }

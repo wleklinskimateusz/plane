@@ -1,9 +1,21 @@
 import Image from "next/image";
-import type { VitoldTranslations } from "@/translations/vitold/dictionary";
 
-type FinancingProps = {
-  financing: VitoldTranslations["financing"];
-};
+interface FinancingProps {
+  financing: {
+    title: string;
+    description: string;
+    fundingAmountLabel: string;
+    fundingAmount: string;
+    totalCostLabel?: string;
+    totalCost?: string;
+    financingPeriodLabel: string;
+    financingPeriod: string;
+    logo: string;
+    logo2?: string;
+    altLogo: string;
+    altLogo2?: string;
+  };
+}
 
 export function Financing({ financing }: FinancingProps) {
   const stats = [
@@ -24,14 +36,30 @@ export function Financing({ financing }: FinancingProps) {
   return (
     <div className="mx-auto max-w-5xl rounded-xl border border-gray-200 bg-gray-50 p-8 shadow-sm md:p-10">
       <div className="flex flex-col gap-8 md:flex-row md:items-start md:gap-10">
-        <div className="relative mx-auto h-24 w-full max-w-[200px] shrink-0 md:mx-0 md:h-28 md:max-w-[220px]">
-          <Image
-            src={financing.logo}
-            alt=""
-            fill
-            className="object-contain"
-            sizes="(max-width: 768px) 200px, 220px"
-          />
+        <div className="mx-auto flex w-full max-w-[220px] flex-col items-center gap-4 md:mx-0 md:max-w-[240px]">
+          {financing.logo && (
+            <div className="relative aspect-[16/6] w-full">
+              <Image
+                src={financing.logo}
+                alt={financing.altLogo}
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 220px, 240px"
+              />
+            </div>
+          )}
+
+          {financing.logo2 && financing.altLogo2 && (
+            <div className="relative aspect-[16/6] w-full">
+              <Image
+                src={financing.logo2}
+                alt={financing.altLogo2}
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 220px, 240px"
+              />
+            </div>
+          )}
         </div>
         <div className="min-w-0 flex-1 text-center md:text-left">
           <h3 className="mb-3 font-serif text-2xl font-bold text-gray-900 md:text-3xl">
