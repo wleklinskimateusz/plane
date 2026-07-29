@@ -7,7 +7,6 @@
   "ourSolutions": {
     "title": "Our Solutions",
     "description": "We build it. We code it. We fly it.",
-
     "items": {
       "aero": {
         "title": "Analisysis and design",
@@ -265,5 +264,17 @@
     "title": "Part of AGH Solar Plane",
     "description": "Szczerbatek is being developed by AGH Solar Plane - a student organization dedicated to pushing the boundaries of solar aviation. Join us in our mission to revolutionize sustainable flight.",
     "cta": "Learn More About Our Organization"
+  },
+  "financing": {
+    "title": "Financing",
+    "description": "The project is financed from the state budget, co-financed by the European Union, by the Minister of Science and Higher Education under the non-competitive FERS Project entitled: 'Supporting students in enhancing their competencies and skills'",
+    "fundingAmountLabel": "Funding amount",
+    "fundingAmount": "163,976.00 PLN",
+    "financingPeriodLabel": "Financing period",
+    "financingPeriod": "07.2024 - 12.2025",
+    "logo": "/vitold/timeline/ministerstwo_pl.png",
+    "altLogo": "Logo of the Ministry of Science and Higher Education",
+    "logo2": "/partners/eu.png",
+    "altLogo2": "Logo of the European Union"
   }
 }

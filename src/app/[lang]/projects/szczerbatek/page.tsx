@@ -6,6 +6,7 @@ import Link from "next/link";
 import { OurSolutions } from "../../../../components/OurSolutions";
 import { Team } from "../../../../components/Team";
 import { VideoSection } from "../../../../components/VideoSection";
+import { Financing } from "@/components/Financing";
 
 export const generateMetadata = async ({
   params,
@@ -88,6 +89,11 @@ export default async function Szczerbatek({
         </div>
       </section>
       <Team translations={szczerbatekTranslations.team} />
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-[1680px] px-16">
+          <Financing financing={szczerbatekTranslations.financing} />
+        </div>
+      </section>
       {/* Organization Section */}
       <section className="bg-gray-50 py-24">
         <div className="mx-auto max-w-[1680px] px-4 sm:px-6 lg:px-8">
