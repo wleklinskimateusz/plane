@@ -6,7 +6,7 @@ import Link from "next/link";
 import { OurSolutions } from "../../../../components/OurSolutions";
 import { Team } from "../../../../components/Team";
 import { VideoSection } from "../../../../components/VideoSection";
-import { Financing } from "@/components/Financing";
+import { Financing } from "./_components/FinancingFERS";
 
 export const generateMetadata = async ({
   params,
