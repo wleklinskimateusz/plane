@@ -268,12 +268,26 @@
   "financing": {
     "title": "Financing",
     "description": "The project is financed from the state budget, co-financed by the European Union, by the Minister of Science and Higher Education under the non-competitive FERS Project entitled: 'Supporting students in enhancing their competencies and skills'",
+    "projectTitle": "Title: Enhancing students' competencies in autonomous unmanned aerial vehicle systems through participation in international competitions",
+    "projectDescription": "The project objectives included building unmanned aerial vehicles, completing specialized training, and preparing for and participating in international competitions. Students had the opportunity to gain practical experience in the design, construction, and testing of autonomous aerial systems, as well as in teamwork and problem-solving in a dynamic environment, thereby enhancing their hard and soft skills.",
+    "schedule": [
+      {
+        "name": "Task 1: Participation in the Student Unmanned Aerial Systems Competition 2025.",
+        "description": "The task involved preparing an autonomous aerial vehicle capable of successfully carrying out a payload drop mission in a designated area, as well as performing terrain mapping.",
+        "date": "July 2024 - June 2025"
+      },
+      {
+        "name": "Task 2: Participation in the 2025 TÜBİTAK International Unmanned Aerial Vehicle Competition.",
+        "description": "Part of the preparations for the competition involved participating in specialized unmanned aerial vehicle piloting training, which allowed students to gain practical skills in operating and controlling drones. Thanks to this training and the constructions they built, students took part in the competition and enhanced their competencies.",
+        "date": "July 2025 - December 2025"
+      }
+    ],
     "fundingAmountLabel": "Funding amount",
     "fundingAmount": "163,976.00 PLN",
     "financingPeriodLabel": "Financing period",
     "financingPeriod": "07.2024 - 12.2025",
-    "logo": "/vitold/timeline/ministerstwo_pl.png",
-    "altLogo": "Logo of the Ministry of Science and Higher Education",
+    "logo": "/szczerbatek/financing/FERS_belka.jpg",
+    "altLogo": "Logos of the European Funds for Social Development, the Ministry of Science and Higher Education and the European Union",
     "logo2": "/partners/eu.png",
     "altLogo2": "Logo of the European Union"
   }

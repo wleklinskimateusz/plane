@@ -268,12 +268,26 @@
   "financing": {
     "title": "Finansowanie",
     "description": "Projekt finansowany ze środków budżetu państwa, dofinansowanych przez Unię Europejską, przez Ministra Nauki i Szkolnictwa Wyższego w ramach Projektu niekonkurencyjnego FERS pt.: 'Wsparcie studentów w zakresie podniesienia ich kompetencji i umiejętności'",
+    "projectTitle": "Tytuł: Podnoszenie kompetencji studentów w zakresie systemów autonomicznych bezzałogowych statków powietrznych poprzez udział w międzynarodowych zawodach",
+    "projectDescription": "Założenia projektu obejmowały stworzenie bezzałogowych statków powietrznych, odbycie specjalistycznych szkoleń oraz przygotwania i udział w międzynarodowych zawodach. Studenci mieli okazję zdobyć praktyczne doświadczenie w projektowaniu, budowie i testowaniu autonomicznych systemów lotniczych, a także w pracy zespołowej i rozwiązywaniu problemów w dynamicznym środowisku, dzięki czemu podnieśli swoje kompetencje twarde i miękkie.",
+    "schedule": [
+      {
+        "name": "Zadanie 1: Udział w zawodach Student Unmanned Aerial Systems Competition 2025.",
+        "description": "Zadanie obejmowało przygotowanie autonomicznego statku powietrznego, który skutecznie wykonałby misję zrzutu ładunku w określonym obszarze, a także przeprowadził mapowanie terenu.",
+        "date": "lipiec 2024 - czerwiec 2025"
+      },
+      {
+        "name": "Zadanie 2: Udział w zawodach 2025 TÜBİTAK International Unmanned Aerial Vehicle Competition.",
+        "description": "Częścią przygotowań do zawodów było wzięcie udziału w specjalistycznych szkoleniach pilotażu bezzałogowych statków powietrznych, które pozwoliły studentom na zdobycie praktycznych umiejętności w zakresie obsługi i sterowania dronami. Dzięki tym szkoleniom oraz zbudowanym konstrukcjom studenci wzięli udział w zawodach i podnieśli swoje kompetencje.",
+        "date": "lipiec 2025 - grudzień 2025"
+      }
+    ],
     "fundingAmountLabel": "Kwota dofinansowania",
     "fundingAmount": "163,976.00 PLN",
     "financingPeriodLabel": "Okres finansowania",
     "financingPeriod": "07.2024 - 12.2025",
-    "logo": "/vitold/timeline/ministerstwo_pl.png",
-    "altLogo": "Logo Ministerstwa Nauki i Szkolnictwa Wyższego",
+    "logo": "/szczerbatek/financing/FERS_belka.jpg",
+    "altLogo": "Loga Funduszy Europejskich na rzecz Rozwoju Społecznego, Ministerstwa Nauki i Szkolnictwa Wyższego oraz Unii Europejskiej",
     "logo2": "/partners/eu.png",
     "altLogo2": "Logo Unii Europejskiej"
   }
