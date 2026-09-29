@@ -90,6 +90,10 @@
                     {
                         "name": "Trajectory algorithms documentation.",
                         "path": "/swierszcz/timeline/Optimal_drop_position_algorithm.pdf"
+                    },
+                    {
+                        "name": "Perypetie trenowania modeli YOLO",
+                        "path": "/swierszcz/timeline/artykul_yolo_suas.pdf"
                     }
                 ]
             },
